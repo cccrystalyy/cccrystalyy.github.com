@@ -25,7 +25,7 @@ study at
 
 who can be found in
 
-> [github](https://github.com/cccrystalyy) [Google plus](https://plus.google.com/u/0/103939286317705041310/about)
+> [github](https://github.com/cccrystalyy) and [Google plus](https://plus.google.com/u/0/103939286317705041310/about)
 
 mail 
 
