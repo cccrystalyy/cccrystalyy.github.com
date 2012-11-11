@@ -18,7 +18,7 @@ who intesets in
 who plays
 
 > Dota | Call of Duty | StarCraft II | and a lot of games
->![Steam](http://badges.steamprofile.com/profile/default/steam/76561198033245268.png)
+><img src="http://badges.steamprofile.com/profile/default/steam/76561198033245268.png align="left" />
 
 study at
 
