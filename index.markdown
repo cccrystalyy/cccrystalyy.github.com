@@ -33,7 +33,7 @@ email
 
 or follow 
 
-> [@愤怒的小号](http://www.weibo.com/cccrystalyy)
+> [@0010-11-0100](http://www.weibo.com/cccrystalyy)
 
 to reach me
 
