@@ -15,6 +15,10 @@ who intesets in
 
 >  Everything about Computer Science and Mathematics | Computer Games | Classical music 
 
+who reads
+
+> Carl Gustav Jung | Stefan Zweig 
+
 who plays
 
 > Dota | Call of Duty | StarCraft II | and a lot of games
