@@ -11,7 +11,7 @@ who focus on
 
 > Rendering | Machine Learning | Semantic Search 
 
-who intesets in 
+who intrests in 
 
 >  Everything about Computer Science and Mathematics | Computer Games | Classical music 
 
