@@ -35,10 +35,6 @@ email
 
 > echo huangil4l18i.wiveni8dbox4hom | tr huangil418.wvedboxm crystal.un@wvedboxm
 
-or follow 
-
-> [@0010-11-0100](http://www.weibo.com/cccrystalyy)
-
 to reach me
 
 
