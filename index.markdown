@@ -21,7 +21,7 @@ who reads
 
 who plays
 
-> Dota | Call of Duty | StarCraft II | and a lot of games
+> Dota | Call of Duty | StarCraft II | [Minecraft](http://mc.trexguo.com/) | and a lot of games
 
 study at
 
