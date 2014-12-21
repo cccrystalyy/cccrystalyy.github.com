@@ -7,21 +7,21 @@ a
 
 >  Unixer | Coder | DotAer | FPSer
 
-who focus on 
+who focus on
 
-> Rendering | Machine Learning | Semantic Search 
+> Physically Based Rendering | Machine Learning | Semantic Search
 
-who intrests in 
+who intrests in
 
->  Everything about Computer Science and Mathematics | Computer Games | Classical music 
+>  Everything about Computer Science and Mathematics | Computer Games | Classical music
 
 who reads
 
-> Carl Gustav Jung | Stefan Zweig 
+> Carl Gustav Jung | Stefan Zweig
 
 who plays
 
-> Dota | Call of Duty | StarCraft II | [Minecraft](http://mc.trexguo.com/) | and a lot of games
+> Dota | CS:GO | Call of Duty | StarCraft II | [Minecraft](http://rainmc.com/) | and a lot of games
 
 study at
 
@@ -29,12 +29,10 @@ study at
 
 who can be found in
 
-> [github](https://github.com/cccrystalyy) and [Google plus](https://plus.google.com/u/0/103939286317705041310/about)
+> [steam](http://steamcommunity.com/id/silentlistener) [github](https://github.com/cccrystalyy) and [Google plus](https://plus.google.com/u/0/103939286317705041310/about)
 
-email 
+email
 
-> echo huangil4l18i.wiveni8dbox4hom | tr huangil418.wvedboxm crystal.un@wvedboxm
+> [here](i@silentlistener.me)
 
 to reach me
-
-
