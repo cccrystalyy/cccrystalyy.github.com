@@ -33,6 +33,6 @@ who can be found in
 
 email
 
-> [here](i@silentlistener.me)
+> i(AT)silentlistener.me
 
 to reach me
