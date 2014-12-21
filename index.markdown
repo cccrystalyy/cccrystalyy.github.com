@@ -17,7 +17,7 @@ who intrests in
 
 who reads
 
-> Carl Gustav Jung | Stefan Zweig
+> Carl Gustav Jung | Stefan Zweig | Philip.K.Dick etc.
 
 who plays
 
