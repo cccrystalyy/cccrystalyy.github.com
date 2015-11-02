@@ -17,7 +17,7 @@ who intrests in
 
 who loves
 
->Computer Games | Classical music | Reading | Sleep all day
+>Computer Games | Classical music | Reading | Sleeping all day
 
 who reads
 
