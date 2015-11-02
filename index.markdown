@@ -13,9 +13,11 @@ who focus on
 
 who intrests in
 
->  Everything about Computer Science and Mathematics 
+> Computer Science and Mathematics 
+
 who loves
-Computer Games | Classical music | Reading | Sleep all day
+
+>Computer Games | Classical music | Reading | Sleep all day
 
 who reads
 
