@@ -5,7 +5,7 @@ avatar: yes
 
 a
 
->  Unixer | Coder | DotAer | FPSer
+>  Coder | Gamer
 
 who focus on
 
@@ -13,7 +13,9 @@ who focus on
 
 who intrests in
 
->  Everything about Computer Science and Mathematics | Computer Games | Classical music
+>  Everything about Computer Science and Mathematics 
+who loves
+Computer Games | Classical music | Reading | Sleep all day
 
 who reads
 
@@ -21,7 +23,7 @@ who reads
 
 who plays
 
-> Dota | CS:GO | Call of Duty | StarCraft II | [Minecraft](http://rainmc.com/) | and a lot of games
+> Dota | CS:GO | EVE Online | StarCraft II | [Minecraft](http://rainmc.com/) | and a lot of games
 
 study at
 
