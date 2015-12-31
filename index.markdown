@@ -25,7 +25,7 @@ who reads
 
 who plays
 
-> Dota | CS:GO | EVE Online | StarCraft II | [Minecraft](http://rainmc.com/) | and a lot of games
+> Dota | CS:GO | EVE Online | [Minecraft](http://rainmc.com/) | and a lot of games
 
 study at
 
