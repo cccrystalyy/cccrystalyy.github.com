@@ -1,0 +1,85 @@
+
+      <!DOCTYPE html PUBLIC "-/W3C/DTD XHTML 1.0 Strict/EN" "http:/www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    <html xmlns="http:/www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+        <head>
+            <title>
+      Comparison of test1 Scene
+            </title>
+            <meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+            <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+            <script type="text/javascript" src="js/jquery.min.js"></script>
+            <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+            <script type="text/javascript" src="js/jquery.comp.js"></script>
+            <script type="text/javascript" src="js/jquery.comp2.js"></script>
+            <script type="text/javascript" src="js/plotly-latest.min.js"></script>
+        </head>
+           <body>
+       <div id='content'>
+           <h1 style='text-align:center'>Comparison of test1 Scene</h1>
+           <h2 style='text-align:center'>Comparing different params for the pingpong batch fits with 128^3 grid Cache, the weight of photon is clamped to 20 times original energy</h2>
+           <table class='shortcuts'>
+           <tr>
+<td>
+<b>no_pingpong_20M_hist</b>
+</td>
+<td> No pingpong just 20M photon fitted in 1 Batches </td>
+</tr>
+           <tr>
+<td>
+<b>no_pingpong_20M_vmf</b>
+</td>
+<td> No pingpong just 20M photon fitted in 1 Batches with VMF Mixture model </td>
+</tr>
+           <tr>
+<td>
+<b>PingPong_10Passes_hist</b>
+</td>
+<td> Result with 10 Pingpong Pass </td>
+</tr>
+           <tr>
+<td>
+<b>PingPong_10Passes_vmf</b>
+</td>
+<td> Result with 10 Pingpong Pass </td>
+</tr>
+           <tr>
+<td>
+<b>ref</b>
+</td>
+<td> reference </td>
+</tr>
+           <tr>
+<td>
+<b>volpath</b>
+</td>
+<td> volume path tracer </td>
+</tr>
+</table>
+<table>
+	<tr>
+		<td>
+			<div class='comp'>
+				<img src='test1/no_pingpong_20M_hist/test1_auto.png' alt='no_pingpong_20M_hist'/>
+				<img src='test1/no_pingpong_20M_vmf/test1_auto.png' alt='no_pingpong_20M_vmf'/>
+				<img src='test1/PingPong_10Passes_hist/test1_auto.png' alt='PingPong_10Passes_hist'/>
+				<img src='test1/PingPong_10Passes_vmf/test1_auto.png' alt='PingPong_10Passes_vmf'/>
+				<img src='test1/ref/test1_auto.png' alt='ref'/>
+				<img src='test1/volpath/test1_auto.png' alt='volpath'/>
+			</div>
+		</td>
+		<td>
+			<div class='comp'>
+				<img src='test1/no_pingpong_20M_hist/test1_diff.png' alt='no_pingpong_20M_hist'/>
+				<img src='test1/no_pingpong_20M_vmf/test1_diff.png' alt='no_pingpong_20M_vmf'/>
+				<img src='test1/PingPong_10Passes_hist/test1_diff.png' alt='PingPong_10Passes_hist'/>
+				<img src='test1/PingPong_10Passes_vmf/test1_diff.png' alt='PingPong_10Passes_vmf'/>
+				<img src='test1/ref/test1_diff.png' alt='ref'/>
+				<img src='test1/volpath/test1_diff.png' alt='volpath'/>
+			</div>
+		</td>
+	</tr>
+</table>
+
+            </body>
+        </html>
+        
