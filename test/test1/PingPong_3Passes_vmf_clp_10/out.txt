@@ -1,0 +1,2139 @@
+2017-03-30 03:01:22 INFO  main [mitsuba.cpp:275] Mitsuba version 0.5.0 (Windows, 64 bit), Copyright (c) 2014 Wenzel Jakob
+2017-03-30 03:01:22 INFO  main [mitsuba.cpp:377] Parsing scene description from "../scenes/test1/test1_auto.xml" ..
+2017-03-30 03:01:22 INFO  main [PluginManager] Loading plugin "plugins\homogeneous.dll" ..
+2017-03-30 03:01:22 INFO  main [PluginManager] Loading plugin "plugins\isotropic.dll" ..
+2017-03-30 03:01:22 INFO  main [scenehandler.cpp:676] In file "C:\Users\ZhaoYang\Documents\GitHub\mrp-scripts\../scenes/test1/test1_auto.xml" (near line 16): Parsing included file "guided_volpath.xml" ..
+2017-03-30 03:01:22 INFO  main [PluginManager] Loading plugin "plugins\guided_volpath.dll" ..
+2017-03-30 03:01:22 INFO  main [volume_guiding.h:167] vMFMixtureModelFactory[
+cfg = vMFMixtureModelFactoryConfig[
+maxK = 16, 
+maxItr = 20, 
+type = wmapfull, 
+initKappa = 5, 
+maxKappa = 1000, 
+v = 2
+priorRWeight = 1
+priorR = 0.6
+useBackGroundComp = 1, 
+minBackGroundWeight = 0.5, 
+]
+]
+2017-03-30 03:01:22 WARN  main [scenehandler.cpp:796] In file "C:\Users\ZhaoYang\Documents\GitHub\mrp-scripts\../scenes/test1\../integrators/guided_volpath.xml" (near line 174): Unqueried attribute "DistCache.minRadius" in element "integrator"
+2017-03-30 03:01:22 WARN  main [scenehandler.cpp:796] In file "C:\Users\ZhaoYang\Documents\GitHub\mrp-scripts\../scenes/test1\../integrators/guided_volpath.xml" (near line 174): Unqueried attribute "DistributionFactory.cacheStrat" in element "integrator"
+2017-03-30 03:01:22 WARN  main [scenehandler.cpp:796] In file "C:\Users\ZhaoYang\Documents\GitHub\mrp-scripts\../scenes/test1\../integrators/guided_volpath.xml" (near line 174): Unqueried attribute "DistributionFactory.fixRadius" in element "integrator"
+2017-03-30 03:01:22 WARN  main [scenehandler.cpp:796] In file "C:\Users\ZhaoYang\Documents\GitHub\mrp-scripts\../scenes/test1\../integrators/guided_volpath.xml" (near line 174): Unqueried attribute "HistFac.nBins" in element "integrator"
+2017-03-30 03:01:22 WARN  main [scenehandler.cpp:796] In file "C:\Users\ZhaoYang\Documents\GitHub\mrp-scripts\../scenes/test1\../integrators/guided_volpath.xml" (near line 174): Unqueried attribute "HistFac.prior" in element "integrator"
+2017-03-30 03:01:22 WARN  main [scenehandler.cpp:796] In file "C:\Users\ZhaoYang\Documents\GitHub\mrp-scripts\../scenes/test1\../integrators/guided_volpath.xml" (near line 174): Unqueried attribute "HistFac.splatWeight" in element "integrator"
+2017-03-30 03:01:22 WARN  main [scenehandler.cpp:796] In file "C:\Users\ZhaoYang\Documents\GitHub\mrp-scripts\../scenes/test1\../integrators/guided_volpath.xml" (near line 174): Unqueried attribute "octreeCache.maxPhotons" in element "integrator"
+2017-03-30 03:01:22 WARN  main [scenehandler.cpp:796] In file "C:\Users\ZhaoYang\Documents\GitHub\mrp-scripts\../scenes/test1\../integrators/guided_volpath.xml" (near line 174): Unqueried attribute "octreeCache.photon_search_radius" in element "integrator"
+2017-03-30 03:01:22 WARN  main [scenehandler.cpp:796] In file "C:\Users\ZhaoYang\Documents\GitHub\mrp-scripts\../scenes/test1\../integrators/guided_volpath.xml" (near line 174): Unqueried attribute "octreeCache.radius_scaling" in element "integrator"
+2017-03-30 03:01:22 WARN  main [scenehandler.cpp:796] In file "C:\Users\ZhaoYang\Documents\GitHub\mrp-scripts\../scenes/test1\../integrators/guided_volpath.xml" (near line 174): Unqueried attribute "onlineCache.maxPhotons" in element "integrator"
+2017-03-30 03:01:22 WARN  main [scenehandler.cpp:796] In file "C:\Users\ZhaoYang\Documents\GitHub\mrp-scripts\../scenes/test1\../integrators/guided_volpath.xml" (near line 174): Unqueried attribute "onlineCache.minPhotons" in element "integrator"
+2017-03-30 03:01:22 WARN  main [scenehandler.cpp:796] In file "C:\Users\ZhaoYang\Documents\GitHub\mrp-scripts\../scenes/test1\../integrators/guided_volpath.xml" (near line 174): Unqueried attribute "onlineCache.relSceneRad" in element "integrator"
+2017-03-30 03:01:22 WARN  main [scenehandler.cpp:796] In file "C:\Users\ZhaoYang\Documents\GitHub\mrp-scripts\../scenes/test1\../integrators/guided_volpath.xml" (near line 174): Unqueried attribute "vds.biasComp" in element "integrator"
+2017-03-30 03:01:22 WARN  main [scenehandler.cpp:796] In file "C:\Users\ZhaoYang\Documents\GitHub\mrp-scripts\../scenes/test1\../integrators/guided_volpath.xml" (near line 174): Unqueried attribute "vds.forceInteraction" in element "integrator"
+2017-03-30 03:01:22 WARN  main [scenehandler.cpp:796] In file "C:\Users\ZhaoYang\Documents\GitHub\mrp-scripts\../scenes/test1\../integrators/guided_volpath.xml" (near line 174): Unqueried attribute "vds.maxTabs" in element "integrator"
+2017-03-30 03:01:22 WARN  main [scenehandler.cpp:796] In file "C:\Users\ZhaoYang\Documents\GitHub\mrp-scripts\../scenes/test1\../integrators/guided_volpath.xml" (near line 174): Unqueried attribute "vds.mediumSamplingWeight" in element "integrator"
+2017-03-30 03:01:22 WARN  main [scenehandler.cpp:796] In file "C:\Users\ZhaoYang\Documents\GitHub\mrp-scripts\../scenes/test1\../integrators/guided_volpath.xml" (near line 174): Unqueried attribute "vds.useCacheIrr" in element "integrator"
+2017-03-30 03:01:22 WARN  main [scenehandler.cpp:796] In file "C:\Users\ZhaoYang\Documents\GitHub\mrp-scripts\../scenes/test1\../integrators/guided_volpath.xml" (near line 174): Unqueried attribute "vds.useSmoothIrr" in element "integrator"
+2017-03-30 03:01:22 INFO  main [scenehandler.cpp:676] In file "C:\Users\ZhaoYang\Documents\GitHub\mrp-scripts\../scenes/test1/test1_auto.xml" (near line 17): Parsing included file "cam1.xml" ..
+2017-03-30 03:01:22 INFO  main [PluginManager] Loading plugin "plugins\independent.dll" ..
+2017-03-30 03:01:22 INFO  main [PluginManager] Loading plugin "plugins\box.dll" ..
+2017-03-30 03:01:22 INFO  main [PluginManager] Loading plugin "plugins\hdrfilm.dll" ..
+2017-03-30 03:01:22 INFO  main [PluginManager] Loading plugin "plugins\perspective.dll" ..
+2017-03-30 03:01:22 INFO  main [scenehandler.cpp:676] In file "C:\Users\ZhaoYang\Documents\GitHub\mrp-scripts\../scenes/test1/test1_auto.xml" (near line 18): Parsing included file "objects.xml" ..
+2017-03-30 03:01:22 INFO  main [PluginManager] Loading plugin "plugins\sphere.dll" ..
+2017-03-30 03:01:22 INFO  main [PluginManager] Loading plugin "plugins\null.dll" ..
+2017-03-30 03:01:22 INFO  main [PluginManager] Loading plugin "plugins\diffuse.dll" ..
+2017-03-30 03:01:22 INFO  main [PluginManager] Loading plugin "plugins\cube.dll" ..
+2017-03-30 03:01:22 INFO  main [PluginManager] Loading plugin "plugins\area.dll" ..
+2017-03-30 03:01:22 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (62 primitives) ..
+2017-03-30 03:01:22 INFO  ren0 [KDTreeBase] Finished -- took 1 ms.
+2017-03-30 03:01:22 INFO  ren0 [Scene]  - Emitter unnamed: 1.000000
+2017-03-30 03:01:22 INFO  ren0 [guided_volpath.cpp:519] --------Pre-processing: START--------
+
+2017-03-30 03:01:22 INFO  ren0 [volume_guiding.cpp:157] Training (pass 1/3): tracing importons
+2017-03-30 03:01:22 INFO  ren0 [volume_guiding.cpp:33] Creating independent samplers for importon tracing, one sampler per core...
+2017-03-30 03:01:25 INFO  ren0 [volume_guiding.cpp:98] Global photon map full. Shot 2424577 particles, excess particles due to parallelism: 101401 Stored particles: 2000000
+2017-03-30 03:01:25 INFO  ren0 [volume_guiding.cpp:99] Tracing took 3.1s
+2017-03-30 03:01:25 INFO  ren0 [volume_guiding.cpp:105] Captured 0 background particles.
+2017-03-30 03:01:25 INFO  ren0 [volume_guiding.cpp:110] Particle (importon) statistics:
+Particle splits: 0
+Particle kills: 0
+Particles after splitting: 0
+Measured particles in total: 0
+Average path length: 0
+Max path length: 0
+Min particle weight: 3.40282e+038
+Max particle weight: -3.40282e+038
+Min particle window weight: 3.40282e+038
+Max particle window weight: -3.40282e+038
+
+2017-03-30 03:01:25 INFO  ren0 [volume_guiding.cpp:172] Training: importance cache update
+2017-03-30 03:01:25 INFO  ren0 [GridDistributionCache.h:196] search radius 0.600000
+2017-03-30 03:01:25 INFO  ren0 [GridDistributionCache.h:213] Grid::init: nCores= 8
+2017-03-30 03:01:25 INFO  omp1 [PluginManager] Loading plugin "plugins\ldsampler.dll" ..
+2017-03-30 03:02:05 INFO  ren0 [volume_guiding.cpp:206] GridDistributionCache[
+visEmptyCells = 0
+nCells = 274625
+nCellX = 65
+nCellY = 65
+nCellZ = 65
+cellExtend = 0.325
+radius = 0.6
+bound[0] = [-10.5, -10.5, -10.2047]
+bound[1] = [10.3, 10.3, 10.5953]
+]
+2017-03-30 03:02:05 INFO  ren0 [volume_guiding.cpp:209] Training (pass 1/3): tracing photons
+2017-03-30 03:02:05 INFO  ren0 [volume_guiding.cpp:33] Creating independent samplers for photon tracing, one sampler per core...
+2017-03-30 03:02:10 INFO  ren0 [volume_guiding.cpp:98] Global photon map full. Shot 2462449 particles, excess particles due to parallelism: 93700 Stored particles: 2000000
+2017-03-30 03:02:10 INFO  ren0 [volume_guiding.cpp:99] Tracing took 5.0s
+2017-03-30 03:02:10 INFO  ren0 [volume_guiding.cpp:110] Particle (photon) statistics:
+Particle splits: 0
+Particle kills: 0
+Particles after splitting: 0
+Measured particles in total: 0
+Average path length: 0
+Max path length: 0
+Min particle weight: 3.40282e+038
+Max particle weight: -3.40282e+038
+Min particle window weight: 3.40282e+038
+Max particle window weight: -3.40282e+038
+
+2017-03-30 03:02:10 INFO  ren0 [volume_guiding.cpp:214] Training: radiance cache update
+2017-03-30 03:02:10 INFO  ren0 [GridDistributionCache.h:196] search radius 0.600000
+2017-03-30 03:02:10 INFO  ren0 [GridDistributionCache.h:213] Grid::init: nCores= 8
+2017-03-30 03:02:35 INFO  ren0 [volume_guiding.cpp:237] Saving PhotonMap: 
+pm_test1_vmf_clp_10_PP_iter_0.bin
+
+2017-03-30 03:03:27 INFO  ren0 [volume_guiding.cpp:248] Saving Radiance Cache: 
+radCache_test1_vmf_clp_10_PP_iter_0.bin
+
+2017-03-30 03:03:27 INFO  ren0 [volume_guiding.cpp:249] Cache: 
+GridDistributionCache[
+visEmptyCells = 0
+nCells = 274625
+nCellX = 65
+nCellY = 65
+nCellZ = 65
+cellExtend = 0.325
+radius = 0.6
+bound[0] = [-10.5, -10.5, -10.2047]
+bound[1] = [10.3, 10.3, 10.5953]
+]
+
+2017-03-30 03:07:03 INFO  ren0 [volume_guiding.cpp:256] Radiance Cache Saved. 
+
+2017-03-30 03:07:03 INFO  ren0 [volume_guiding.cpp:258] GridDistributionCache[
+visEmptyCells = 0
+nCells = 274625
+nCellX = 65
+nCellY = 65
+nCellZ = 65
+cellExtend = 0.325
+radius = 0.6
+bound[0] = [-10.5, -10.5, -10.2047]
+bound[1] = [10.3, 10.3, 10.5953]
+]
+2017-03-30 03:07:03 INFO  ren0 [volume_guiding.cpp:157] Training (pass 2/3): tracing importons
+2017-03-30 03:07:06 INFO  ren0 [volume_guiding.cpp:98] Global photon map full. Shot 2305230 particles, excess particles due to parallelism: 101017 Stored particles: 2000000
+2017-03-30 03:07:06 INFO  ren0 [volume_guiding.cpp:99] Tracing took 3.5s
+2017-03-30 03:07:06 INFO  ren0 [volume_guiding.cpp:105] Captured 0 background particles.
+2017-03-30 03:07:06 INFO  ren0 [volume_guiding.cpp:110] Particle (importon) statistics:
+Particle splits: 0
+Particle kills: 0
+Particles after splitting: 0
+Measured particles in total: 0
+Average path length: 0
+Max path length: 0
+Min particle weight: 3.40282e+038
+Max particle weight: -3.40282e+038
+Min particle window weight: 3.40282e+038
+Max particle window weight: -3.40282e+038
+
+2017-03-30 03:07:06 INFO  ren0 [volume_guiding.cpp:172] Training: importance cache update
+2017-03-30 03:07:06 INFO  ren0 [GridDistributionCache.cpp:60] search radius 0.600000
+2017-03-30 03:07:06 INFO  ren0 [GridDistributionCache.cpp:79] Grid::update: nCores= 8
+2017-03-30 03:07:46 INFO  ren0 [volume_guiding.cpp:206] GridDistributionCache[
+visEmptyCells = 0
+nCells = 274625
+nCellX = 65
+nCellY = 65
+nCellZ = 65
+cellExtend = 0.325
+radius = 0.6
+bound[0] = [-10.5, -10.5, -10.2047]
+bound[1] = [10.3, 10.3, 10.5953]
+]
+2017-03-30 03:07:46 INFO  ren0 [volume_guiding.cpp:209] Training (pass 2/3): tracing photons
+2017-03-30 03:07:51 INFO  ren0 [volume_guiding.cpp:98] Global photon map full. Shot 2423649 particles, excess particles due to parallelism: 101634 Stored particles: 2000000
+2017-03-30 03:07:51 INFO  ren0 [volume_guiding.cpp:99] Tracing took 5.0s
+2017-03-30 03:07:51 INFO  ren0 [volume_guiding.cpp:110] Particle (photon) statistics:
+Particle splits: 0
+Particle kills: 0
+Particles after splitting: 0
+Measured particles in total: 0
+Average path length: 0
+Max path length: 0
+Min particle weight: 3.40282e+038
+Max particle weight: -3.40282e+038
+Min particle window weight: 3.40282e+038
+Max particle window weight: -3.40282e+038
+
+2017-03-30 03:07:51 INFO  ren0 [volume_guiding.cpp:214] Training: radiance cache update
+2017-03-30 03:07:51 INFO  ren0 [GridDistributionCache.cpp:60] search radius 0.600000
+2017-03-30 03:07:51 INFO  ren0 [GridDistributionCache.cpp:79] Grid::update: nCores= 8
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:07:56 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:08:17 INFO  ren0 [volume_guiding.cpp:237] Saving PhotonMap: 
+pm_test1_vmf_clp_10_PP_iter_1.bin
+
+2017-03-30 03:09:09 INFO  ren0 [volume_guiding.cpp:248] Saving Radiance Cache: 
+radCache_test1_vmf_clp_10_PP_iter_1.bin
+
+2017-03-30 03:09:09 INFO  ren0 [volume_guiding.cpp:249] Cache: 
+GridDistributionCache[
+visEmptyCells = 0
+nCells = 274625
+nCellX = 65
+nCellY = 65
+nCellZ = 65
+cellExtend = 0.325
+radius = 0.6
+bound[0] = [-10.5, -10.5, -10.2047]
+bound[1] = [10.3, 10.3, 10.5953]
+]
+
+2017-03-30 03:12:44 INFO  ren0 [volume_guiding.cpp:256] Radiance Cache Saved. 
+
+2017-03-30 03:12:44 INFO  ren0 [volume_guiding.cpp:258] GridDistributionCache[
+visEmptyCells = 0
+nCells = 274625
+nCellX = 65
+nCellY = 65
+nCellZ = 65
+cellExtend = 0.325
+radius = 0.6
+bound[0] = [-10.5, -10.5, -10.2047]
+bound[1] = [10.3, 10.3, 10.5953]
+]
+2017-03-30 03:12:44 INFO  ren0 [volume_guiding.cpp:157] Training (pass 3/3): tracing importons
+2017-03-30 03:12:48 INFO  ren0 [volume_guiding.cpp:98] Global photon map full. Shot 2298189 particles, excess particles due to parallelism: 107732 Stored particles: 2000000
+2017-03-30 03:12:48 INFO  ren0 [volume_guiding.cpp:99] Tracing took 3.5s
+2017-03-30 03:12:48 INFO  ren0 [volume_guiding.cpp:105] Captured 0 background particles.
+2017-03-30 03:12:48 INFO  ren0 [volume_guiding.cpp:110] Particle (importon) statistics:
+Particle splits: 0
+Particle kills: 0
+Particles after splitting: 0
+Measured particles in total: 0
+Average path length: 0
+Max path length: 0
+Min particle weight: 3.40282e+038
+Max particle weight: -3.40282e+038
+Min particle window weight: 3.40282e+038
+Max particle window weight: -3.40282e+038
+
+2017-03-30 03:12:48 INFO  ren0 [volume_guiding.cpp:172] Training: importance cache update
+2017-03-30 03:12:48 INFO  ren0 [GridDistributionCache.cpp:60] search radius 0.600000
+2017-03-30 03:12:48 INFO  ren0 [GridDistributionCache.cpp:79] Grid::update: nCores= 8
+2017-03-30 03:13:28 INFO  ren0 [volume_guiding.cpp:206] GridDistributionCache[
+visEmptyCells = 0
+nCells = 274625
+nCellX = 65
+nCellY = 65
+nCellZ = 65
+cellExtend = 0.325
+radius = 0.6
+bound[0] = [-10.5, -10.5, -10.2047]
+bound[1] = [10.3, 10.3, 10.5953]
+]
+2017-03-30 03:13:28 INFO  ren0 [volume_guiding.cpp:209] Training (pass 3/3): tracing photons
+2017-03-30 03:13:32 INFO  ren0 [volume_guiding.cpp:98] Global photon map full. Shot 2417229 particles, excess particles due to parallelism: 94310 Stored particles: 2000000
+2017-03-30 03:13:32 INFO  ren0 [volume_guiding.cpp:99] Tracing took 4.9s
+2017-03-30 03:13:32 INFO  ren0 [volume_guiding.cpp:110] Particle (photon) statistics:
+Particle splits: 0
+Particle kills: 0
+Particles after splitting: 0
+Measured particles in total: 0
+Average path length: 0
+Max path length: 0
+Min particle weight: 3.40282e+038
+Max particle weight: -3.40282e+038
+Min particle window weight: 3.40282e+038
+Max particle window weight: -3.40282e+038
+
+2017-03-30 03:13:32 INFO  ren0 [volume_guiding.cpp:214] Training: radiance cache update
+2017-03-30 03:13:32 INFO  ren0 [GridDistributionCache.cpp:60] search radius 0.600000
+2017-03-30 03:13:32 INFO  ren0 [GridDistributionCache.cpp:79] Grid::update: nCores= 8
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:37 WARN  omp4 [vector.h:538] Vector3: Division by zero!
+2017-03-30 03:13:59 INFO  ren0 [volume_guiding.cpp:237] Saving PhotonMap: 
+pm_test1_vmf_clp_10_PP_iter_2.bin
+
+2017-03-30 03:14:52 INFO  ren0 [volume_guiding.cpp:248] Saving Radiance Cache: 
+radCache_test1_vmf_clp_10_PP_iter_2.bin
+
+2017-03-30 03:14:52 INFO  ren0 [volume_guiding.cpp:249] Cache: 
+GridDistributionCache[
+visEmptyCells = 0
+nCells = 274625
+nCellX = 65
+nCellY = 65
+nCellZ = 65
+cellExtend = 0.325
+radius = 0.6
+bound[0] = [-10.5, -10.5, -10.2047]
+bound[1] = [10.3, 10.3, 10.5953]
+]
+
+2017-03-30 03:18:34 INFO  ren0 [volume_guiding.cpp:256] Radiance Cache Saved. 
+
+2017-03-30 03:18:34 INFO  ren0 [volume_guiding.cpp:258] GridDistributionCache[
+visEmptyCells = 0
+nCells = 274625
+nCellX = 65
+nCellY = 65
+nCellZ = 65
+cellExtend = 0.325
+radius = 0.6
+bound[0] = [-10.5, -10.5, -10.2047]
+bound[1] = [10.3, 10.3, 10.5953]
+]
+2017-03-30 03:18:34 INFO  ren0 [volume_guiding.cpp:268] Training phase took 17.2m
+2017-03-30 03:18:34 INFO  ren0 [guided_volpath.cpp:609] Overall pre-processing: time: 17.208996m
+
+2017-03-30 03:18:34 INFO  ren0 [guided_volpath.cpp:611] --------Pre-processing: END --------
+
+2017-03-30 03:18:34 INFO  ren0 [guided_volpath.cpp:615] Integrator: 
+GuidedVolumetricPathTracer[
+  maxDepth = 8,
+  rrDepth = 8,
+  guidingDistType = vMFMixture
+  gdFactory = vMFMixtureModelFactory[
+cfg = vMFMixtureModelFactoryConfig[
+maxK = 16, 
+maxItr = 20, 
+type = wmapfull, 
+initKappa = 5, 
+maxKappa = 1000, 
+v = 2
+priorRWeight = 1
+priorR = 0.6
+useBackGroundComp = 1, 
+minBackGroundWeight = 0.5, 
+]
+]
+  cacheType = unknown
+  cache = GridDistributionCache[
+visEmptyCells = 0
+nCells = 274625
+nCellX = 65
+nCellY = 65
+nCellZ = 65
+cellExtend = 0.325
+radius = 0.6
+bound[0] = [-10.5, -10.5, -10.2047]
+bound[1] = [10.3, 10.3, 10.5953]
+]
+  vds = StandardVolumeDistanceSampler[
+]
+  volumePhotons = 2500000
+  fitType = unknown
+  usePhaseProduct = 1
+VMFMixturePhaseProductGenerator[]
+]
+
+2017-03-30 03:18:34 INFO  ren0 [SamplingIntegrator] Starting render job (512x512, 1024 samples, 8 cores, SSE2 enabled) ..
+2017-03-30 03:23:52 INFO  ren0 [RenderJob] Render time: 22.5035m
+2017-03-30 03:23:52 INFO  ren0 [guided_volpath.cpp:314] Cache: 
+GridDistributionCache[
+visEmptyCells = 0
+nCells = 274625
+nCellX = 65
+nCellY = 65
+nCellZ = 65
+cellExtend = 0.325
+radius = 0.6
+bound[0] = [-10.5, -10.5, -10.2047]
+bound[1] = [10.3, 10.3, 10.5953]
+]
+
+2017-03-30 03:23:52 INFO  ren0 [HDRFilm] Writing image to "C:\Users\ZhaoYang\Documents\GitHub\mrp-scripts\../scenes/test1\test1_auto.exr" ..
+2017-03-30 03:23:52 INFO  main [statistics.cpp:142] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins\area.dll [Area light]
+    -  plugins\box.dll [Box filter]
+    -  plugins\cube.dll [Cube intersection primitive]
+    -  plugins\diffuse.dll [Smooth diffuse BRDF]
+    -  plugins\guided_volpath.dll [Guided Volumetric path tracer]
+    -  plugins\hdrfilm.dll [High dynamic range film]
+    -  plugins\homogeneous.dll [Homogeneous medium]
+    -  plugins\independent.dll [Independent sampler]
+    -  plugins\isotropic.dll [Isotropic phase function]
+    -  plugins\ldsampler.dll [Low discrepancy sampler]
+    -  plugins\null.dll [Null BSDF]
+    -  plugins\perspective.dll [Perspective camera]
+    -  plugins\sphere.dll [Sphere intersection primitive]
+
+  * General :
+    -  Normal rays traced : 1.126 G
+    -  Shadow rays traced : 265.231 M
+
+  * Volumetric path tracer :
+    -  Average path length : 3.11 (835.56 M / 268.44 M)
+------------------------------------------------------------
