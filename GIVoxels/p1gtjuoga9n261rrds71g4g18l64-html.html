@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title></title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft10{font-size:9px;font-family:Times;color:#000000;}
+	.ft11{font-size:9px;font-family:Times;color:#0000ff;}
+	.ft12{font-size:23px;font-family:Times;color:#000000;}
+	.ft13{font-size:11px;font-family:Times;color:#000000;}
+	.ft14{font-size:8px;font-family:Times;color:#000000;}
+	.ft15{font-size:6px;font-family:Times;color:#000000;}
+	.ft16{font-size:11px;font-family:Times;color:#0000ff;}
+	.ft17{font-size:9px;line-height:14px;font-family:Times;color:#000000;}
+	.ft18{font-size:11px;line-height:12px;font-family:Times;color:#000000;}
+	.ft19{font-size:11px;line-height:16px;font-family:Times;color:#000000;}
+	.ft110{font-size:6px;line-height:12px;font-family:Times;color:#000000;}
+	.ft111{font-size:6px;line-height:11px;font-family:Times;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page1-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="target001.png" alt="background image"/>
+<p style="position:absolute;top:76px;left:108px;white-space:nowrap" class="ft17">Accepted&#160;at&#160;Pacific&#160;Graphics&#160;2011<br/>Bing-Yu&#160;Chen,&#160;Jan&#160;Kautz,&#160;Tong-Yee&#160;Lee,&#160;and&#160;Ming&#160;C.&#160;Lin<br/>Authors’&#160;version&#160;(The&#160;definitive&#160;version&#160;is&#160;available&#160;at</p>
+<p style="position:absolute;top:106px;left:371px;white-space:nowrap" class="ft11"><a href="http://diglib.eg.org/">http://diglib.eg.org/</a></p>
+<p style="position:absolute;top:105px;left:525px;white-space:nowrap" class="ft10">and</p>
+<p style="position:absolute;top:121px;left:108px;white-space:nowrap" class="ft11"><a href="http://onlinelibrary.wiley.com/">http://onlinelibrary.wiley.com/</a></p>
+<p style="position:absolute;top:120px;left:330px;white-space:nowrap" class="ft10"><a href="http://onlinelibrary.wiley.com/">)</a></p>
+<p style="position:absolute;top:76px;left:651px;white-space:nowrap" class="ft10">Volume&#160;30</p>
+<p style="position:absolute;top:76px;left:704px;white-space:nowrap" class="ft10">(2011),&#160;Number&#160;7</p>
+<p style="position:absolute;top:163px;left:120px;white-space:nowrap" class="ft12">Interactive&#160;Indirect&#160;Illumination&#160;Using&#160;Voxel&#160;Cone&#160;Tracing</p>
+<p style="position:absolute;top:201px;left:161px;white-space:nowrap" class="ft13">Cyril&#160;Crassin</p>
+<p style="position:absolute;top:198px;left:232px;white-space:nowrap" class="ft14">1,2</p>
+<p style="position:absolute;top:201px;left:283px;white-space:nowrap" class="ft13">Fabrice&#160;Neyret</p>
+<p style="position:absolute;top:198px;left:363px;white-space:nowrap" class="ft14">1,3</p>
+<p style="position:absolute;top:201px;left:413px;white-space:nowrap" class="ft13">Miguel&#160;Sainz</p>
+<p style="position:absolute;top:198px;left:485px;white-space:nowrap" class="ft14">4</p>
+<p style="position:absolute;top:201px;left:528px;white-space:nowrap" class="ft13">Simon&#160;Green</p>
+<p style="position:absolute;top:198px;left:599px;white-space:nowrap" class="ft14">4</p>
+<p style="position:absolute;top:201px;left:642px;white-space:nowrap" class="ft13">Elmar&#160;Eisemann</p>
+<p style="position:absolute;top:198px;left:731px;white-space:nowrap" class="ft14">5</p>
+<p style="position:absolute;top:233px;left:193px;white-space:nowrap" class="ft15">1</p>
+<p style="position:absolute;top:235px;left:201px;white-space:nowrap" class="ft10">INRIA&#160;Rhone-Alpes&#160;&amp;&#160;LJK</p>
+<p style="position:absolute;top:233px;left:340px;white-space:nowrap" class="ft15">2</p>
+<p style="position:absolute;top:235px;left:348px;white-space:nowrap" class="ft10">Grenoble&#160;University</p>
+<p style="position:absolute;top:233px;left:448px;white-space:nowrap" class="ft15">3</p>
+<p style="position:absolute;top:235px;left:457px;white-space:nowrap" class="ft10">CNRS</p>
+<p style="position:absolute;top:233px;left:491px;white-space:nowrap" class="ft15">4</p>
+<p style="position:absolute;top:235px;left:499px;white-space:nowrap" class="ft10">NVIDIA&#160;Corporation</p>
+<p style="position:absolute;top:233px;left:605px;white-space:nowrap" class="ft15">4</p>
+<p style="position:absolute;top:235px;left:613px;white-space:nowrap" class="ft10">Telecom&#160;ParisTech</p>
+<p style="position:absolute;top:439px;left:108px;white-space:nowrap" class="ft18">Figure&#160;1:&#160;Real-time&#160;indirect&#160;illumination&#160;(25-70&#160;fps&#160;on&#160;a&#160;GTX480):&#160;We&#160;rely&#160;on&#160;a&#160;voxel-based&#160;cone&#160;tracing&#160;to&#160;ensure&#160;efficient<br/>integration&#160;of&#160;2-bounce&#160;illumination&#160;and&#160;support&#160;diffuse&#160;and&#160;glossy&#160;materials&#160;on&#160;complex&#160;scenes.</p>
+<p style="position:absolute;top:454px;left:629px;white-space:nowrap" class="ft15">(Right&#160;scene&#160;courtesy&#160;of&#160;G.&#160;M.&#160;Leal&#160;Llaguno)</p>
+<p style="position:absolute;top:483px;left:144px;white-space:nowrap" class="ft19">Abstract<br/>Indirect&#160;illumination&#160;is&#160;an&#160;important&#160;element&#160;for&#160;realistic&#160;image&#160;synthesis,&#160;but&#160;its&#160;computation&#160;is&#160;expensive&#160;and<br/>highly&#160;dependent&#160;on&#160;the&#160;complexity&#160;of&#160;the&#160;scene&#160;and&#160;of&#160;the&#160;BRDF&#160;of&#160;the&#160;involved&#160;surfaces.&#160;While&#160;off-line&#160;com-<br/>putation&#160;and&#160;pre-baking&#160;can&#160;be&#160;acceptable&#160;for&#160;some&#160;cases,&#160;many&#160;applications&#160;(games,&#160;simulators,&#160;etc.)&#160;require<br/>real-time&#160;or&#160;interactive&#160;approaches&#160;to&#160;evaluate&#160;indirect&#160;illumination.&#160;We&#160;present&#160;a&#160;novel&#160;algorithm&#160;to&#160;compute<br/>indirect&#160;lighting&#160;in&#160;real-time&#160;that&#160;avoids&#160;costly&#160;precomputation&#160;steps&#160;and&#160;is&#160;not&#160;restricted&#160;to&#160;low-frequency&#160;illumi-<br/>nation.&#160;It&#160;is&#160;based&#160;on&#160;a&#160;hierarchical&#160;voxel&#160;octree&#160;representation&#160;generated&#160;and&#160;updated&#160;on&#160;the&#160;fly&#160;from&#160;a&#160;regular<br/>scene&#160;mesh&#160;coupled&#160;with&#160;an&#160;approximate&#160;voxel&#160;cone&#160;tracing&#160;that&#160;allows&#160;for&#160;a&#160;fast&#160;estimation&#160;of&#160;the&#160;visibility&#160;and<br/>incoming&#160;energy.&#160;Our&#160;approach&#160;can&#160;manage&#160;two&#160;light&#160;bounces&#160;for&#160;both&#160;Lambertian&#160;and&#160;glossy&#160;materials&#160;at&#160;in-<br/>teractive&#160;framerates&#160;(25-70FPS).&#160;It&#160;exhibits&#160;an&#160;almost&#160;scene-independent&#160;performance&#160;and&#160;can&#160;handle&#160;complex<br/>scenes&#160;with&#160;dynamic&#160;content&#160;thanks&#160;to&#160;an&#160;interactive&#160;octree-voxelization&#160;scheme.&#160;In&#160;addition,&#160;we&#160;demonstrate&#160;that<br/>our&#160;voxel&#160;cone&#160;tracing&#160;can&#160;be&#160;used&#160;to&#160;efficiently&#160;estimate&#160;Ambient&#160;Occlusion.</p>
+<p style="position:absolute;top:689px;left:144px;white-space:nowrap" class="ft13">Categories&#160;and&#160;Subject&#160;Descriptors</p>
+<p style="position:absolute;top:690px;left:347px;white-space:nowrap" class="ft10">(according&#160;to&#160;ACM&#160;CCS)</p>
+<p style="position:absolute;top:689px;left:476px;white-space:nowrap" class="ft13">:&#160;I.3.7&#160;[Computer&#160;Graphics]:&#160;Three-Dimensional</p>
+<p style="position:absolute;top:706px;left:144px;white-space:nowrap" class="ft13">Graphics&#160;and&#160;Realism—Color,&#160;shading,&#160;shadowing,&#160;and&#160;texture</p>
+<p style="position:absolute;top:730px;left:144px;white-space:nowrap" class="ft13">Keywords:&#160;global&#160;illumination,&#160;indirect&#160;lighting,&#160;final&#160;gather,&#160;cone-tracing,&#160;voxels,&#160;GPU,&#160;real-time&#160;rendering</p>
+<p style="position:absolute;top:797px;left:108px;white-space:nowrap" class="ft13">1.&#160;Introduction</p>
+<p style="position:absolute;top:834px;left:108px;white-space:nowrap" class="ft19">There&#160;is&#160;no&#160;doubt&#160;that&#160;indirect&#160;illumination&#160;drastically&#160;im-<br/>proves&#160;the&#160;realism&#160;of&#160;a&#160;rendered&#160;scene,&#160;but&#160;generally&#160;comes<br/>at&#160;a&#160;significant&#160;cost&#160;because&#160;complex&#160;scenes&#160;are&#160;challenging<br/>to&#160;illuminate,&#160;especially&#160;in&#160;the&#160;presence&#160;of&#160;glossy&#160;reflections.<br/>Global&#160;illumination&#160;is&#160;computationally&#160;expensive&#160;for&#160;several<br/>reasons.&#160;It&#160;requires&#160;computing&#160;visibility&#160;between&#160;arbitrary<br/>points&#160;in&#160;the&#160;3D&#160;scene,&#160;which&#160;is&#160;difficult&#160;with&#160;rasterization<br/>based&#160;rendering.&#160;Secondly,&#160;it&#160;requires&#160;integrating&#160;lighting&#160;in-<br/>formation&#160;over&#160;a&#160;large&#160;number&#160;of&#160;directions&#160;for&#160;each&#160;shaded<br/>point.&#160;Nowadays,&#160;with&#160;the&#160;complexity&#160;of&#160;rendering&#160;content<br/>approaching&#160;millions&#160;of&#160;triangles,&#160;even&#160;in&#160;games,&#160;computing<br/>indirect&#160;illumination&#160;in&#160;real-time&#160;on&#160;such&#160;scenes&#160;is&#160;a&#160;major<br/>challenge&#160;with&#160;high&#160;industrial&#160;impact.&#160;Due&#160;to&#160;real-time&#160;con-</p>
+<p style="position:absolute;top:797px;left:467px;white-space:nowrap" class="ft19">straints,&#160;off-line&#160;algorithms&#160;used&#160;by&#160;the&#160;special-effect&#160;indus-<br/>try&#160;are&#160;not&#160;suitable,&#160;and&#160;fast,&#160;approximate,&#160;and&#160;adaptive&#160;so-<br/>lutions&#160;are&#160;required.&#160;Relying&#160;on&#160;precomputed&#160;illumination&#160;is<br/>very&#160;limiting&#160;because&#160;common&#160;effects&#160;such&#160;as&#160;dynamic&#160;light<br/>sources&#160;and&#160;glossy&#160;materials&#160;are&#160;rarely&#160;handled.</p>
+<p style="position:absolute;top:900px;left:480px;white-space:nowrap" class="ft13">In&#160;this&#160;paper,&#160;we&#160;present&#160;a&#160;novel&#160;algorithm&#160;that&#160;com-</p>
+<p style="position:absolute;top:916px;left:467px;white-space:nowrap" class="ft13">putes&#160;two&#160;light&#160;bounces&#160;(using&#160;final&#160;gathering&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:916px;left:726px;white-space:nowrap" class="ft16"><a href="#page10-div">Jen96</a></p>
+<p style="position:absolute;top:916px;left:757px;white-space:nowrap" class="ft13"><a href="#page10-div">])&#160;</a>and</p>
+<p style="position:absolute;top:933px;left:467px;white-space:nowrap" class="ft19">is&#160;entirely&#160;implemented&#160;on&#160;the&#160;GPU.&#160;It&#160;does&#160;not&#160;suffer&#160;from<br/>noise&#160;or&#160;temporal&#160;discontinuities,&#160;avoids&#160;costly&#160;precompu-<br/>tation&#160;steps,&#160;and&#160;is&#160;not&#160;restricted&#160;to&#160;low-frequency&#160;illumina-<br/>tion.&#160;It&#160;exhibits&#160;almost&#160;scene-independent&#160;performance&#160;be-<br/>cause&#160;we&#160;manage&#160;to&#160;mostly&#160;avoid&#160;involving&#160;the&#160;actual&#160;mesh<br/>in&#160;our&#160;computations.&#160;Further,&#160;our&#160;solution&#160;can&#160;be&#160;extended<br/>to&#160;out-of-core&#160;rendering,&#160;hereby&#160;handling&#160;arbitrarily&#160;com-</p>
+<p style="position:absolute;top:1067px;left:111px;white-space:nowrap" class="ft15">c</p>
+<p style="position:absolute;top:1067px;left:108px;white-space:nowrap" class="ft110">&#160;2011&#160;The&#160;Author(s)<br/>Computer&#160;Graphics&#160;Forum&#160;c</p>
+<p style="position:absolute;top:1079px;left:206px;white-space:nowrap" class="ft15">&#160;2011&#160;The&#160;Eurographics&#160;Association&#160;and&#160;Blackwell&#160;Publish-</p>
+<p style="position:absolute;top:1091px;left:108px;white-space:nowrap" class="ft111">ing&#160;Ltd.&#160;Published&#160;by&#160;Blackwell&#160;Publishing,&#160;9600&#160;Garsington&#160;Road,&#160;Oxford&#160;OX4&#160;2DQ,<br/>UK&#160;and&#160;350&#160;Main&#160;Street,&#160;Malden,&#160;MA&#160;02148,&#160;USA.</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title></title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft20{font-size:9px;font-family:Times;color:#000000;}
+	.ft21{font-size:11px;font-family:Times;color:#000000;}
+	.ft22{font-size:11px;font-family:Times;color:#0000ff;}
+	.ft23{font-size:8px;font-family:Times;color:#0000ff;}
+	.ft24{font-size:6px;font-family:Times;color:#000000;}
+	.ft25{font-size:11px;line-height:16px;font-family:Times;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page2-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="target002.png" alt="background image"/>
+<p style="position:absolute;top:99px;left:172px;white-space:nowrap" class="ft20">C.&#160;Crassin,&#160;F.&#160;Neyret,&#160;M.&#160;Sainz,&#160;S.&#160;Green,&#160;E.&#160;Eisemann&#160;/&#160;Interactive&#160;Indirect&#160;Illumination&#160;Using&#160;Voxel&#160;Cone&#160;Tracing</p>
+<p style="position:absolute;top:127px;left:108px;white-space:nowrap" class="ft25">plex&#160;scenes.&#160;We&#160;reach&#160;real-time&#160;frame&#160;rates&#160;even&#160;for&#160;highly<br/>detailed&#160;environments&#160;and&#160;produce&#160;plausible&#160;indirect&#160;illumi-<br/>nation&#160;(see&#160;Teaser).</p>
+<p style="position:absolute;top:185px;left:122px;white-space:nowrap" class="ft21">The&#160;core&#160;of&#160;our&#160;approach&#160;is&#160;built&#160;upon&#160;a&#160;pre-filtered&#160;hi-</p>
+<p style="position:absolute;top:202px;left:108px;white-space:nowrap" class="ft25">erarchical&#160;voxel&#160;representation&#160;of&#160;the&#160;scene&#160;geometry.&#160;For<br/>efficiency,&#160;this&#160;representation&#160;is&#160;stored&#160;on&#160;the&#160;GPU&#160;in&#160;the<br/>form&#160;of&#160;a&#160;dynamic&#160;sparse&#160;voxel&#160;octree&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:234px;left:340px;white-space:nowrap" class="ft22"><a href="#page10-div">CNLE09</a></p>
+<p style="position:absolute;top:234px;left:388px;white-space:nowrap" class="ft21"><a href="#page10-div">,</a></p>
+<p style="position:absolute;top:234px;left:395px;white-space:nowrap" class="ft22"><a href="#page10-div">LK10</a></p>
+<p style="position:absolute;top:234px;left:426px;white-space:nowrap" class="ft21"><a href="#page10-div">]</a></p>
+<p style="position:absolute;top:251px;left:108px;white-space:nowrap" class="ft25">generated&#160;from&#160;the&#160;triangle&#160;meshes.&#160;We&#160;rely&#160;on&#160;this&#160;pre-<br/>filtered&#160;representation&#160;to&#160;quickly&#160;estimate&#160;visibility&#160;and&#160;inte-<br/>grate&#160;incoming&#160;indirect&#160;energy&#160;splatted&#160;in&#160;the&#160;structure&#160;from<br/>the&#160;light&#160;sources,&#160;using&#160;a&#160;new&#160;approximate&#160;voxel&#160;cone&#160;trac-<br/>ing&#160;technique.&#160;We&#160;handle&#160;fully&#160;dynamic&#160;scenes,&#160;thanks&#160;to<br/>a&#160;new&#160;real-time&#160;mesh&#160;voxelization&#160;and&#160;octree&#160;building&#160;and<br/>filtering&#160;algorithm&#160;that&#160;efficiently&#160;exploits&#160;the&#160;GPU&#160;rasteri-<br/>zation&#160;pipeline.&#160;This&#160;octree&#160;representation&#160;is&#160;built&#160;once&#160;for<br/>the&#160;static&#160;part&#160;of&#160;the&#160;scene,&#160;and&#160;is&#160;then&#160;updated&#160;interactively<br/>with&#160;moving&#160;objects&#160;or&#160;dynamic&#160;modifications&#160;on&#160;the&#160;envi-<br/>ronment&#160;(like&#160;breaking&#160;a&#160;wall&#160;or&#160;opening&#160;a&#160;door).</p>
+<p style="position:absolute;top:440px;left:122px;white-space:nowrap" class="ft21">The&#160;main&#160;contributions&#160;of&#160;our&#160;work&#160;are&#160;the&#160;following:</p>
+<p style="position:absolute;top:458px;left:112px;white-space:nowrap" class="ft25">•&#160;A&#160;real-time&#160;algorithm&#160;for&#160;indirect&#160;illumination;<br/>•&#160;An&#160;adaptive&#160;scene&#160;representation&#160;independent&#160;of&#160;the</p>
+<p style="position:absolute;top:492px;left:126px;white-space:nowrap" class="ft25">mesh&#160;complexity&#160;together&#160;with&#160;a&#160;fast&#160;GPU-based&#160;mesh<br/>voxelization&#160;and&#160;octree-building&#160;algorithm;</p>
+<p style="position:absolute;top:523px;left:112px;white-space:nowrap" class="ft21">•&#160;An&#160;efficient&#160;splatting&#160;scheme&#160;to&#160;inject&#160;and&#160;filter&#160;incoming</p>
+<p style="position:absolute;top:541px;left:126px;white-space:nowrap" class="ft21">radiance&#160;information&#160;into&#160;our&#160;voxel&#160;structure;</p>
+<p style="position:absolute;top:556px;left:112px;white-space:nowrap" class="ft21">•&#160;An&#160;efficient&#160;approximate&#160;cone-tracing&#160;integration;</p>
+<p style="position:absolute;top:755px;left:108px;white-space:nowrap" class="ft25">Figure&#160;2:&#160;Our&#160;method&#160;supports&#160;diffuse&#160;and&#160;glossy&#160;reflec-<br/>tions.</p>
+<p style="position:absolute;top:809px;left:108px;white-space:nowrap" class="ft21">2.&#160;Previous&#160;Work</p>
+<p style="position:absolute;top:834px;left:108px;white-space:nowrap" class="ft25">There&#160;are&#160;well&#160;established&#160;off-line&#160;solutions&#160;for&#160;accu-<br/>rate&#160;global-illumination&#160;computation&#160;such&#160;as&#160;path&#160;trac-<br/>ing&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:867px;left:134px;white-space:nowrap" class="ft22"><a href="#page10-div">Kaj86</a></p>
+<p style="position:absolute;top:867px;left:167px;white-space:nowrap" class="ft21"><a href="#page10-div">],&#160;</a>or&#160;photon&#160;mapping&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:867px;left:295px;white-space:nowrap" class="ft22"><a href="#page10-div">Jen01</a></p>
+<p style="position:absolute;top:867px;left:326px;white-space:nowrap" class="ft21"><a href="#page10-div">].&#160;</a>These&#160;have&#160;been</p>
+<p style="position:absolute;top:883px;left:108px;white-space:nowrap" class="ft25">extended&#160;with&#160;optimizations&#160;that&#160;often&#160;exploit&#160;geometric<br/>simplifications&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:900px;left:197px;white-space:nowrap" class="ft22"><a href="#page10-div">TL04</a></p>
+<p style="position:absolute;top:900px;left:227px;white-space:nowrap" class="ft21"><a href="#page10-div">,</a></p>
+<p style="position:absolute;top:900px;left:234px;white-space:nowrap" class="ft22"><a href="#page10-div">CB04</a></p>
+<p style="position:absolute;top:900px;left:265px;white-space:nowrap" class="ft21"><a href="#page10-div">],&#160;</a>or&#160;hierarchical&#160;scene&#160;struc-</p>
+<p style="position:absolute;top:916px;left:108px;white-space:nowrap" class="ft21">tures&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:916px;left:142px;white-space:nowrap" class="ft22"><a href="#page10-div">WZPB09</a></p>
+<p style="position:absolute;top:916px;left:193px;white-space:nowrap" class="ft21"><a href="#page10-div">],&#160;</a>but&#160;do&#160;not&#160;achieve&#160;real-time&#160;performance.</p>
+<p style="position:absolute;top:933px;left:108px;white-space:nowrap" class="ft25">Fast,&#160;but&#160;memory-intensive&#160;relighting&#160;for&#160;static&#160;scenes&#160;is<br/>possible&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:949px;left:161px;white-space:nowrap" class="ft22"><a href="#page10-div">LZT</a></p>
+<p style="position:absolute;top:945px;left:185px;white-space:nowrap" class="ft23"><a href="#page10-div">∗</a></p>
+<p style="position:absolute;top:949px;left:192px;white-space:nowrap" class="ft22"><a href="#page10-div">08</a></p>
+<p style="position:absolute;top:949px;left:206px;white-space:nowrap" class="ft21"><a href="#page10-div">],&#160;</a>but&#160;involves&#160;a&#160;slow&#160;preprocessing&#160;step.</p>
+<p style="position:absolute;top:966px;left:108px;white-space:nowrap" class="ft21">Anti-radiance&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:966px;left:192px;white-space:nowrap" class="ft22"><a href="#page10-div">DSDD07</a></p>
+<p style="position:absolute;top:966px;left:242px;white-space:nowrap" class="ft21"><a href="#page10-div">,</a></p>
+<p style="position:absolute;top:966px;left:248px;white-space:nowrap" class="ft22"><a href="#page10-div">DKTS07</a></p>
+<p style="position:absolute;top:966px;left:297px;white-space:nowrap" class="ft21"><a href="#page10-div">]&#160;</a>allows&#160;us&#160;to&#160;deal&#160;with</p>
+<p style="position:absolute;top:982px;left:108px;white-space:nowrap" class="ft25">visibility&#160;indirectly,&#160;by&#160;shooting&#160;negative&#160;light,&#160;and&#160;reaches<br/>interactive&#160;rates&#160;for&#160;a&#160;few&#160;thousand&#160;triangles.&#160;Recent&#160;GPU<br/>implementations&#160;of&#160;photon&#160;mapping&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:1015px;left:313px;white-space:nowrap" class="ft22"><a href="#page10-div">Hac05</a></p>
+<p style="position:absolute;top:1015px;left:348px;white-space:nowrap" class="ft21"><a href="#page10-div">,</a></p>
+<p style="position:absolute;top:1015px;left:354px;white-space:nowrap" class="ft22"><a href="#page10-div">WZPB09</a></p>
+<p style="position:absolute;top:1015px;left:405px;white-space:nowrap" class="ft21"><a href="#page10-div">]&#160;</a>use</p>
+<p style="position:absolute;top:1031px;left:108px;white-space:nowrap" class="ft21">clustering&#160;and&#160;exploit&#160;the&#160;spatial&#160;coherence&#160;of&#160;illumination</p>
+<p style="position:absolute;top:127px;left:467px;white-space:nowrap" class="ft25">to&#160;reduce&#160;the&#160;sampling&#160;cost&#160;of&#160;final&#160;gathering.&#160;These&#160;ap-<br/>proaches&#160;allow&#160;multiple&#160;bounce&#160;global&#160;illumination,&#160;but&#160;they<br/>still&#160;do&#160;not&#160;reach&#160;real-time&#160;performances,&#160;and&#160;suffer&#160;from<br/>temporal&#160;flickering&#160;artifacts.</p>
+<p style="position:absolute;top:201px;left:480px;white-space:nowrap" class="ft21">To&#160;achieve&#160;higher&#160;framerates,&#160;the&#160;light&#160;transport&#160;is</p>
+<p style="position:absolute;top:218px;left:467px;white-space:nowrap" class="ft21">often&#160;discretized&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:218px;left:576px;white-space:nowrap" class="ft22"><a href="#page10-div">DK09</a></p>
+<p style="position:absolute;top:218px;left:609px;white-space:nowrap" class="ft21"><a href="#page10-div">].&#160;</a>Particularly,&#160;the&#160;concept&#160;of</p>
+<p style="position:absolute;top:234px;left:467px;white-space:nowrap" class="ft21">VPLs&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:234px;left:506px;white-space:nowrap" class="ft22"><a href="#page10-div">Kel97</a></p>
+<p style="position:absolute;top:234px;left:538px;white-space:nowrap" class="ft21"><a href="#page10-div">]&#160;</a>is&#160;interesting,&#160;where&#160;the&#160;bounced&#160;direct&#160;light</p>
+<p style="position:absolute;top:251px;left:467px;white-space:nowrap" class="ft25">is&#160;computed&#160;via&#160;a&#160;set&#160;of&#160;virtual&#160;point&#160;lights.&#160;For&#160;each&#160;such<br/>VPL,&#160;a&#160;shadow&#160;map&#160;is&#160;computed,&#160;which&#160;is&#160;often&#160;costly.<br/>Laine&#160;et&#160;al.&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:283px;left:534px;white-space:nowrap" class="ft22"><a href="#page10-div">LSK</a></p>
+<p style="position:absolute;top:279px;left:559px;white-space:nowrap" class="ft23"><a href="#page10-div">∗</a></p>
+<p style="position:absolute;top:283px;left:566px;white-space:nowrap" class="ft22"><a href="#page10-div">07</a></p>
+<p style="position:absolute;top:283px;left:579px;white-space:nowrap" class="ft21"><a href="#page10-div">]&#160;</a>proposed&#160;to&#160;reuse&#160;the&#160;shadow&#160;maps&#160;in</p>
+<p style="position:absolute;top:300px;left:467px;white-space:nowrap" class="ft25">static&#160;scenes.&#160;While&#160;this&#160;approach&#160;is&#160;very&#160;elegant,&#160;fast&#160;light<br/>movement&#160;and&#160;complex&#160;scene&#160;geometry&#160;can&#160;affect&#160;the&#160;reuse<br/>ratio.&#160;Walter&#160;et&#160;al.&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:333px;left:574px;white-space:nowrap" class="ft22"><a href="#page10-div">WFA</a></p>
+<p style="position:absolute;top:328px;left:603px;white-space:nowrap" class="ft23"><a href="#page10-div">∗</a></p>
+<p style="position:absolute;top:333px;left:610px;white-space:nowrap" class="ft22"><a href="#page10-div">05</a></p>
+<p style="position:absolute;top:333px;left:623px;white-space:nowrap" class="ft21"><a href="#page10-div">]&#160;</a>use&#160;lightcuts&#160;to&#160;cluster&#160;VPLs</p>
+<p style="position:absolute;top:349px;left:467px;white-space:nowrap" class="ft21">hierarchically&#160;for&#160;each&#160;pixel,&#160;while&#160;Hasan&#160;et&#160;al.&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:349px;left:745px;white-space:nowrap" class="ft22"><a href="#page10-div">HPB07</a></p>
+<p style="position:absolute;top:349px;left:785px;white-space:nowrap" class="ft21"><a href="#page10-div">]</a></p>
+<p style="position:absolute;top:366px;left:467px;white-space:nowrap" class="ft25">push&#160;this&#160;idea&#160;further&#160;to&#160;include&#160;coarsely&#160;sampled&#160;visibility<br/>relationships.&#160;In&#160;both&#160;cases,&#160;a&#160;costly&#160;computation&#160;of&#160;shadow<br/>maps&#160;cannot&#160;be&#160;avoided&#160;and&#160;does&#160;not&#160;result&#160;in&#160;real-time&#160;per-<br/>formance.&#160;ISM-like&#160;solutions&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:415px;left:632px;white-space:nowrap" class="ft22"><a href="#page10-div">RGK</a></p>
+<p style="position:absolute;top:411px;left:660px;white-space:nowrap" class="ft23"><a href="#page10-div">∗</a></p>
+<p style="position:absolute;top:415px;left:667px;white-space:nowrap" class="ft22"><a href="#page10-div">08</a></p>
+<p style="position:absolute;top:415px;left:680px;white-space:nowrap" class="ft21"><a href="#page10-div">,</a></p>
+<p style="position:absolute;top:415px;left:685px;white-space:nowrap" class="ft22"><a href="#page10-div">REG</a></p>
+<p style="position:absolute;top:411px;left:712px;white-space:nowrap" class="ft23"><a href="#page10-div">∗</a></p>
+<p style="position:absolute;top:415px;left:719px;white-space:nowrap" class="ft22"><a href="#page10-div">09</a></p>
+<p style="position:absolute;top:415px;left:732px;white-space:nowrap" class="ft21"><a href="#page10-div">,</a></p>
+<p style="position:absolute;top:415px;left:737px;white-space:nowrap" class="ft22"><a href="#page10-div">HREB11</a></p>
+<p style="position:absolute;top:415px;left:786px;white-space:nowrap" class="ft21"><a href="#page10-div">,</a></p>
+<p style="position:absolute;top:431px;left:467px;white-space:nowrap" class="ft22"><a href="#page10-div">RHK</a></p>
+<p style="position:absolute;top:427px;left:495px;white-space:nowrap" class="ft23"><a href="#page10-div">∗</a></p>
+<p style="position:absolute;top:431px;left:502px;white-space:nowrap" class="ft22"><a href="#page10-div">11</a></p>
+<p style="position:absolute;top:431px;left:515px;white-space:nowrap" class="ft21"><a href="#page10-div">]&#160;</a>reach&#160;real-time&#160;performance&#160;by&#160;using&#160;a&#160;point-</p>
+<p style="position:absolute;top:448px;left:467px;white-space:nowrap" class="ft25">based&#160;scene&#160;approximation&#160;to&#160;accelerate&#160;the&#160;rendering&#160;into<br/>the&#160;VPL&#160;frusta,&#160;but&#160;cannot&#160;easily&#160;ensure&#160;sufficient&#160;precision<br/>for&#160;nearby&#160;geometry.</p>
+<p style="position:absolute;top:505px;left:480px;white-space:nowrap" class="ft21">The&#160;most&#160;efficient&#160;real-time&#160;solutions&#160;available&#160;today</p>
+<p style="position:absolute;top:522px;left:467px;white-space:nowrap" class="ft25">work&#160;in&#160;the&#160;image-space&#160;of&#160;the&#160;current&#160;view,&#160;but&#160;ignore&#160;off-<br/>screen&#160;information&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:538px;left:576px;white-space:nowrap" class="ft22"><a href="#page10-div">NSW09</a></p>
+<p style="position:absolute;top:538px;left:620px;white-space:nowrap" class="ft21"><a href="#page10-div">].&#160;</a>Our&#160;approach&#160;is&#160;less&#160;efficient</p>
+<p style="position:absolute;top:555px;left:467px;white-space:nowrap" class="ft25">than&#160;such&#160;solutions,&#160;but&#160;does&#160;not&#160;require&#160;similarly&#160;strong&#160;ap-<br/>proximations.&#160;In&#160;particular,&#160;we&#160;achieve&#160;high&#160;precision&#160;near<br/>the&#160;viewer&#160;which&#160;is&#160;important&#160;for&#160;good&#160;surface&#160;percep-<br/>tion&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:604px;left:496px;white-space:nowrap" class="ft22"><a href="#page10-div">AFO05</a></p>
+<p style="position:absolute;top:604px;left:536px;white-space:nowrap" class="ft21"><a href="#page10-div">].&#160;</a>Thiedemann&#160;et&#160;al.&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:604px;left:654px;white-space:nowrap" class="ft22"><a href="#page10-div">THGM11</a></p>
+<p style="position:absolute;top:604px;left:707px;white-space:nowrap" class="ft21"><a href="#page10-div">]&#160;</a>rely&#160;on&#160;a&#160;reg-</p>
+<p style="position:absolute;top:620px;left:467px;white-space:nowrap" class="ft25">ular&#160;voxel&#160;grid&#160;to&#160;speed-up&#160;ray-tracing&#160;used&#160;for&#160;computing<br/>visibility&#160;with&#160;VPLs&#160;stored&#160;inside&#160;a&#160;reflective&#160;shadow&#160;map<br/>(RSM)&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:653px;left:514px;white-space:nowrap" class="ft22"><a href="#page10-div">DS05</a></p>
+<p style="position:absolute;top:653px;left:545px;white-space:nowrap" class="ft21"><a href="#page10-div">].&#160;</a>It&#160;offers&#160;real-time&#160;performances&#160;but&#160;only</p>
+<p style="position:absolute;top:670px;left:467px;white-space:nowrap" class="ft25">for&#160;near-field&#160;single&#160;bounce&#160;indirect&#160;illumination&#160;and&#160;dif-<br/>fuse&#160;materials.&#160;It&#160;is&#160;restricted&#160;to&#160;low-resolution&#160;voxel&#160;grids,<br/>and&#160;suffers&#160;from&#160;classical&#160;precision&#160;problems&#160;of&#160;RSMs,&#160;as<br/>well&#160;as&#160;noise&#160;and&#160;flickering&#160;artifacts&#160;coming&#160;from&#160;the&#160;lim-<br/>ited&#160;number&#160;of&#160;rays&#160;that&#160;can&#160;be&#160;used&#160;in&#160;real-time&#160;to&#160;perform<br/>final&#160;gathering.&#160;Our&#160;approach&#160;does&#160;not&#160;suffer&#160;from&#160;such&#160;ar-<br/>tifacts&#160;and&#160;always&#160;produce&#160;smooth&#160;temporally&#160;coherent&#160;re-<br/>sults,&#160;thanks&#160;to&#160;the&#160;use&#160;of&#160;our&#160;voxel&#160;cone-tracing.</p>
+<p style="position:absolute;top:809px;left:480px;white-space:nowrap" class="ft21">A</p>
+<p style="position:absolute;top:809px;left:505px;white-space:nowrap" class="ft21">near-interactive</p>
+<p style="position:absolute;top:809px;left:603px;white-space:nowrap" class="ft21">approach</p>
+<p style="position:absolute;top:809px;left:667px;white-space:nowrap" class="ft21">has</p>
+<p style="position:absolute;top:809px;left:700px;white-space:nowrap" class="ft21">been</p>
+<p style="position:absolute;top:809px;left:740px;white-space:nowrap" class="ft21">proposed</p>
+<p style="position:absolute;top:826px;left:467px;white-space:nowrap" class="ft21">in&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:826px;left:491px;white-space:nowrap" class="ft22"><a href="#page10-div">LWDB10</a></p>
+<p style="position:absolute;top:826px;left:543px;white-space:nowrap" class="ft21"><a href="#page10-div">]&#160;</a>to&#160;render&#160;glossy&#160;reflections&#160;with&#160;indi-</p>
+<p style="position:absolute;top:842px;left:467px;white-space:nowrap" class="ft25">rect&#160;highlights,&#160;caused&#160;by&#160;two&#160;successive&#160;reflections&#160;on<br/>glossy&#160;surfaces.&#160;But&#160;this&#160;solution&#160;is&#160;not&#160;fast&#160;enough&#160;to<br/>provide&#160;real-time&#160;performances.&#160;To&#160;support&#160;indirect&#160;high-<br/>lights,&#160;our&#160;approach&#160;uses&#160;a&#160;simpler,&#160;less&#160;precise,&#160;Gaussian<br/>lobe&#160;representation&#160;to&#160;encode&#160;a&#160;NDF&#160;(Normal&#160;Distribution<br/>Function)</p>
+<p style="position:absolute;top:925px;left:524px;white-space:nowrap" class="ft21">and&#160;a&#160;distribution&#160;of&#160;light&#160;directions,&#160;that&#160;can&#160;be</p>
+<p style="position:absolute;top:941px;left:467px;white-space:nowrap" class="ft25">convolved&#160;with&#160;a&#160;set&#160;of&#160;pre-defined&#160;BRDFs&#160;to&#160;reconstruct<br/>the&#160;radiance&#160;response.</p>
+<p style="position:absolute;top:982px;left:480px;white-space:nowrap" class="ft21">Our&#160;work&#160;derives&#160;a&#160;hierarchical&#160;representation&#160;of&#160;the</p>
+<p style="position:absolute;top:999px;left:467px;white-space:nowrap" class="ft25">scene&#160;that&#160;produces&#160;a&#160;regular&#160;structure&#160;to&#160;facilitate&#160;light<br/>transfer&#160;and&#160;achieve&#160;real-time&#160;performance.&#160;This&#160;structure<br/>is&#160;similar&#160;as&#160;the&#160;one&#160;in&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:1031px;left:605px;white-space:nowrap" class="ft22"><a href="#page10-div">KD10</a></p>
+<p style="position:absolute;top:1031px;left:638px;white-space:nowrap" class="ft21"><a href="#page10-div">],&#160;</a>where&#160;diffuse&#160;indirect&#160;il-</p>
+<p style="position:absolute;top:1073px;left:709px;white-space:nowrap" class="ft24">c</p>
+<p style="position:absolute;top:1073px;left:705px;white-space:nowrap" class="ft24">&#160;2011&#160;The&#160;Author(s)</p>
+<p style="position:absolute;top:1085px;left:540px;white-space:nowrap" class="ft24">c</p>
+<p style="position:absolute;top:1085px;left:536px;white-space:nowrap" class="ft24">&#160;2011&#160;The&#160;Eurographics&#160;Association&#160;and&#160;Blackwell&#160;Publishing&#160;Ltd.</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title></title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft30{font-size:9px;font-family:Times;color:#000000;}
+	.ft31{font-size:11px;font-family:Times;color:#000000;}
+	.ft32{font-size:11px;font-family:Times;color:#0000ff;}
+	.ft33{font-size:6px;font-family:Times;color:#000000;}
+	.ft34{font-size:11px;line-height:16px;font-family:Times;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page3-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="target003.png" alt="background image"/>
+<p style="position:absolute;top:99px;left:171px;white-space:nowrap" class="ft30">C.&#160;Crassin,&#160;F.&#160;Neyret,&#160;M.&#160;Sainz,&#160;S.&#160;Green,&#160;E.&#160;Eisemann&#160;/&#160;Interactive&#160;Indirect&#160;Illumination&#160;Using&#160;Voxel&#160;Cone&#160;Tracing</p>
+<p style="position:absolute;top:318px;left:108px;white-space:nowrap" class="ft34">Figure&#160;3:&#160;Left:&#160;Illustration&#160;of&#160;the&#160;three&#160;steps&#160;of&#160;our&#160;real-time&#160;indirect&#160;lighting&#160;algorithm.&#160;Right:&#160;Display&#160;of&#160;the&#160;sparse&#160;voxel<br/>octree&#160;structure&#160;storing&#160;geometry&#160;and&#160;direct&#160;lighting&#160;information.</p>
+<p style="position:absolute;top:368px;left:108px;white-space:nowrap" class="ft34">lumination&#160;is&#160;produced&#160;via&#160;a&#160;diffusion&#160;process&#160;inside&#160;a&#160;set<br/>of&#160;nested&#160;regular&#160;voxel&#160;grids.&#160;While&#160;relatively&#160;fast,&#160;this&#160;ap-<br/>proach&#160;suffers&#160;from&#160;a&#160;lack&#160;of&#160;precision&#160;and&#160;temporal&#160;dis-<br/>continuities&#160;coming&#160;from&#160;the&#160;relatively&#160;low&#160;resolution&#160;of&#160;the<br/>usable&#160;voxel&#160;grids.&#160;The&#160;resolution&#160;is&#160;limited&#160;by&#160;the&#160;cost&#160;of<br/>the&#160;diffusion&#160;process&#160;as&#160;well&#160;as&#160;memory&#160;occupancy.&#160;Conse-<br/>quently,&#160;only&#160;diffuse&#160;indirect&#160;illumination&#160;is&#160;possible,&#160;while<br/>our&#160;approach&#160;can&#160;manage&#160;both&#160;diffuse&#160;and&#160;specular&#160;indirect<br/>lighting&#160;(glossy&#160;refections&#160;with&#160;indirect&#160;highlights).&#160;This&#160;im-<br/>provement&#160;is&#160;enabled&#160;by&#160;using&#160;ray&#160;tracing&#160;to&#160;collect&#160;the&#160;ra-<br/>diance&#160;stored&#160;in&#160;the&#160;structure&#160;and&#160;allows&#160;us&#160;to&#160;use&#160;a&#160;sparse<br/>storage&#160;of&#160;the&#160;incoming&#160;radiance&#160;and&#160;scene&#160;occlusion&#160;infor-<br/>mation,&#160;while&#160;maintaining&#160;high&#160;precision.</p>
+<p style="position:absolute;top:623px;left:108px;white-space:nowrap" class="ft31">3.&#160;Algorithm&#160;overview</p>
+<p style="position:absolute;top:653px;left:108px;white-space:nowrap" class="ft34">Our&#160;approach&#160;is&#160;based&#160;on&#160;a&#160;three-step&#160;algorithm&#160;as&#160;detailed<br/>in&#160;Fig.</p>
+<p style="position:absolute;top:670px;left:148px;white-space:nowrap" class="ft32"><a href="#page3-div">3</a></p>
+<p style="position:absolute;top:670px;left:155px;white-space:nowrap" class="ft31"><a href="#page3-div">.&#160;</a>We&#160;first&#160;inject&#160;incoming&#160;radiance&#160;(energy&#160;and&#160;di-</p>
+<p style="position:absolute;top:686px;left:108px;white-space:nowrap" class="ft34">rection)&#160;from&#160;dynamic&#160;light&#160;sources&#160;into&#160;the&#160;leaves&#160;of&#160;the<br/>sparse&#160;voxel&#160;octree&#160;hierarchy.&#160;This&#160;is&#160;done&#160;by&#160;rasterizing&#160;the<br/>scene&#160;from&#160;all&#160;light&#160;sources&#160;and&#160;splatting&#160;a&#160;photon&#160;for&#160;each<br/>visible&#160;surface&#160;fragment.&#160;In&#160;a&#160;second&#160;step,&#160;we&#160;filter&#160;the&#160;in-<br/>coming&#160;radiance&#160;values&#160;into&#160;the&#160;higher&#160;levels&#160;of&#160;the&#160;octree<br/>(mipmap).&#160;We&#160;rely&#160;on&#160;a&#160;compact&#160;Gaussian-Lobes&#160;represen-<br/>tation&#160;to&#160;store&#160;the&#160;filtered&#160;distribution&#160;of&#160;incoming&#160;light&#160;di-<br/>rections,&#160;which&#160;is&#160;done&#160;efficiently&#160;in&#160;parallel&#160;by&#160;relying&#160;on&#160;a<br/>screen-space&#160;quad-tree&#160;analysis.&#160;Our&#160;voxel&#160;filtering&#160;scheme<br/>also&#160;treats&#160;the&#160;NDF&#160;(Normal&#160;Distribution&#160;Function)&#160;and&#160;the<br/>BRDF&#160;in&#160;a&#160;view-dependent&#160;way.&#160;Finally,&#160;we&#160;render&#160;the&#160;scene<br/>from&#160;the&#160;camera.&#160;For&#160;each&#160;visible&#160;surface&#160;fragment,&#160;we&#160;com-<br/>bine&#160;the&#160;direct&#160;and&#160;indirect&#160;illumination.&#160;We&#160;employ&#160;an&#160;ap-<br/>proximate&#160;cone&#160;tracing&#160;to&#160;perform&#160;a&#160;final&#160;gathering&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:900px;left:392px;white-space:nowrap" class="ft32"><a href="#page10-div">Jen96</a></p>
+<p style="position:absolute;top:900px;left:423px;white-space:nowrap" class="ft31"><a href="#page10-div">],</a></p>
+<p style="position:absolute;top:916px;left:108px;white-space:nowrap" class="ft34">sending&#160;out&#160;a&#160;few&#160;cones&#160;over&#160;the&#160;hemisphere&#160;to&#160;collect&#160;illu-<br/>mination&#160;distributed&#160;in&#160;the&#160;octree.&#160;Typically&#160;for&#160;Phong-like<br/>BRDFs,&#160;a&#160;few&#160;large&#160;cones&#160;(~5)&#160;estimate&#160;the&#160;diffuse&#160;energy<br/>coming&#160;from&#160;the&#160;scene,&#160;while&#160;a&#160;tight&#160;cone&#160;in&#160;the&#160;reflected<br/>direction&#160;with&#160;respect&#160;to&#160;the&#160;viewpoint&#160;captures&#160;the&#160;specu-<br/>lar&#160;component.&#160;The&#160;aperture&#160;of&#160;the&#160;specular&#160;cone&#160;is&#160;derived<br/>from&#160;the&#160;specular&#160;exponent&#160;of&#160;the&#160;material,&#160;allowing&#160;us&#160;to<br/>efficiently&#160;compute&#160;glossy&#160;reflections.</p>
+<p style="position:absolute;top:368px;left:467px;white-space:nowrap" class="ft31">4.&#160;Our&#160;hierarchical&#160;voxel&#160;structure</p>
+<p style="position:absolute;top:391px;left:467px;white-space:nowrap" class="ft34">The&#160;core&#160;of&#160;our&#160;approach&#160;is&#160;built&#160;around&#160;a&#160;pre-filtered&#160;hier-<br/>archical&#160;voxel&#160;version&#160;of&#160;the&#160;scene&#160;geometry.&#160;For&#160;efficiency,<br/>this&#160;representation&#160;is&#160;stored&#160;in&#160;the&#160;form&#160;of&#160;a&#160;sparse&#160;voxel<br/>octree&#160;in&#160;the&#160;spirit&#160;of&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:440px;left:587px;white-space:nowrap" class="ft32"><a href="#page10-div">LK10</a></p>
+<p style="position:absolute;top:440px;left:618px;white-space:nowrap" class="ft31"><a href="#page10-div">]&#160;</a>and&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:440px;left:653px;white-space:nowrap" class="ft32"><a href="#page10-div">CNLE09</a></p>
+<p style="position:absolute;top:440px;left:702px;white-space:nowrap" class="ft31"><a href="#page10-div">].</a></p>
+<p style="position:absolute;top:463px;left:480px;white-space:nowrap" class="ft31">Having&#160;a&#160;hierarchical&#160;structure&#160;allows&#160;us&#160;to&#160;avoid&#160;using</p>
+<p style="position:absolute;top:480px;left:467px;white-space:nowrap" class="ft34">the&#160;actual&#160;geometric&#160;mesh&#160;and&#160;leads&#160;to&#160;indirect&#160;illumination<br/>in&#160;arbitrary&#160;scenes&#160;at&#160;an&#160;almost&#160;geometry-independent&#160;cost.<br/>It&#160;is&#160;possible&#160;to&#160;improve&#160;precision&#160;near&#160;the&#160;observer&#160;and&#160;to<br/>abstract&#160;energy&#160;and&#160;occupancy&#160;information&#160;farther&#160;away.&#160;We<br/>reach&#160;real-time&#160;frame&#160;rates&#160;even&#160;for&#160;highly&#160;detailed&#160;environ-<br/>ments&#160;and&#160;produce&#160;plausible&#160;indirect&#160;illumination.&#160;We&#160;can<br/>choose&#160;a&#160;scene&#160;resolution&#160;suitable&#160;to&#160;the&#160;viewing&#160;and&#160;light-<br/>ing&#160;configuration,&#160;without&#160;missing&#160;information&#160;like&#160;light&#160;un-<br/>dersampling&#160;or&#160;geometric&#160;LOD&#160;would.&#160;Thus,&#160;contrary&#160;to<br/>path-tracing&#160;or&#160;photon&#160;mapping&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:628px;left:653px;white-space:nowrap" class="ft32"><a href="#page10-div">Jen96</a></p>
+<p style="position:absolute;top:628px;left:684px;white-space:nowrap" class="ft31"><a href="#page10-div">],&#160;</a>our&#160;approach&#160;al-</p>
+<p style="position:absolute;top:644px;left:467px;white-space:nowrap" class="ft31">ways&#160;gives&#160;smooth&#160;results.</p>
+<p style="position:absolute;top:682px;left:467px;white-space:nowrap" class="ft31">4.1.&#160;Structure&#160;description</p>
+<p style="position:absolute;top:705px;left:467px;white-space:nowrap" class="ft34">The&#160;root&#160;node&#160;of&#160;the&#160;tree&#160;represents&#160;the&#160;entire&#160;scene.&#160;Its&#160;chil-<br/>dren&#160;each&#160;represent&#160;an&#160;eighth&#160;of&#160;the&#160;parent’s&#160;volume&#160;and&#160;so<br/>forth.&#160;Therefore,&#160;we&#160;will&#160;also&#160;sometimes&#160;associate&#160;a&#160;node<br/>directly&#160;to&#160;a&#160;bounding&#160;box&#160;of&#160;the&#160;volume&#160;in&#160;space&#160;that&#160;it&#160;rep-<br/>resents.&#160;This&#160;structure&#160;allows&#160;us&#160;to&#160;query&#160;filtered&#160;scene&#160;infor-<br/>mation&#160;(energy&#160;intensity&#160;and&#160;direction,&#160;occlusion,&#160;and&#160;local<br/>normal&#160;distribution&#160;functions&#160;-&#160;NDFs)&#160;with&#160;increasing&#160;preci-<br/>sion&#160;by&#160;descending&#160;the&#160;tree&#160;hierarchy.&#160;Through&#160;this&#160;adaptiv-<br/>ity,&#160;we&#160;handle&#160;large&#160;and&#160;complex&#160;scenes.</p>
+<p style="position:absolute;top:867px;left:467px;white-space:nowrap" class="ft31">GPU&#160;representation</p>
+<p style="position:absolute;top:867px;left:597px;white-space:nowrap" class="ft31">Our&#160;sparse&#160;voxel&#160;octree&#160;is&#160;a&#160;very</p>
+<p style="position:absolute;top:883px;left:467px;white-space:nowrap" class="ft31">compact&#160;pointer-based&#160;structure,&#160;similar&#160;to&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:883px;left:709px;white-space:nowrap" class="ft32"><a href="#page10-div">CNLE09</a></p>
+<p style="position:absolute;top:883px;left:757px;white-space:nowrap" class="ft31"><a href="#page10-div">].&#160;</a>Oc-</p>
+<p style="position:absolute;top:900px;left:467px;white-space:nowrap" class="ft34">tree&#160;nodes&#160;are&#160;stored&#160;in&#160;linear&#160;GPU&#160;memory&#160;and&#160;nodes&#160;are<br/>grouped&#160;into&#160;2&#160;×&#160;2&#160;×&#160;2&#160;tiles.&#160;This&#160;grouping&#160;allows&#160;us&#160;to&#160;store<br/>a&#160;single&#160;pointer&#160;to&#160;all&#160;2&#160;×&#160;2&#160;×&#160;2&#160;children.&#160;Further,&#160;each&#160;node<br/>contains&#160;a&#160;pointer&#160;to&#160;a&#160;small&#160;voxel&#160;volume,&#160;a&#160;brick,&#160;stored&#160;in<br/>texture&#160;memory.&#160;This&#160;texture&#160;approximates&#160;the&#160;scene&#160;section<br/>represented&#160;by&#160;the&#160;node.The&#160;representation&#160;is&#160;sparse,&#160;mean-<br/>ing&#160;that&#160;empty&#160;nodes&#160;are&#160;collapsed&#160;to&#160;gain&#160;memory.&#160;Since<br/>we&#160;use&#160;a&#160;brick&#160;instead&#160;of&#160;a&#160;single&#160;value&#160;per&#160;node,&#160;we&#160;can&#160;use<br/>hardware&#160;texture&#160;trilinear&#160;interpolation&#160;to&#160;interpolate&#160;values.</p>
+<p style="position:absolute;top:1067px;left:111px;white-space:nowrap" class="ft33">c</p>
+<p style="position:absolute;top:1067px;left:108px;white-space:nowrap" class="ft33">&#160;2011&#160;The&#160;Author(s)</p>
+<p style="position:absolute;top:1079px;left:111px;white-space:nowrap" class="ft33">c</p>
+<p style="position:absolute;top:1079px;left:108px;white-space:nowrap" class="ft33">&#160;2011&#160;The&#160;Eurographics&#160;Association&#160;and&#160;Blackwell&#160;Publishing&#160;Ltd.</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title></title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft40{font-size:9px;font-family:Times;color:#000000;}
+	.ft41{font-size:11px;font-family:Times;color:#000000;}
+	.ft42{font-size:11px;font-family:Times;color:#0000ff;}
+	.ft43{font-size:7px;font-family:Times;color:#000000;}
+	.ft44{font-size:8px;font-family:Times;color:#000000;}
+	.ft45{font-size:6px;font-family:Times;color:#000000;}
+	.ft46{font-size:11px;line-height:16px;font-family:Times;color:#000000;}
+	.ft47{font-size:11px;line-height:17px;font-family:Times;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page4-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="target004.png" alt="background image"/>
+<p style="position:absolute;top:99px;left:172px;white-space:nowrap" class="ft40">C.&#160;Crassin,&#160;F.&#160;Neyret,&#160;M.&#160;Sainz,&#160;S.&#160;Green,&#160;E.&#160;Eisemann&#160;/&#160;Interactive&#160;Indirect&#160;Illumination&#160;Using&#160;Voxel&#160;Cone&#160;Tracing</p>
+<p style="position:absolute;top:127px;left:122px;white-space:nowrap" class="ft41">Our&#160;representation&#160;has&#160;some&#160;differences&#160;compared</p>
+<p style="position:absolute;top:144px;left:108px;white-space:nowrap" class="ft41">to&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:144px;left:128px;white-space:nowrap" class="ft42"><a href="#page10-div">CNLE09</a></p>
+<p style="position:absolute;top:144px;left:176px;white-space:nowrap" class="ft41"><a href="#page10-div">].&#160;</a>When&#160;voxelizing&#160;a&#160;mesh-based&#160;scene,&#160;most</p>
+<p style="position:absolute;top:160px;left:108px;white-space:nowrap" class="ft46">of&#160;the&#160;volume&#160;remains&#160;empty&#160;which&#160;implies&#160;that&#160;small&#160;bricks<br/>are&#160;more&#160;efficient&#160;in&#160;a&#160;sparse&#160;octree.&#160;However,&#160;the&#160;brick&#160;rep-<br/>resentation&#160;proposed&#160;by&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:193px;left:250px;white-space:nowrap" class="ft42"><a href="#page10-div">CNLE09</a></p>
+<p style="position:absolute;top:193px;left:299px;white-space:nowrap" class="ft41"><a href="#page10-div">]&#160;</a>is&#160;not&#160;optimal&#160;in&#160;case</p>
+<p style="position:absolute;top:209px;left:108px;white-space:nowrap" class="ft46">of&#160;small&#160;bricks,&#160;due&#160;to&#160;the&#160;need&#160;of&#160;a&#160;one&#160;voxel&#160;border&#160;du-<br/>plicating&#160;neighboring&#160;voxels&#160;to&#160;ensure&#160;a&#160;correct&#160;inter-brick<br/>interpolation.&#160;This&#160;border&#160;becomes&#160;very&#160;expensive&#160;in&#160;terms<br/>of&#160;storage&#160;when&#160;small&#160;bricks&#160;are&#160;used.</p>
+<p style="position:absolute;top:301px;left:203px;white-space:nowrap" class="ft43">brick</p>
+<p style="position:absolute;top:301px;left:128px;white-space:nowrap" class="ft43">node</p>
+<p style="position:absolute;top:368px;left:117px;white-space:nowrap" class="ft43">voxel center</p>
+<p style="position:absolute;top:283px;left:287px;white-space:nowrap" class="ft41">To&#160;solve&#160;this&#160;problem,&#160;we</p>
+<p style="position:absolute;top:300px;left:273px;white-space:nowrap" class="ft46">propose&#160;to&#160;use&#160;3&#160;×&#160;3&#160;×&#160;3&#160;voxel<br/>bricks,&#160;but&#160;assume&#160;that&#160;the<br/>voxel&#160;centers&#160;are&#160;located&#160;at<br/>the&#160;node&#160;corners&#160;instead&#160;of<br/>the&#160;node&#160;centers&#160;(Fig.&#160;left).<br/>This&#160;ensures&#160;that&#160;interpolated</p>
+<p style="position:absolute;top:399px;left:108px;white-space:nowrap" class="ft46">values&#160;can&#160;always&#160;be&#160;computed&#160;inside&#160;a&#160;brick&#160;covering&#160;a&#160;set<br/>of&#160;2&#160;×&#160;2&#160;×&#160;2&#160;nodes.&#160;Redundancy&#160;is&#160;not&#160;eliminated,&#160;but&#160;we&#160;use<br/>less&#160;than&#160;half&#160;the&#160;amount&#160;of&#160;memory&#160;compared&#160;to&#160;adding&#160;a<br/>boundary,&#160;for&#160;the&#160;same&#160;sampling&#160;precision.</p>
+<p style="position:absolute;top:472px;left:122px;white-space:nowrap" class="ft41">This&#160;memory&#160;reduction&#160;allows&#160;us&#160;to&#160;add&#160;neighbor&#160;point-</p>
+<p style="position:absolute;top:489px;left:108px;white-space:nowrap" class="ft46">ers&#160;to&#160;the&#160;structure&#160;which&#160;enable&#160;us&#160;to&#160;quickly&#160;visit&#160;spatially<br/>neighboring&#160;nodes&#160;and&#160;the&#160;parent.&#160;We&#160;will&#160;see&#160;that&#160;these<br/>links&#160;are&#160;particularly&#160;important&#160;to&#160;efficiently&#160;distribute&#160;the<br/>direct&#160;illumination&#160;over&#160;all&#160;levels&#160;of&#160;the&#160;tree.</p>
+<p style="position:absolute;top:579px;left:108px;white-space:nowrap" class="ft41">4.2.&#160;Interactive&#160;voxel&#160;hierarchy&#160;construction&#160;and</p>
+<p style="position:absolute;top:596px;left:135px;white-space:nowrap" class="ft41">dynamic&#160;updates</p>
+<p style="position:absolute;top:620px;left:108px;white-space:nowrap" class="ft46">Our&#160;sparse&#160;hierarchical&#160;voxel&#160;structure&#160;will&#160;replace&#160;the&#160;ac-<br/>tual&#160;scene&#160;in&#160;our&#160;light&#160;transport&#160;computations.&#160;The&#160;voxel&#160;data<br/>representation&#160;(see&#160;above)&#160;allows&#160;interpolation&#160;and&#160;filtering<br/>computations&#160;to&#160;be&#160;simple.</p>
+<p style="position:absolute;top:694px;left:122px;white-space:nowrap" class="ft41">In&#160;order&#160;to&#160;quickly&#160;voxelize&#160;an&#160;arbitrary&#160;triangle-based</p>
+<p style="position:absolute;top:711px;left:108px;white-space:nowrap" class="ft46">scene,&#160;we&#160;propose&#160;a&#160;new&#160;real-time&#160;voxelization&#160;approach<br/>that&#160;efficiently&#160;exploits&#160;the&#160;GPU&#160;rasterization&#160;pipeline&#160;in&#160;or-<br/>der&#160;to&#160;build&#160;our&#160;sparse&#160;octree&#160;structure&#160;and&#160;filter&#160;geometrical<br/>information&#160;inside&#160;it.&#160;It&#160;must&#160;be&#160;fast&#160;enough&#160;to&#160;be&#160;performed<br/>in&#160;each&#160;frame&#160;to&#160;be&#160;able&#160;to&#160;handle&#160;fully&#160;dynamic&#160;scenes.&#160;In<br/>order&#160;to&#160;scale&#160;to&#160;very-large&#160;scenes,&#160;our&#160;approach&#160;avoids&#160;rely-<br/>ing&#160;on&#160;an&#160;intermediate&#160;full&#160;regular&#160;grid&#160;to&#160;build&#160;the&#160;structure<br/>and&#160;constructs&#160;the&#160;octree&#160;directly.&#160;To&#160;speed-up&#160;the&#160;process,<br/>we&#160;observe&#160;that,&#160;in&#160;many&#160;scenes,&#160;large&#160;parts&#160;of&#160;the&#160;environ-<br/>ment&#160;are&#160;usually&#160;static&#160;or&#160;updated&#160;locally&#160;upon&#160;user&#160;inter-<br/>action.&#160;Consequently,&#160;most&#160;updates&#160;are&#160;restricted&#160;and&#160;only<br/>applied&#160;when&#160;needed,&#160;but&#160;fully-dynamic&#160;objects&#160;need&#160;a&#160;per-<br/>frame&#160;voxelization.</p>
+<p style="position:absolute;top:933px;left:122px;white-space:nowrap" class="ft41">Both&#160;semi-static&#160;and&#160;fully&#160;dynamic&#160;objects&#160;are&#160;stored&#160;in</p>
+<p style="position:absolute;top:949px;left:108px;white-space:nowrap" class="ft46">the&#160;same&#160;octree&#160;structure&#160;for&#160;an&#160;easy&#160;traversal&#160;and&#160;a&#160;unified<br/>filtering.&#160;A&#160;time-stamp&#160;mechanism&#160;is&#160;used&#160;to&#160;differentiate<br/>both&#160;types,&#160;in&#160;order&#160;to&#160;prevent&#160;semi-static&#160;parts&#160;of&#160;the&#160;scene<br/>to&#160;be&#160;destructed&#160;in&#160;each&#160;frame.&#160;Our&#160;structure&#160;construction<br/>algorithm&#160;performs&#160;in&#160;two&#160;steps:&#160;octree&#160;building&#160;and&#160;MIP-<br/>mapping&#160;of&#160;the&#160;values.</p>
+<p style="position:absolute;top:127px;left:467px;white-space:nowrap" class="ft41">4.2.1.&#160;Octree&#160;building</p>
+<p style="position:absolute;top:153px;left:467px;white-space:nowrap" class="ft46">We&#160;first&#160;create&#160;the&#160;octree&#160;structure&#160;itself&#160;by&#160;using&#160;the&#160;GPU<br/>rasterization&#160;pipeline.&#160;We&#160;rasterize&#160;the&#160;mesh&#160;three&#160;times,<br/>along&#160;the&#160;three&#160;main&#160;axis&#160;of&#160;the&#160;scene,&#160;with&#160;a&#160;viewport&#160;reso-<br/>lution&#160;corresponding&#160;to&#160;the&#160;resolution&#160;of&#160;the&#160;maximum&#160;level<br/>of&#160;subdivision&#160;of&#160;the&#160;octree&#160;(typically&#160;512&#160;×&#160;512&#160;pixels&#160;for<br/>a&#160;512</p>
+<p style="position:absolute;top:231px;left:497px;white-space:nowrap" class="ft44">3</p>
+<p style="position:absolute;top:235px;left:507px;white-space:nowrap" class="ft41">octree).&#160;By&#160;disabling&#160;the&#160;depth&#160;test&#160;to&#160;prevent&#160;early</p>
+<p style="position:absolute;top:251px;left:467px;white-space:nowrap" class="ft46">culling,&#160;we&#160;generate&#160;at&#160;least&#160;one&#160;fragment&#160;shader&#160;thread&#160;for<br/>each&#160;potentially-existing&#160;leaf&#160;node&#160;in&#160;the&#160;tree.&#160;Each&#160;thread<br/>traverse&#160;the&#160;octree&#160;from&#160;top-to-bottom&#160;and&#160;directly&#160;subdi-<br/>vide&#160;it&#160;when&#160;needed.&#160;Once&#160;the&#160;correct&#160;leaf&#160;node&#160;is&#160;found&#160;the<br/>surface&#160;attributes&#160;(typically&#160;texture&#160;color,&#160;normal&#160;and&#160;mate-<br/>rial)&#160;are&#160;written.</p>
+<p style="position:absolute;top:359px;left:480px;white-space:nowrap" class="ft41">Whenever&#160;a&#160;node&#160;needs&#160;to&#160;be&#160;subdivided,&#160;a&#160;set&#160;of&#160;2&#160;×&#160;2&#160;×&#160;2</p>
+<p style="position:absolute;top:375px;left:467px;white-space:nowrap" class="ft46">sub-nodes&#160;are&#160;&#34;allocated&#34;&#160;inside&#160;a&#160;global&#160;shared&#160;node&#160;buffer<br/>which&#160;is&#160;pre-allocated&#160;in&#160;video&#160;memory.&#160;The&#160;address&#160;of&#160;this<br/>set&#160;of&#160;new&#160;sub-nodes&#160;is&#160;written&#160;to&#160;the&#160;“child”&#160;pointer&#160;of&#160;the<br/>subdivided&#160;node&#160;and&#160;the&#160;thread&#160;continue&#160;its&#160;descent&#160;down<br/>to&#160;the&#160;leaf.&#160;These&#160;allocations&#160;are&#160;made&#160;using&#160;the&#160;atomic&#160;in-<br/>crement&#160;of&#160;a&#160;global&#160;shared&#160;counter,&#160;which&#160;indicates&#160;the&#160;next<br/>available&#160;page&#160;of&#160;nodes&#160;in&#160;the&#160;shared&#160;node&#160;buffer.&#160;Since,&#160;in&#160;a<br/>massively&#160;parallel&#160;environment,&#160;multiple&#160;threads&#160;can&#160;request<br/>the&#160;subdivision&#160;of&#160;the&#160;same&#160;node&#160;at&#160;the&#160;same&#160;time&#160;an&#160;inco-<br/>herent&#160;structure&#160;could&#160;result.&#160;Such&#160;conflicts&#160;are&#160;prevented&#160;by<br/>a&#160;per-node&#160;mutex&#160;that&#160;ensures&#160;that&#160;the&#160;subdivision&#160;is&#160;only<br/>performed&#160;by&#160;the&#160;first&#160;thread.&#160;Unfortunately,&#160;it&#160;is&#160;not&#160;possi-<br/>ble&#160;to&#160;put&#160;the&#160;other&#160;threads&#160;asleep&#160;while&#160;waiting&#160;for&#160;the&#160;first<br/>thread&#160;to&#160;finish&#160;the&#160;subdivision.</p>
+<p style="position:absolute;top:614px;left:480px;white-space:nowrap" class="ft41">In&#160;order&#160;to&#160;avoid&#160;an&#160;active&#160;waiting&#160;loop&#160;that&#160;would&#160;be&#160;too</p>
+<p style="position:absolute;top:631px;left:467px;white-space:nowrap" class="ft46">expensive,&#160;we&#160;implemented&#160;a&#160;global&#160;thread&#160;list&#160;where&#160;inter-<br/>rupted&#160;threads&#160;put&#160;themselves&#160;for&#160;a&#160;deferred&#160;execution.&#160;At<br/>the&#160;end&#160;of&#160;the&#160;rasterization&#160;pass,&#160;deferred&#160;threads&#160;are&#160;re-run<br/>(in&#160;a&#160;vertex&#160;shader)&#160;and&#160;their&#160;values&#160;written&#160;in&#160;the&#160;tree.&#160;Such<br/>deferred&#160;passes&#160;can&#160;possibly&#160;generate&#160;new&#160;deferred&#160;threads<br/>and&#160;are&#160;re-executed&#160;as&#160;long&#160;as&#160;the&#160;global&#160;thread&#160;list&#160;is&#160;not<br/>empty.&#160;Values&#160;in&#160;the&#160;leaves&#160;are&#160;written&#160;directly&#160;inside&#160;the<br/>brick&#160;associated&#160;to&#160;the&#160;nodes,&#160;and&#160;bricks&#160;are&#160;allocated&#160;simi-<br/>larly&#160;to&#160;the&#160;nodes&#160;inside&#160;a&#160;shared&#160;brick&#160;buffer.</p>
+<p style="position:absolute;top:788px;left:480px;white-space:nowrap" class="ft41">In&#160;our&#160;OpenGL&#160;implementation&#160;this&#160;scheme&#160;is&#160;made</p>
+<p style="position:absolute;top:804px;left:467px;white-space:nowrap" class="ft47">possible&#160;by&#160;the&#160;new&#160;NV_shader_buffer_load&#160;and<br/>NV_shader_buffer_store</p>
+<p style="position:absolute;top:821px;left:652px;white-space:nowrap" class="ft41">extensions&#160;that&#160;provides</p>
+<p style="position:absolute;top:837px;left:467px;white-space:nowrap" class="ft46">CUDA-like&#160;video&#160;memory&#160;pointers&#160;as&#160;well&#160;as&#160;atomic&#160;opera-<br/>tions&#160;directly&#160;inside&#160;OpenGL&#160;shaders.</p>
+<p style="position:absolute;top:891px;left:467px;white-space:nowrap" class="ft41">4.2.2.&#160;Dynamic&#160;update</p>
+<p style="position:absolute;top:916px;left:467px;white-space:nowrap" class="ft46">Dynamic&#160;update&#160;of&#160;the&#160;octree&#160;structure&#160;for&#160;animated&#160;ob-<br/>jects&#160;is&#160;done&#160;with&#160;the&#160;same&#160;rasterization-based&#160;building&#160;al-<br/>gorithm&#160;we&#160;just&#160;described.&#160;Animated&#160;objects&#160;are&#160;rasterized<br/>every&#160;frame,&#160;the&#160;only&#160;difference&#160;is&#160;that&#160;new&#160;voxels&#160;gener-<br/>ated&#160;by&#160;these&#160;objects&#160;cannot&#160;overwrite&#160;existing&#160;static&#160;parts<br/>of&#160;the&#160;structure.&#160;To&#160;prevent&#160;overwriting&#160;static&#160;octree&#160;nodes<br/>and&#160;bricks,&#160;and&#160;allow&#160;for&#160;a&#160;fast&#160;clearing&#160;every&#160;frame,&#160;these<br/>elements&#160;are&#160;stored&#160;at&#160;the&#160;end&#160;of&#160;the&#160;buffers.</p>
+<p style="position:absolute;top:1073px;left:709px;white-space:nowrap" class="ft45">c</p>
+<p style="position:absolute;top:1073px;left:705px;white-space:nowrap" class="ft45">&#160;2011&#160;The&#160;Author(s)</p>
+<p style="position:absolute;top:1085px;left:540px;white-space:nowrap" class="ft45">c</p>
+<p style="position:absolute;top:1085px;left:536px;white-space:nowrap" class="ft45">&#160;2011&#160;The&#160;Eurographics&#160;Association&#160;and&#160;Blackwell&#160;Publishing&#160;Ltd.</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title></title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft50{font-size:9px;font-family:Times;color:#000000;}
+	.ft51{font-size:11px;font-family:Times;color:#000000;}
+	.ft52{font-size:7px;font-family:Times;color:#000000;}
+	.ft53{font-size:11px;font-family:Times;color:#0000ff;}
+	.ft54{font-size:8px;font-family:Times;color:#000000;}
+	.ft55{font-size:8px;font-family:Times;color:#0000ff;}
+	.ft56{font-size:5px;font-family:Times;color:#000000;}
+	.ft57{font-size:10px;font-family:Times;color:#000000;}
+	.ft58{font-size:6px;font-family:Times;color:#000000;}
+	.ft59{font-size:7px;line-height:14px;font-family:Times;color:#000000;}
+	.ft510{font-size:11px;line-height:16px;font-family:Times;color:#000000;}
+	.ft511{font-size:8px;line-height:11px;font-family:Times;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page5-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="target005.png" alt="background image"/>
+<p style="position:absolute;top:99px;left:171px;white-space:nowrap" class="ft50">C.&#160;Crassin,&#160;F.&#160;Neyret,&#160;M.&#160;Sainz,&#160;S.&#160;Green,&#160;E.&#160;Eisemann&#160;/&#160;Interactive&#160;Indirect&#160;Illumination&#160;Using&#160;Voxel&#160;Cone&#160;Tracing</p>
+<p style="position:absolute;top:127px;left:108px;white-space:nowrap" class="ft51">4.2.3.&#160;MIP-mapping</p>
+<p style="position:absolute;top:151px;left:269px;white-space:nowrap" class="ft51">Once&#160;the&#160;octree&#160;structure&#160;is</p>
+<p style="position:absolute;top:211px;left:115px;white-space:nowrap" class="ft59">1/16<br/>1/8</p>
+<p style="position:absolute;top:240px;left:116px;white-space:nowrap" class="ft52">1/4</p>
+<p style="position:absolute;top:200px;left:108px;white-space:nowrap" class="ft52">weights</p>
+<p style="position:absolute;top:278px;left:108px;white-space:nowrap" class="ft510">Figure&#160;4:&#160;Lower-level<br/>voxels&#160;surround&#160;higher-<br/>level</p>
+<p style="position:absolute;top:311px;left:147px;white-space:nowrap" class="ft51">voxels.</p>
+<p style="position:absolute;top:311px;left:198px;white-space:nowrap" class="ft51">During</p>
+<p style="position:absolute;top:328px;left:108px;white-space:nowrap" class="ft51">MIP-mapping,</p>
+<p style="position:absolute;top:328px;left:201px;white-space:nowrap" class="ft51">shared</p>
+<p style="position:absolute;top:344px;left:108px;white-space:nowrap" class="ft51">voxels</p>
+<p style="position:absolute;top:344px;left:160px;white-space:nowrap" class="ft51">are</p>
+<p style="position:absolute;top:344px;left:195px;white-space:nowrap" class="ft51">“evenly</p>
+<p style="position:absolute;top:361px;left:108px;white-space:nowrap" class="ft51">distributed”</p>
+<p style="position:absolute;top:361px;left:190px;white-space:nowrap" class="ft51">resulting</p>
+<p style="position:absolute;top:377px;left:108px;white-space:nowrap" class="ft51">in&#160;gaussian&#160;weights.</p>
+<p style="position:absolute;top:168px;left:255px;white-space:nowrap" class="ft510">built&#160;and&#160;the&#160;surface&#160;values&#160;writ-<br/>ten&#160;inside&#160;the&#160;leafs,&#160;these&#160;val-<br/>ues&#160;must&#160;be&#160;MIP-mapped&#160;and&#160;fil-<br/>tered&#160;in&#160;the&#160;inner&#160;nodes&#160;of&#160;the<br/>tree.&#160;This&#160;is&#160;simply&#160;done&#160;in&#160;n&#160;−&#160;1<br/>steps&#160;for&#160;an&#160;octree&#160;of&#160;n&#160;levels.<br/>At&#160;each&#160;step,&#160;threads&#160;compute<br/>the&#160;filtered&#160;values&#160;coming&#160;from<br/>the&#160;bricks&#160;in&#160;the&#160;sub&#160;nodes&#160;of<br/>each&#160;node&#160;of&#160;the&#160;current&#160;level.<br/>To&#160;compute&#160;a&#160;new&#160;filtered&#160;oc-<br/>tree&#160;level,&#160;the&#160;algorithm&#160;averages<br/>values&#160;from&#160;the&#160;previous&#160;level.<br/>Since&#160;we&#160;rely&#160;on&#160;vertex-centered</p>
+<p style="position:absolute;top:398px;left:108px;white-space:nowrap" class="ft51">voxels&#160;(see&#160;Sec.</p>
+<p style="position:absolute;top:398px;left:200px;white-space:nowrap" class="ft53"><a href="#page3-div">4.1</a></p>
+<p style="position:absolute;top:398px;left:217px;white-space:nowrap" class="ft51"><a href="#page3-div">),&#160;</a>each&#160;node&#160;contains&#160;a&#160;3</p>
+<p style="position:absolute;top:394px;left:355px;white-space:nowrap" class="ft54">3</p>
+<p style="position:absolute;top:398px;left:361px;white-space:nowrap" class="ft51">-voxel&#160;brick,</p>
+<p style="position:absolute;top:414px;left:108px;white-space:nowrap" class="ft510">whose&#160;boundary&#160;reappears&#160;in&#160;neighboring&#160;bricks.&#160;Conse-<br/>quently,&#160;when&#160;computing&#160;the&#160;filtered&#160;data,&#160;one&#160;has&#160;to&#160;weight<br/>each&#160;voxel&#160;with&#160;the&#160;inverse&#160;of&#160;its&#160;multiplicity&#160;(Fig.</p>
+<p style="position:absolute;top:447px;left:416px;white-space:nowrap" class="ft53"><a href="#page5-div">4</a></p>
+<p style="position:absolute;top:447px;left:423px;white-space:nowrap" class="ft51"><a href="#page5-div">).</a></p>
+<p style="position:absolute;top:464px;left:108px;white-space:nowrap" class="ft51">In&#160;practice,&#160;this&#160;results&#160;in&#160;a&#160;3</p>
+<p style="position:absolute;top:460px;left:283px;white-space:nowrap" class="ft54">3</p>
+<p style="position:absolute;top:464px;left:289px;white-space:nowrap" class="ft51">-Gaussian&#160;weighting&#160;ker-</p>
+<p style="position:absolute;top:480px;left:108px;white-space:nowrap" class="ft510">nel,&#160;which,&#160;for&#160;our&#160;case,&#160;is&#160;an&#160;optimal&#160;reconstruction&#160;fil-<br/>ter&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:496px;left:130px;white-space:nowrap" class="ft53"><a href="#page10-div">FP02</a></p>
+<p style="position:absolute;top:496px;left:158px;white-space:nowrap" class="ft51"><a href="#page10-div">].</a></p>
+<p style="position:absolute;top:520px;left:108px;white-space:nowrap" class="ft51">4.3.&#160;Voxel&#160;representation</p>
+<p style="position:absolute;top:544px;left:108px;white-space:nowrap" class="ft510">Each&#160;voxel&#160;at&#160;a&#160;given&#160;level&#160;must&#160;represent&#160;the&#160;light&#160;behav-<br/>ior&#160;of&#160;the&#160;lower&#160;levels&#160;-&#160;and&#160;thus,&#160;of&#160;the&#160;whole&#160;scene&#160;span<br/>it&#160;represents.&#160;For&#160;this,&#160;we&#160;model&#160;the&#160;directional&#160;information<br/>with&#160;distributions&#160;that&#160;describe&#160;the&#160;underlying&#160;data.&#160;We&#160;ap-<br/>ply&#160;this&#160;to&#160;normals&#160;and&#160;to&#160;light&#160;directions.&#160;This&#160;is&#160;more&#160;accu-<br/>rate&#160;than&#160;single&#160;values,&#160;as&#160;shown&#160;in&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:627px;left:311px;white-space:nowrap" class="ft53"><a href="#page10-div">HSRG07</a></p>
+<p style="position:absolute;top:627px;left:360px;white-space:nowrap" class="ft51"><a href="#page10-div">].&#160;</a>Since&#160;stor-</p>
+<p style="position:absolute;top:643px;left:108px;white-space:nowrap" class="ft510">ing&#160;arbitrary&#160;distributions&#160;would&#160;be&#160;too&#160;memory-intensive,<br/>we&#160;choose&#160;to&#160;store&#160;only&#160;isotropic&#160;Gaussian&#160;lobes&#160;character-<br/>ized&#160;by&#160;an&#160;average&#160;vector&#160;D&#160;and&#160;a&#160;standard&#160;deviation&#160;σ.&#160;Fol-<br/>lowing&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:692px;left:153px;white-space:nowrap" class="ft53"><a href="#page10-div">Tok05</a></p>
+<p style="position:absolute;top:692px;left:187px;white-space:nowrap" class="ft51"><a href="#page10-div">],&#160;</a>to&#160;ease&#160;the&#160;interpolation,&#160;the&#160;variance&#160;is&#160;en-</p>
+<p style="position:absolute;top:711px;left:108px;white-space:nowrap" class="ft51">coded&#160;via&#160;the&#160;norm&#160;|D|&#160;such&#160;that&#160;σ</p>
+<p style="position:absolute;top:708px;left:297px;white-space:nowrap" class="ft54">2</p>
+<p style="position:absolute;top:711px;left:307px;white-space:nowrap" class="ft51">=</p>
+<p style="position:absolute;top:707px;left:322px;white-space:nowrap" class="ft54">1−|D|</p>
+<p style="position:absolute;top:718px;left:329px;white-space:nowrap" class="ft54">|D|</p>
+<p style="position:absolute;top:711px;left:353px;white-space:nowrap" class="ft51">.&#160;In&#160;Sec.</p>
+<p style="position:absolute;top:711px;left:401px;white-space:nowrap" class="ft53"><a href="#page6-div">7</a></p>
+<p style="position:absolute;top:711px;left:408px;white-space:nowrap" class="ft51"><a href="#page6-div">,&#160;</a>we</p>
+<p style="position:absolute;top:730px;left:108px;white-space:nowrap" class="ft510">will&#160;detail&#160;how&#160;to&#160;calculate&#160;light&#160;interaction&#160;with&#160;such&#160;a&#160;data<br/>representation.</p>
+<p style="position:absolute;top:770px;left:122px;white-space:nowrap" class="ft51">We&#160;also&#160;estimate&#160;occlusion&#160;information,&#160;in&#160;form&#160;of&#160;visi-</p>
+<p style="position:absolute;top:787px;left:108px;white-space:nowrap" class="ft510">bility&#160;(percentage&#160;of&#160;blocked&#160;rays),&#160;and&#160;not&#160;volumetric&#160;den-<br/>sity.&#160;We&#160;choose&#160;to&#160;store&#160;a&#160;single&#160;average&#160;value&#160;to&#160;keep&#160;voxel<br/>data&#160;compact,&#160;leading&#160;to&#160;a&#160;lack&#160;of&#160;view-dependency&#160;that&#160;is<br/>a&#160;disadvantage&#160;for&#160;large&#160;thin&#160;objects.&#160;Material&#160;color&#160;is&#160;actu-<br/>ally&#160;represented&#160;as&#160;an&#160;opacity&#160;weighted&#160;color&#160;value&#160;(alpha<br/>pre-multiplied)&#160;for&#160;better&#160;interpolation&#160;and&#160;integration&#160;dur-<br/>ing&#160;the&#160;rendering&#160;stage&#160;(Sec.</p>
+<p style="position:absolute;top:885px;left:266px;white-space:nowrap" class="ft53"><a href="#page6-div">7</a></p>
+<p style="position:absolute;top:885px;left:273px;white-space:nowrap" class="ft51"><a href="#page6-div">).&#160;</a>Normal&#160;information&#160;is&#160;also</p>
+<p style="position:absolute;top:902px;left:108px;white-space:nowrap" class="ft510">pre-multiplied&#160;by&#160;the&#160;opacity&#160;value&#160;in&#160;order&#160;to&#160;correctly&#160;take<br/>its&#160;visibility&#160;into&#160;account.</p>
+<p style="position:absolute;top:958px;left:108px;white-space:nowrap" class="ft51">5.&#160;Approximate&#160;Voxel&#160;Cone&#160;Tracing</p>
+<p style="position:absolute;top:982px;left:108px;white-space:nowrap" class="ft510">Global&#160;illumination&#160;generally&#160;requires&#160;many&#160;sampling&#160;rays<br/>to&#160;be&#160;tested&#160;against&#160;the&#160;scene,&#160;which&#160;is&#160;expensive.&#160;These&#160;rays<br/>are&#160;spatially&#160;and&#160;directionally&#160;coherent&#160;which&#160;is&#160;a&#160;property<br/>that&#160;many&#160;approaches&#160;such&#160;as&#160;packet&#160;ray-tracing&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:1031px;left:385px;white-space:nowrap" class="ft53"><a href="#page10-div">WMG</a></p>
+<p style="position:absolute;top:1027px;left:419px;white-space:nowrap" class="ft55"><a href="#page10-div">∗</a></p>
+<p style="position:absolute;top:1031px;left:426px;white-space:nowrap" class="ft51"><a href="#page10-div">]</a></p>
+<p style="position:absolute;top:127px;left:467px;white-space:nowrap" class="ft510">use.&#160;Similarly,&#160;in&#160;order&#160;for&#160;us&#160;to&#160;exploit&#160;this&#160;coherence,&#160;we<br/>introduce&#160;a&#160;voxel&#160;cone&#160;tracing&#160;method&#160;that&#160;was&#160;inspired&#160;by<br/>filtering&#160;for&#160;anti-aliasing&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:160px;left:606px;white-space:nowrap" class="ft53"><a href="#page10-div">CNLE09</a></p>
+<p style="position:absolute;top:160px;left:655px;white-space:nowrap" class="ft51"><a href="#page10-div">].</a></p>
+<p style="position:absolute;top:185px;left:480px;white-space:nowrap" class="ft51">While&#160;the&#160;original&#160;cone&#160;tracing&#160;technique&#160;is&#160;complex&#160;and</p>
+<p style="position:absolute;top:201px;left:467px;white-space:nowrap" class="ft510">often&#160;expensive,&#160;we&#160;can&#160;use&#160;our&#160;filtered&#160;voxel&#160;structure&#160;to<br/>approximate&#160;the&#160;result&#160;for&#160;all&#160;rays&#160;in&#160;the&#160;same&#160;bundle&#160;in&#160;par-<br/>allel.&#160;The&#160;idea&#160;is&#160;to&#160;step&#160;along&#160;the&#160;cone&#160;axis&#160;and&#160;perform<br/>lookups&#160;in&#160;our&#160;hierarchical&#160;representation&#160;at&#160;the&#160;level&#160;corre-<br/>sponding&#160;to&#160;the&#160;cone&#160;radius&#160;(Fig.</p>
+<p style="position:absolute;top:267px;left:644px;white-space:nowrap" class="ft53"><a href="#page5-div">5</a></p>
+<p style="position:absolute;top:267px;left:651px;white-space:nowrap" class="ft51"><a href="#page5-div">).&#160;</a>During&#160;this&#160;step,&#160;we&#160;use</p>
+<p style="position:absolute;top:284px;left:467px;white-space:nowrap" class="ft510">quadrilinear&#160;interpolation&#160;to&#160;ensure&#160;a&#160;smooth&#160;variation&#160;that<br/>does&#160;not&#160;exhibit&#160;aliasing.&#160;Because&#160;of&#160;the&#160;way&#160;we&#160;pre-filtered<br/>the&#160;voxel&#160;data,&#160;this&#160;approximation&#160;produces&#160;visual&#160;plausible<br/>results&#160;although&#160;it&#160;might&#160;differ&#160;from&#160;true&#160;cone&#160;tracing.</p>
+<p style="position:absolute;top:559px;left:467px;white-space:nowrap" class="ft510">Figure&#160;5:&#160;Voxel-based&#160;cone&#160;tracing&#160;using&#160;pre-filtered&#160;geom-<br/>etry&#160;and&#160;lighting&#160;information&#160;from&#160;a&#160;sparse&#160;MIP-map&#160;pyra-<br/>mid&#160;(stored&#160;in&#160;a&#160;voxel&#160;octree&#160;structure).</p>
+<p style="position:absolute;top:617px;left:480px;white-space:nowrap" class="ft51">While&#160;stepping&#160;along&#160;the&#160;cone,&#160;we&#160;use&#160;the&#160;classical</p>
+<p style="position:absolute;top:634px;left:467px;white-space:nowrap" class="ft51">emission-absorption&#160;optical&#160;model&#160;described&#160;in&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:634px;left:748px;white-space:nowrap" class="ft53"><a href="#page10-div">Max95</a></p>
+<p style="position:absolute;top:634px;left:786px;white-space:nowrap" class="ft51"><a href="#page10-div">,</a></p>
+<p style="position:absolute;top:650px;left:467px;white-space:nowrap" class="ft53"><a href="#page10-div">EHK</a></p>
+<p style="position:absolute;top:646px;left:494px;white-space:nowrap" class="ft55"><a href="#page10-div">∗</a></p>
+<p style="position:absolute;top:650px;left:501px;white-space:nowrap" class="ft53"><a href="#page10-div">04</a></p>
+<p style="position:absolute;top:650px;left:515px;white-space:nowrap" class="ft51"><a href="#page10-div">]&#160;</a>to&#160;accumulate&#160;the&#160;values&#160;along&#160;the&#160;cone.&#160;We&#160;keep</p>
+<p style="position:absolute;top:667px;left:467px;white-space:nowrap" class="ft510">track&#160;of&#160;occlusion&#160;α&#160;and,&#160;potentially,&#160;a&#160;color&#160;value&#160;c&#160;repre-<br/>senting&#160;the&#160;reflected&#160;light&#160;towards&#160;the&#160;cone&#160;origin.&#160;In&#160;each<br/>step,&#160;we&#160;retrieve&#160;the&#160;appropriately&#160;filtered&#160;scene&#160;information<br/>and&#160;the&#160;occlusion&#160;value&#160;α</p>
+<p style="position:absolute;top:720px;left:603px;white-space:nowrap" class="ft54">2</p>
+<p style="position:absolute;top:716px;left:612px;white-space:nowrap" class="ft51">from&#160;the&#160;octree&#160;to&#160;compute&#160;a&#160;new</p>
+<p style="position:absolute;top:733px;left:467px;white-space:nowrap" class="ft51">outgoing&#160;radiance&#160;c</p>
+<p style="position:absolute;top:737px;left:572px;white-space:nowrap" class="ft54">2</p>
+<p style="position:absolute;top:733px;left:582px;white-space:nowrap" class="ft51">(Sec.</p>
+<p style="position:absolute;top:733px;left:612px;white-space:nowrap" class="ft53"><a href="#page6-div">7</a></p>
+<p style="position:absolute;top:733px;left:619px;white-space:nowrap" class="ft51"><a href="#page6-div">).&#160;</a>We&#160;then&#160;update&#160;the&#160;values&#160;us-</p>
+<p style="position:absolute;top:749px;left:467px;white-space:nowrap" class="ft51">ing&#160;the&#160;classical&#160;volumetric&#160;front-to-back&#160;accumulation:&#160;c&#160;:=</p>
+<p style="position:absolute;top:768px;left:467px;white-space:nowrap" class="ft51">αc&#160;+&#160;(1&#160;−&#160;α)α2c</p>
+<p style="position:absolute;top:770px;left:558px;white-space:nowrap" class="ft54">2</p>
+<p style="position:absolute;top:765px;left:569px;white-space:nowrap" class="ft51">and&#160;α&#160;=&#160;α&#160;+&#160;(1&#160;−&#160;α)α2.&#160;Also,&#160;to&#160;ensure</p>
+<p style="position:absolute;top:782px;left:467px;white-space:nowrap" class="ft510">good&#160;integration&#160;quality,&#160;even&#160;for&#160;large&#160;cones,&#160;the&#160;distance<br/>d</p>
+<p style="position:absolute;top:794px;left:474px;white-space:nowrap" class="ft54">0</p>
+<p style="position:absolute;top:798px;left:481px;white-space:nowrap" class="ft51">between&#160;successive&#160;sample&#160;locations&#160;along&#160;a&#160;ray&#160;does&#160;not</p>
+<p style="position:absolute;top:815px;left:467px;white-space:nowrap" class="ft51">coincide&#160;with&#160;the&#160;current&#160;voxel&#160;size&#160;d.&#160;To&#160;account&#160;for&#160;the</p>
+<p style="position:absolute;top:833px;left:467px;white-space:nowrap" class="ft51">smaller&#160;step&#160;size,&#160;we&#160;use&#160;the&#160;correction&#160;α</p>
+<p style="position:absolute;top:829px;left:687px;white-space:nowrap" class="ft54">0</p>
+<p style="position:absolute;top:838px;left:687px;white-space:nowrap" class="ft54">s</p>
+<p style="position:absolute;top:833px;left:695px;white-space:nowrap" class="ft51">=&#160;1&#160;−&#160;(1&#160;−&#160;α</p>
+<p style="position:absolute;top:837px;left:764px;white-space:nowrap" class="ft54">s</p>
+<p style="position:absolute;top:833px;left:768px;white-space:nowrap" class="ft51">)</p>
+<p style="position:absolute;top:828px;left:775px;white-space:nowrap" class="ft56">d0</p>
+<p style="position:absolute;top:835px;left:777px;white-space:nowrap" class="ft56">d</p>
+<p style="position:absolute;top:833px;left:786px;white-space:nowrap" class="ft51">.</p>
+<p style="position:absolute;top:875px;left:467px;white-space:nowrap" class="ft51">6.&#160;Ambient&#160;Occlusion</p>
+<p style="position:absolute;top:900px;left:467px;white-space:nowrap" class="ft510">To&#160;illustrate&#160;the&#160;use&#160;of&#160;our&#160;approximate&#160;cone&#160;tracing&#160;and&#160;to<br/>facilitate&#160;the&#160;understanding&#160;of&#160;our&#160;indirect&#160;illumination&#160;algo-<br/>rithm,&#160;we&#160;will&#160;first&#160;present&#160;a&#160;simpler&#160;case:&#160;an&#160;ambient&#160;occlu-<br/>sion&#160;estimation&#160;(AO),&#160;which&#160;can&#160;be&#160;seen&#160;as&#160;an&#160;accessibility<br/>value&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:966px;left:503px;white-space:nowrap" class="ft53"><a href="#page10-div">Mil94</a></p>
+<p style="position:absolute;top:966px;left:536px;white-space:nowrap" class="ft51"><a href="#page10-div">].&#160;</a>The&#160;ambient&#160;occlusion&#160;A(p)&#160;at&#160;a&#160;surface&#160;point</p>
+<p style="position:absolute;top:982px;left:468px;white-space:nowrap" class="ft51">p</p>
+<p style="position:absolute;top:982px;left:478px;white-space:nowrap" class="ft51">is&#160;defined&#160;as&#160;the&#160;visibility&#160;integral&#160;over&#160;the&#160;hemisphere&#160;Ω</p>
+<p style="position:absolute;top:999px;left:467px;white-space:nowrap" class="ft510">(above&#160;the&#160;surface)&#160;with&#160;respect&#160;to&#160;the&#160;projected&#160;solid&#160;angle.<br/>Precisely,&#160;A(p)&#160;=</p>
+<p style="position:absolute;top:1011px;left:568px;white-space:nowrap" class="ft511">1<br/>π</p>
+<p style="position:absolute;top:1013px;left:577px;white-space:nowrap" class="ft57">R</p>
+<p style="position:absolute;top:1023px;left:583px;white-space:nowrap" class="ft54">Ω</p>
+<p style="position:absolute;top:1015px;left:593px;white-space:nowrap" class="ft51">V</p>
+<p style="position:absolute;top:1015px;left:603px;white-space:nowrap" class="ft51">(p,&#160;ω)(cosω)dω,&#160;where&#160;V&#160;(p,&#160;ω)&#160;is</p>
+<p style="position:absolute;top:1031px;left:467px;white-space:nowrap" class="ft51">the&#160;visibility&#160;function&#160;that&#160;is&#160;zero&#160;if&#160;the&#160;ray&#160;originating&#160;at&#160;s&#160;in</p>
+<p style="position:absolute;top:1067px;left:111px;white-space:nowrap" class="ft58">c</p>
+<p style="position:absolute;top:1067px;left:108px;white-space:nowrap" class="ft58">&#160;2011&#160;The&#160;Author(s)</p>
+<p style="position:absolute;top:1079px;left:111px;white-space:nowrap" class="ft58">c</p>
+<p style="position:absolute;top:1079px;left:108px;white-space:nowrap" class="ft58">&#160;2011&#160;The&#160;Eurographics&#160;Association&#160;and&#160;Blackwell&#160;Publishing&#160;Ltd.</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title></title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft60{font-size:9px;font-family:Times;color:#000000;}
+	.ft61{font-size:11px;font-family:Times;color:#000000;}
+	.ft62{font-size:8px;font-family:Times;color:#000000;}
+	.ft63{font-size:10px;font-family:Times;color:#000000;}
+	.ft64{font-size:5px;font-family:Times;color:#000000;}
+	.ft65{font-size:11px;font-family:Times;color:#0000ff;}
+	.ft66{font-size:6px;font-family:Times;color:#000000;}
+	.ft67{font-size:11px;line-height:16px;font-family:Times;color:#000000;}
+	.ft68{font-size:8px;line-height:9px;font-family:Times;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page6-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="target006.png" alt="background image"/>
+<p style="position:absolute;top:99px;left:172px;white-space:nowrap" class="ft60">C.&#160;Crassin,&#160;F.&#160;Neyret,&#160;M.&#160;Sainz,&#160;S.&#160;Green,&#160;E.&#160;Eisemann&#160;/&#160;Interactive&#160;Indirect&#160;Illumination&#160;Using&#160;Voxel&#160;Cone&#160;Tracing</p>
+<p style="position:absolute;top:127px;left:108px;white-space:nowrap" class="ft67">direction&#160;ω&#160;intersects&#160;the&#160;scene,&#160;else&#160;it&#160;is&#160;one.&#160;For&#160;practical<br/>uses&#160;(typically,&#160;indoor&#160;scenes&#160;which&#160;have&#160;no&#160;open&#160;sky)&#160;the<br/>visibility&#160;is&#160;limited&#160;to&#160;a&#160;distance&#160;since&#160;the&#160;environment&#160;walls<br/>play&#160;the&#160;role&#160;of&#160;ambient&#160;diffusors.&#160;Hence,&#160;we&#160;weight&#160;occlu-<br/>sion&#160;α&#160;by&#160;a&#160;function&#160;f&#160;(r)&#160;which&#160;decays&#160;with&#160;the&#160;distance&#160;(in<br/>our&#160;implementation&#160;we&#160;use</p>
+<p style="position:absolute;top:206px;left:272px;white-space:nowrap" class="ft62">1</p>
+<p style="position:absolute;top:217px;left:259px;white-space:nowrap" class="ft62">(1+λr)</p>
+<p style="position:absolute;top:209px;left:293px;white-space:nowrap" class="ft61">).&#160;The&#160;modified&#160;occlusion</p>
+<p style="position:absolute;top:229px;left:108px;white-space:nowrap" class="ft61">is&#160;α</p>
+<p style="position:absolute;top:234px;left:130px;white-space:nowrap" class="ft62">f</p>
+<p style="position:absolute;top:229px;left:136px;white-space:nowrap" class="ft61">(p&#160;+&#160;rω)&#160;:=&#160;f&#160;(r)α(p&#160;+&#160;r−</p>
+<p style="position:absolute;top:223px;left:268px;white-space:nowrap" class="ft61">→</p>
+<p style="position:absolute;top:231px;left:270px;white-space:nowrap" class="ft61">ω&#160;).</p>
+<p style="position:absolute;top:352px;left:108px;white-space:nowrap" class="ft61">Figure&#160;6:&#160;Ambient&#160;Occlusion&#160;with&#160;a&#160;small&#160;set&#160;of&#160;voxel&#160;cones.</p>
+<p style="position:absolute;top:378px;left:122px;white-space:nowrap" class="ft61">To&#160;compute&#160;the&#160;integral&#160;A(p)&#160;efficiently,&#160;we&#160;ob-</p>
+<p style="position:absolute;top:394px;left:108px;white-space:nowrap" class="ft61">serve</p>
+<p style="position:absolute;top:394px;left:148px;white-space:nowrap" class="ft61">that</p>
+<p style="position:absolute;top:394px;left:181px;white-space:nowrap" class="ft61">the</p>
+<p style="position:absolute;top:394px;left:209px;white-space:nowrap" class="ft61">hemisphere</p>
+<p style="position:absolute;top:394px;left:284px;white-space:nowrap" class="ft61">can</p>
+<p style="position:absolute;top:394px;left:314px;white-space:nowrap" class="ft61">be</p>
+<p style="position:absolute;top:394px;left:339px;white-space:nowrap" class="ft61">partitioned</p>
+<p style="position:absolute;top:394px;left:410px;white-space:nowrap" class="ft61">into</p>
+<p style="position:absolute;top:410px;left:108px;white-space:nowrap" class="ft61">a&#160;sum&#160;of&#160;integrals:</p>
+<p style="position:absolute;top:411px;left:247px;white-space:nowrap" class="ft61">A</p>
+<p style="position:absolute;top:410px;left:255px;white-space:nowrap" class="ft61">(p)&#160;=</p>
+<p style="position:absolute;top:407px;left:293px;white-space:nowrap" class="ft62">1</p>
+<p style="position:absolute;top:417px;left:291px;white-space:nowrap" class="ft62">N</p>
+<p style="position:absolute;top:414px;left:302px;white-space:nowrap" class="ft61">∑</p>
+<p style="position:absolute;top:407px;left:312px;white-space:nowrap" class="ft68">N<br/>i</p>
+<p style="position:absolute;top:416px;left:315px;white-space:nowrap" class="ft62">=1</p>
+<p style="position:absolute;top:411px;left:330px;white-space:nowrap" class="ft61">V&#160;c</p>
+<p style="position:absolute;top:410px;left:346px;white-space:nowrap" class="ft61">(p,&#160;Ω</p>
+<p style="position:absolute;top:415px;left:374px;white-space:nowrap" class="ft62">i</p>
+<p style="position:absolute;top:410px;left:378px;white-space:nowrap" class="ft61">),&#160;where</p>
+<p style="position:absolute;top:427px;left:107px;white-space:nowrap" class="ft61">V&#160;c</p>
+<p style="position:absolute;top:427px;left:123px;white-space:nowrap" class="ft61">(p,&#160;Ω</p>
+<p style="position:absolute;top:431px;left:152px;white-space:nowrap" class="ft62">i</p>
+<p style="position:absolute;top:427px;left:155px;white-space:nowrap" class="ft61">)&#160;=</p>
+<p style="position:absolute;top:425px;left:177px;white-space:nowrap" class="ft63">R</p>
+<p style="position:absolute;top:435px;left:183px;white-space:nowrap" class="ft62">Ω</p>
+<p style="position:absolute;top:437px;left:191px;white-space:nowrap" class="ft64">i</p>
+<p style="position:absolute;top:427px;left:196px;white-space:nowrap" class="ft61">V</p>
+<p style="position:absolute;top:432px;left:204px;white-space:nowrap" class="ft62">p</p>
+<p style="position:absolute;top:431px;left:209px;white-space:nowrap" class="ft62">,θ</p>
+<p style="position:absolute;top:427px;left:218px;white-space:nowrap" class="ft61">(cosθ)dθ.&#160;For&#160;a&#160;regular&#160;partition,&#160;each</p>
+<p style="position:absolute;top:443px;left:107px;white-space:nowrap" class="ft61">V&#160;c</p>
+<p style="position:absolute;top:443px;left:123px;white-space:nowrap" class="ft61">(p,&#160;Ω</p>
+<p style="position:absolute;top:448px;left:152px;white-space:nowrap" class="ft62">i</p>
+<p style="position:absolute;top:443px;left:155px;white-space:nowrap" class="ft61">)&#160;resembles&#160;a&#160;cone.&#160;If&#160;we&#160;factor&#160;the&#160;cosine&#160;out&#160;of</p>
+<p style="position:absolute;top:460px;left:108px;white-space:nowrap" class="ft67">the&#160;V&#160;c&#160;integral&#160;(the&#160;approximation&#160;is&#160;coarse&#160;mainly&#160;for&#160;large<br/>or&#160;grazing&#160;cones),&#160;we&#160;can&#160;approximate&#160;their&#160;contribution<br/>with&#160;our&#160;voxel-based&#160;cone&#160;tracing,&#160;as&#160;illustrated&#160;in&#160;Fig.</p>
+<p style="position:absolute;top:493px;left:421px;white-space:nowrap" class="ft65"><a href="#page6-div">6</a></p>
+<p style="position:absolute;top:493px;left:427px;white-space:nowrap" class="ft61"><a href="#page6-div">,</a></p>
+<p style="position:absolute;top:509px;left:108px;white-space:nowrap" class="ft67">left.&#160;The&#160;weighted&#160;visibility&#160;integral&#160;V&#160;(p,&#160;ω)&#160;is&#160;obtained&#160;by<br/>accumulating&#160;the&#160;occlusion&#160;information&#160;only,&#160;accounting<br/>for&#160;the&#160;weight&#160;f&#160;(r).&#160;Summing&#160;up&#160;the&#160;contributions&#160;of&#160;all<br/>cones&#160;results&#160;in&#160;our&#160;approximation&#160;of&#160;the&#160;AO&#160;term.</p>
+<p style="position:absolute;top:593px;left:108px;white-space:nowrap" class="ft61">Final&#160;Rendering</p>
+<p style="position:absolute;top:618px;left:108px;white-space:nowrap" class="ft67">To&#160;perform&#160;the&#160;rendering&#160;of&#160;a&#160;scene&#160;mesh&#160;with&#160;AO&#160;effects,<br/>we&#160;evaluate&#160;the&#160;cone-tracing&#160;approximation&#160;in&#160;the&#160;frag-<br/>ment&#160;shader.&#160;For&#160;efficiency,&#160;we&#160;make&#160;use&#160;of&#160;deferred&#160;shad-<br/>ing&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:668px;left:134px;white-space:nowrap" class="ft65"><a href="#page10-div">ST90</a></p>
+<p style="position:absolute;top:668px;left:163px;white-space:nowrap" class="ft61"><a href="#page10-div">]&#160;</a>to&#160;avoid&#160;evaluating&#160;the&#160;computation&#160;for&#160;hidden</p>
+<p style="position:absolute;top:684px;left:108px;white-space:nowrap" class="ft67">geometry.&#160;I.e.,&#160;we&#160;render&#160;the&#160;world&#160;position&#160;and&#160;surface&#160;nor-<br/>mal&#160;pixels&#160;of&#160;an&#160;image&#160;from&#160;the&#160;current&#160;point&#160;of&#160;view.&#160;The<br/>AO&#160;computation&#160;is&#160;then&#160;executed&#160;on&#160;each&#160;pixel,&#160;using&#160;the<br/>underlying&#160;normal&#160;and&#160;position.</p>
+<p style="position:absolute;top:776px;left:108px;white-space:nowrap" class="ft61">7.&#160;Voxel&#160;Shading</p>
+<p style="position:absolute;top:801px;left:108px;white-space:nowrap" class="ft67">For&#160;indirect&#160;illumination,&#160;we&#160;will&#160;be&#160;interested&#160;not&#160;only&#160;in<br/>occlusion,&#160;but&#160;need&#160;to&#160;compute&#160;the&#160;shading&#160;of&#160;a&#160;voxel.&#160;For<br/>this,&#160;we&#160;have&#160;to&#160;account&#160;for&#160;the&#160;variations&#160;in&#160;the&#160;embed-<br/>ded&#160;directions&#160;and&#160;scalar&#160;attributes,&#160;as&#160;well&#160;as&#160;the&#160;span&#160;of<br/>the&#160;cone&#160;that&#160;is&#160;currently&#160;accumulating&#160;that&#160;voxel.&#160;As&#160;shown<br/>in&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:883px;left:126px;white-space:nowrap" class="ft65"><a href="#page10-div">Fou92</a></p>
+<p style="position:absolute;top:883px;left:160px;white-space:nowrap" class="ft61"><a href="#page10-div">,</a></p>
+<p style="position:absolute;top:883px;left:164px;white-space:nowrap" class="ft65"><a href="#page10-div">HSRG07</a></p>
+<p style="position:absolute;top:883px;left:213px;white-space:nowrap" class="ft61"><a href="#page10-div">],&#160;</a>this&#160;can&#160;conveniently&#160;be&#160;translated&#160;into</p>
+<p style="position:absolute;top:900px;left:108px;white-space:nowrap" class="ft67">convolutions,&#160;provided&#160;that&#160;the&#160;elements&#160;are&#160;decomposed&#160;in<br/>lobe&#160;shapes.&#160;In&#160;our&#160;case,&#160;we&#160;have&#160;to&#160;convolve&#160;the&#160;BRDF,<br/>the&#160;NDF,&#160;and&#160;the&#160;span&#160;of&#160;the&#160;view&#160;cone,&#160;the&#160;first&#160;already&#160;be-<br/>ing&#160;represented&#160;as&#160;Gaussian&#160;lobes.&#160;We&#160;consider&#160;the&#160;Phong<br/>BRDF,&#160;i.e.,&#160;a&#160;large&#160;diffuse&#160;lobe&#160;and&#160;a&#160;specular&#160;lobe&#160;which<br/>can&#160;be&#160;expressed&#160;as&#160;Gaussian&#160;lobes.&#160;Nonetheless,&#160;our&#160;light-<br/>ing&#160;scheme&#160;could&#160;be&#160;easily&#160;extended&#160;to&#160;any&#160;lobe-mixture<br/>BRDF.&#160;As&#160;previously&#160;discussed,&#160;the&#160;NDF&#160;can&#160;be&#160;computed<br/>from&#160;the&#160;length&#160;of&#160;the&#160;averaged&#160;normal&#160;vector&#160;|N|&#160;that&#160;is</p>
+<p style="position:absolute;top:127px;left:467px;white-space:nowrap" class="ft61">stored&#160;in&#160;the&#160;voxels,&#160;via&#160;the&#160;approach&#160;proposed&#160;by&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:127px;left:751px;white-space:nowrap" class="ft65"><a href="#page10-div">Tok05</a></p>
+<p style="position:absolute;top:127px;left:785px;white-space:nowrap" class="ft61"><a href="#page10-div">]</a></p>
+<p style="position:absolute;top:146px;left:467px;white-space:nowrap" class="ft61">(σ</p>
+<p style="position:absolute;top:143px;left:479px;white-space:nowrap" class="ft62">2</p>
+<p style="position:absolute;top:151px;left:479px;white-space:nowrap" class="ft62">n</p>
+<p style="position:absolute;top:146px;left:488px;white-space:nowrap" class="ft61">=</p>
+<p style="position:absolute;top:142px;left:504px;white-space:nowrap" class="ft62">1−|N|</p>
+<p style="position:absolute;top:153px;left:511px;white-space:nowrap" class="ft62">|N|</p>
+<p style="position:absolute;top:146px;left:535px;white-space:nowrap" class="ft61">).&#160;We&#160;fit&#160;a&#160;distribution&#160;to&#160;the&#160;view&#160;cone,&#160;by&#160;ob-</p>
+<p style="position:absolute;top:165px;left:467px;white-space:nowrap" class="ft61">serving&#160;(Fig.</p>
+<p style="position:absolute;top:165px;left:537px;white-space:nowrap" class="ft65"><a href="#page6-div">7</a></p>
+<p style="position:absolute;top:165px;left:544px;white-space:nowrap" class="ft61"><a href="#page6-div">),&#160;</a>that&#160;the&#160;distribution&#160;of&#160;directions&#160;going&#160;from</p>
+<p style="position:absolute;top:181px;left:467px;white-space:nowrap" class="ft67">a&#160;filtered&#160;voxel&#160;towards&#160;the&#160;origin&#160;of&#160;a&#160;view&#160;cone&#160;is&#160;the&#160;same<br/>as&#160;the&#160;distribution&#160;of&#160;directions&#160;from&#160;the&#160;origin&#160;of&#160;the&#160;cone<br/>towards&#160;the&#160;considered&#160;voxel.&#160;We&#160;represent&#160;this&#160;distribution<br/>with&#160;a&#160;Gaussian&#160;lobe&#160;of&#160;standard&#160;deviation&#160;σ</p>
+<p style="position:absolute;top:234px;left:724px;white-space:nowrap" class="ft62">v</p>
+<p style="position:absolute;top:230px;left:734px;white-space:nowrap" class="ft61">=&#160;cos(ψ),</p>
+<p style="position:absolute;top:247px;left:467px;white-space:nowrap" class="ft61">where&#160;ψ&#160;is&#160;the&#160;view&#160;cone’s&#160;aperture.</p>
+<p style="position:absolute;top:340px;left:467px;white-space:nowrap" class="ft67">Figure&#160;7:&#160;Illustration&#160;of&#160;the&#160;direction&#160;distribution&#160;computed<br/>on&#160;a&#160;filtered&#160;surface&#160;volume&#160;from&#160;an&#160;incident&#160;cone.</p>
+<p style="position:absolute;top:403px;left:467px;white-space:nowrap" class="ft61">8.&#160;Indirect&#160;Illumination</p>
+<p style="position:absolute;top:428px;left:467px;white-space:nowrap" class="ft67">To&#160;compute&#160;indirect&#160;illumination&#160;in&#160;the&#160;presence&#160;of&#160;a&#160;point<br/>light&#160;is&#160;more&#160;involved&#160;than&#160;AO.&#160;We&#160;use&#160;on&#160;a&#160;two-step&#160;ap-<br/>proach.&#160;First,&#160;we&#160;capture&#160;the&#160;incoming&#160;radiance&#160;from&#160;a&#160;light<br/>source&#160;in&#160;the&#160;leaves&#160;of&#160;our&#160;scene&#160;representation.&#160;Storing<br/>incoming&#160;radiance,&#160;not&#160;outgoing&#160;will&#160;allow&#160;us&#160;to&#160;simulate<br/>glossy&#160;surfaces.&#160;We&#160;filter&#160;and&#160;distribute&#160;the&#160;incoming&#160;radi-<br/>ance&#160;over&#160;all&#160;levels&#160;of&#160;our&#160;octree.&#160;Finally,&#160;we&#160;perform&#160;ap-<br/>proximate&#160;cone&#160;tracing&#160;to&#160;simulate&#160;the&#160;light&#160;transport.&#160;Writ-<br/>ing&#160;the&#160;incoming&#160;radiance&#160;in&#160;the&#160;octree&#160;structure&#160;is&#160;complex,<br/>therefore&#160;we&#160;will,&#160;for&#160;the&#160;moment,&#160;assume&#160;that&#160;it&#160;is&#160;already<br/>present&#160;in&#160;our&#160;octree&#160;structure,&#160;before&#160;detailing&#160;this&#160;process.</p>
+<p style="position:absolute;top:787px;left:467px;white-space:nowrap" class="ft67">Figure&#160;8:&#160;Left:&#160;Indirect&#160;diffuse&#160;lighting&#160;with&#160;animated&#160;ob-<br/>ject.&#160;Right:&#160;Glossy&#160;reflections&#160;and&#160;color&#160;bleeding</p>
+<p style="position:absolute;top:842px;left:467px;white-space:nowrap" class="ft61">8.1.&#160;Two-bounce&#160;indirect&#160;illumination</p>
+<p style="position:absolute;top:867px;left:467px;white-space:nowrap" class="ft67">Our&#160;solution&#160;works&#160;for&#160;low-energy/low-frequency&#160;and&#160;high-<br/>energy/high-frequency&#160;components&#160;of&#160;arbitrary&#160;material<br/>BRDFs,&#160;although&#160;we&#160;will&#160;focus&#160;our&#160;description&#160;on&#160;a&#160;Phong<br/>BRDF.&#160;The&#160;algorithm&#160;is&#160;similar&#160;to&#160;the&#160;one&#160;described&#160;in<br/>Sec.</p>
+<p style="position:absolute;top:933px;left:495px;white-space:nowrap" class="ft65"><a href="#page5-div">6</a></p>
+<p style="position:absolute;top:933px;left:507px;white-space:nowrap" class="ft61">for&#160;AO.&#160;We&#160;use&#160;deferred&#160;shading&#160;to&#160;determine&#160;for</p>
+<p style="position:absolute;top:949px;left:467px;white-space:nowrap" class="ft67">which&#160;surface&#160;points&#160;we&#160;need&#160;to&#160;compute&#160;the&#160;indirect&#160;illumi-<br/>nation.&#160;At&#160;each&#160;such&#160;location,&#160;we&#160;perform&#160;a&#160;final&#160;gathering<br/>by&#160;sending&#160;out&#160;several&#160;cones&#160;to&#160;query&#160;the&#160;illumination&#160;that<br/>is&#160;distributed&#160;in&#160;the&#160;octree.&#160;Typically,&#160;for&#160;a&#160;Phong&#160;material<br/>(Fig.</p>
+<p style="position:absolute;top:1015px;left:496px;white-space:nowrap" class="ft65"><a href="#page6-div">6</a></p>
+<p style="position:absolute;top:1015px;left:503px;white-space:nowrap" class="ft61"><a href="#page6-div">,&#160;</a>right),&#160;a&#160;few&#160;large&#160;cones&#160;(typically&#160;five)&#160;estimate&#160;the</p>
+<p style="position:absolute;top:1031px;left:467px;white-space:nowrap" class="ft61">diffuse&#160;energy&#160;coming&#160;from&#160;the&#160;scene,&#160;while&#160;a&#160;tight&#160;cone&#160;in</p>
+<p style="position:absolute;top:1073px;left:709px;white-space:nowrap" class="ft66">c</p>
+<p style="position:absolute;top:1073px;left:705px;white-space:nowrap" class="ft66">&#160;2011&#160;The&#160;Author(s)</p>
+<p style="position:absolute;top:1085px;left:540px;white-space:nowrap" class="ft66">c</p>
+<p style="position:absolute;top:1085px;left:536px;white-space:nowrap" class="ft66">&#160;2011&#160;The&#160;Eurographics&#160;Association&#160;and&#160;Blackwell&#160;Publishing&#160;Ltd.</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title></title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft70{font-size:9px;font-family:Times;color:#000000;}
+	.ft71{font-size:11px;font-family:Times;color:#000000;}
+	.ft72{font-size:11px;font-family:Times;color:#0000ff;}
+	.ft73{font-size:6px;font-family:Times;color:#000000;}
+	.ft74{font-size:7px;font-family:Times;color:#000000;}
+	.ft75{font-size:11px;line-height:16px;font-family:Times;color:#000000;}
+	.ft76{font-size:11px;line-height:17px;font-family:Times;color:#000000;}
+	.ft77{font-size:11px;line-height:18px;font-family:Times;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page7-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="target007.png" alt="background image"/>
+<p style="position:absolute;top:99px;left:171px;white-space:nowrap" class="ft70">C.&#160;Crassin,&#160;F.&#160;Neyret,&#160;M.&#160;Sainz,&#160;S.&#160;Green,&#160;E.&#160;Eisemann&#160;/&#160;Interactive&#160;Indirect&#160;Illumination&#160;Using&#160;Voxel&#160;Cone&#160;Tracing</p>
+<p style="position:absolute;top:127px;left:108px;white-space:nowrap" class="ft75">the&#160;reflected&#160;direction&#160;with&#160;respect&#160;to&#160;the&#160;viewpoint&#160;captures<br/>the&#160;specular&#160;component.&#160;The&#160;aperture&#160;of&#160;the&#160;specular&#160;cone&#160;is<br/>derived&#160;from&#160;the&#160;specular&#160;exponent&#160;of&#160;the&#160;material,&#160;allowing<br/>us&#160;to&#160;compute&#160;glossy&#160;reflections.</p>
+<p style="position:absolute;top:221px;left:108px;white-space:nowrap" class="ft71">8.2.&#160;Capturing&#160;Direct&#160;Illumination</p>
+<p style="position:absolute;top:247px;left:108px;white-space:nowrap" class="ft75">To&#160;complete&#160;our&#160;indirect-illumination&#160;algorithm,&#160;we&#160;finally<br/>need&#160;to&#160;describe&#160;how&#160;to&#160;store&#160;incoming&#160;radiance.&#160;Inspired<br/>by&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:280px;left:130px;white-space:nowrap" class="ft72"><a href="#page10-div">DS05</a></p>
+<p style="position:absolute;top:280px;left:160px;white-space:nowrap" class="ft71"><a href="#page10-div">],&#160;</a>we&#160;render&#160;the&#160;scene&#160;from&#160;the&#160;light’s&#160;view&#160;using</p>
+<p style="position:absolute;top:296px;left:108px;white-space:nowrap" class="ft75">standard&#160;rasterization&#160;to&#160;output&#160;a&#160;world&#160;position.&#160;Basically,<br/>each&#160;pixel&#160;represents&#160;a&#160;photon&#160;that&#160;we&#160;want&#160;to&#160;bounce&#160;in&#160;the<br/>scene.&#160;We&#160;call&#160;this&#160;map&#160;the&#160;light-view&#160;map.&#160;In&#160;the&#160;following,<br/>we&#160;want&#160;to&#160;store&#160;these&#160;photons&#160;in&#160;the&#160;octree&#160;representation.<br/>Precisely,&#160;we&#160;want&#160;to&#160;store&#160;them&#160;as&#160;a&#160;direction&#160;distribution<br/>and&#160;an&#160;energy&#160;proportional&#160;to&#160;the&#160;subtended&#160;solid&#160;angle&#160;of<br/>the&#160;pixel&#160;as&#160;seen&#160;from&#160;the&#160;light.</p>
+<p style="position:absolute;top:420px;left:122px;white-space:nowrap" class="ft71">To&#160;splat&#160;the&#160;photons,&#160;we&#160;basically&#160;use&#160;a&#160;fragment&#160;shader</p>
+<p style="position:absolute;top:436px;left:108px;white-space:nowrap" class="ft75">with&#160;one&#160;thread&#160;per&#160;light-view-map&#160;pixel.&#160;Because&#160;the&#160;light-<br/>view&#160;map’s&#160;resolution&#160;is&#160;usually&#160;higher&#160;than&#160;the&#160;lowest&#160;level<br/>of&#160;the&#160;voxel&#160;grid,&#160;we&#160;can&#160;assume&#160;that&#160;we&#160;can&#160;splat&#160;pho-<br/>tons&#160;directly&#160;into&#160;leaf&#160;nodes&#160;of&#160;our&#160;octree&#160;without&#160;introduc-<br/>ing&#160;gaps.&#160;Furthermore,&#160;photons&#160;can&#160;always&#160;be&#160;placed&#160;at&#160;the<br/>finest&#160;level&#160;of&#160;our&#160;voxel&#160;structure&#160;because&#160;they&#160;are&#160;stored&#160;at<br/>the&#160;surface,&#160;and&#160;we&#160;only&#160;collapsed&#160;empty&#160;voxels&#160;to&#160;produce<br/>our&#160;sparse&#160;representation.&#160;Because&#160;several&#160;photons&#160;might<br/>end&#160;up&#160;in&#160;the&#160;same&#160;voxel,&#160;we&#160;need&#160;to&#160;rely&#160;on&#160;an&#160;atomic&#160;add.</p>
+<p style="position:absolute;top:593px;left:122px;white-space:nowrap" class="ft71">Although&#160;the&#160;process&#160;sounds&#160;simple,&#160;it&#160;is&#160;more&#160;involved</p>
+<p style="position:absolute;top:610px;left:108px;white-space:nowrap" class="ft75">than&#160;one&#160;might&#160;think&#160;and&#160;there&#160;are&#160;two&#160;hurdles&#160;to&#160;overcome.<br/>The&#160;first&#160;problem&#160;is&#160;that&#160;atomic&#160;add&#160;operations&#160;are&#160;currently<br/>only&#160;available&#160;for&#160;integer&#160;textures.&#160;We&#160;can&#160;easily&#160;address&#160;this<br/>issue&#160;by&#160;using&#160;a&#160;16bit&#160;normalized&#160;texture&#160;format,&#160;that&#160;is&#160;de-<br/>normalized&#160;when&#160;accessing&#160;the&#160;value&#160;later.&#160;The&#160;second&#160;dif-<br/>ficulty&#160;is&#160;that&#160;voxels&#160;are&#160;repeated&#160;for&#160;adjacent&#160;bricks.&#160;We<br/>mentioned&#160;in&#160;Sec.</p>
+<p style="position:absolute;top:708px;left:214px;white-space:nowrap" class="ft72"><a href="#page3-div">4</a></p>
+<p style="position:absolute;top:708px;left:226px;white-space:nowrap" class="ft71">that&#160;this&#160;redundancy&#160;is&#160;necessary&#160;for</p>
+<p style="position:absolute;top:725px;left:108px;white-space:nowrap" class="ft75">fast&#160;hardware-supported&#160;filtering.&#160;While&#160;thread&#160;collisions&#160;are<br/>rare&#160;for&#160;the&#160;initial&#160;splat,&#160;we&#160;found&#160;that&#160;copying&#160;the&#160;photon<br/>directly&#160;to&#160;all&#160;required&#160;locations&#160;in&#160;adjacent&#160;bricks&#160;leads&#160;to<br/>many&#160;collisions&#160;that&#160;affect&#160;performance&#160;significantly.&#160;This<br/>parallel&#160;random&#160;scattering,&#160;further,&#160;results&#160;in&#160;bandwidth&#160;is-<br/>sues.&#160;A&#160;more&#160;efficient&#160;transfer&#160;scheme&#160;is&#160;needed.</p>
+<p style="position:absolute;top:842px;left:108px;white-space:nowrap" class="ft75">Value&#160;Transfer&#160;to&#160;Neighboring&#160;Bricks&#160;In&#160;order&#160;to&#160;sim-<br/>plify&#160;the&#160;explanation,&#160;let’s&#160;consider&#160;that&#160;our&#160;octree&#160;is&#160;com-<br/>plete,&#160;so&#160;that&#160;we&#160;can&#160;then&#160;launch&#160;one&#160;thread&#160;per&#160;leaf&#160;node.</p>
+<p style="position:absolute;top:900px;left:122px;white-space:nowrap" class="ft71">We&#160;will&#160;perform&#160;six&#160;passes,&#160;two&#160;for&#160;each&#160;axis&#160;(x,&#160;y,&#160;z).&#160;In</p>
+<p style="position:absolute;top:916px;left:108px;white-space:nowrap" class="ft71">the&#160;first&#160;x-axis&#160;pass&#160;(Fig.</p>
+<p style="position:absolute;top:916px;left:247px;white-space:nowrap" class="ft72"><a href="#page7-div">9</a></p>
+<p style="position:absolute;top:916px;left:254px;white-space:nowrap" class="ft71"><a href="#page7-div">,&#160;</a>only&#160;left),&#160;each&#160;thread&#160;will&#160;add</p>
+<p style="position:absolute;top:933px;left:108px;white-space:nowrap" class="ft75">voxel&#160;data&#160;from&#160;the&#160;current&#160;node&#160;to&#160;the&#160;corresponding&#160;vox-<br/>els&#160;of&#160;the&#160;brick&#160;to&#160;its&#160;right.&#160;In&#160;practice,&#160;this&#160;means&#160;that&#160;three<br/>values&#160;per&#160;thread&#160;are&#160;added.&#160;The&#160;next&#160;pass&#160;for&#160;the&#160;x-axis&#160;will<br/>transfers&#160;data&#160;from&#160;the&#160;right&#160;(where&#160;we&#160;now&#160;have&#160;the&#160;sum)&#160;to<br/>the&#160;left&#160;by&#160;copying&#160;the&#160;values.&#160;After&#160;this&#160;step,&#160;values&#160;along<br/>the&#160;x-axis&#160;are&#160;coherent&#160;and&#160;correctly&#160;distributed.&#160;Repeating<br/>the&#160;same&#160;process&#160;for&#160;the&#160;y&#160;and&#160;z-axis&#160;ensures&#160;that&#160;all&#160;vox-</p>
+<p style="position:absolute;top:130px;left:575px;white-space:nowrap" class="ft76">3<br/>4<br/>0</p>
+<p style="position:absolute;top:129px;left:615px;white-space:nowrap" class="ft76">4<br/>2<br/>1</p>
+<p style="position:absolute;top:200px;left:481px;white-space:nowrap" class="ft73">neighboring&#160;</p>
+<p style="position:absolute;top:210px;left:492px;white-space:nowrap" class="ft73">bricks&#160;</p>
+<p style="position:absolute;top:220px;left:481px;white-space:nowrap" class="ft73">initially with</p>
+<p style="position:absolute;top:229px;left:483px;white-space:nowrap" class="ft73">incoherent&#160;</p>
+<p style="position:absolute;top:239px;left:491px;white-space:nowrap" class="ft73">values</p>
+<p style="position:absolute;top:119px;left:552px;white-space:nowrap" class="ft73">1) Add left values to right</p>
+<p style="position:absolute;top:194px;left:615px;white-space:nowrap" class="ft76">7<br/>6<br/>1</p>
+<p style="position:absolute;top:185px;left:548px;white-space:nowrap" class="ft73">2) Copy value from right to left</p>
+<p style="position:absolute;top:121px;left:471px;white-space:nowrap" class="ft74"><b>Value transfer&#160;</b></p>
+<p style="position:absolute;top:132px;left:471px;white-space:nowrap" class="ft74"><b>to neighboring&#160;</b></p>
+<p style="position:absolute;top:143px;left:471px;white-space:nowrap" class="ft74"><b>bricks (x-axis)</b></p>
+<p style="position:absolute;top:135px;left:677px;white-space:nowrap" class="ft71">3</p>
+<p style="position:absolute;top:134px;left:774px;white-space:nowrap" class="ft71">3</p>
+<p style="position:absolute;top:231px;left:677px;white-space:nowrap" class="ft71">3</p>
+<p style="position:absolute;top:231px;left:773px;white-space:nowrap" class="ft71">3</p>
+<p style="position:absolute;top:182px;left:772px;white-space:nowrap" class="ft71">2</p>
+<p style="position:absolute;top:134px;left:724px;white-space:nowrap" class="ft71">2</p>
+<p style="position:absolute;top:183px;left:677px;white-space:nowrap" class="ft71">2</p>
+<p style="position:absolute;top:230px;left:724px;white-space:nowrap" class="ft71">2</p>
+<p style="position:absolute;top:182px;left:725px;white-space:nowrap" class="ft71">1</p>
+<p style="position:absolute;top:121px;left:671px;white-space:nowrap" class="ft74"><b>Distribution over levels</b></p>
+<p style="position:absolute;top:195px;left:575px;white-space:nowrap" class="ft76">3<br/>4<br/>0</p>
+<p style="position:absolute;top:128px;left:596px;white-space:nowrap" class="ft76">+<br/>+<br/>+</p>
+<p style="position:absolute;top:194px;left:595px;white-space:nowrap" class="ft71">=</p>
+<p style="position:absolute;top:230px;left:595px;white-space:nowrap" class="ft71">=</p>
+<p style="position:absolute;top:212px;left:595px;white-space:nowrap" class="ft71">=</p>
+<p style="position:absolute;top:263px;left:467px;white-space:nowrap" class="ft75">Figure&#160;9:&#160;Left:&#160;After&#160;photon&#160;splatting,&#160;an&#160;addition&#160;and&#160;copy<br/>along&#160;each&#160;axis&#160;is&#160;used&#160;to&#160;correct&#160;inconsistencies&#160;on&#160;for&#160;du-<br/>plicated&#160;voxels&#160;at&#160;bricks&#160;boundaries.&#160;Right:&#160;To&#160;filter&#160;val-<br/>ues&#160;from&#160;a&#160;lower&#160;to&#160;a&#160;higher&#160;level,&#160;three&#160;passes&#160;are&#160;ap-<br/>plied&#160;(numbers).&#160;The&#160;threads&#160;sum&#160;up&#160;lower-level&#160;voxels&#160;(all<br/>around&#160;the&#160;indicated&#160;octants);</p>
+<p style="position:absolute;top:397px;left:467px;white-space:nowrap" class="ft75">els&#160;have&#160;been&#160;correctly&#160;updated.&#160;The&#160;approach&#160;is&#160;very&#160;effi-<br/>cient&#160;because&#160;the&#160;neighbor&#160;pointers&#160;allow&#160;us&#160;to&#160;quickly&#160;ac-<br/>cess&#160;neighboring&#160;nodes&#160;and&#160;thread&#160;collisions&#160;are&#160;avoided.&#160;In<br/>fact,&#160;not&#160;even&#160;atomic&#160;operations&#160;are&#160;needed.</p>
+<p style="position:absolute;top:480px;left:467px;white-space:nowrap" class="ft75">Distribution&#160;over&#160;levels&#160;At&#160;this&#160;point&#160;we&#160;have&#160;coherent&#160;in-<br/>formation&#160;on&#160;the&#160;lowest&#160;level&#160;of&#160;the&#160;octree&#160;and&#160;the&#160;next&#160;step<br/>is&#160;to&#160;filter&#160;the&#160;values&#160;and&#160;store&#160;the&#160;result&#160;in&#160;the&#160;higher&#160;lev-<br/>els&#160;(MIP-map).&#160;A&#160;simple&#160;solution&#160;would&#160;be&#160;to&#160;launch&#160;one<br/>thread&#160;on&#160;each&#160;voxel&#160;of&#160;the&#160;higher&#160;level&#160;and&#160;fetch&#160;data&#160;from<br/>the&#160;lower&#160;level.&#160;Nonetheless,&#160;this&#160;has&#160;an&#160;important&#160;disad-<br/>vantage:&#160;For&#160;shared&#160;voxels,&#160;the&#160;same&#160;computations&#160;are&#160;per-<br/>formed&#160;many&#160;(up&#160;to&#160;eight)&#160;times.&#160;Also,&#160;the&#160;computation&#160;cost<br/>of&#160;the&#160;threads&#160;differs&#160;depending&#160;on&#160;the&#160;processed&#160;voxel&#160;lead-<br/>ing&#160;to&#160;an&#160;unbalanced&#160;scheduling.</p>
+<p style="position:absolute;top:653px;left:480px;white-space:nowrap" class="ft71">Our&#160;solution&#160;is&#160;to&#160;perform&#160;three&#160;separate&#160;passes&#160;in&#160;which</p>
+<p style="position:absolute;top:669px;left:467px;white-space:nowrap" class="ft71">all&#160;threads&#160;have&#160;roughly&#160;the&#160;same&#160;cost&#160;(Fig.</p>
+<p style="position:absolute;top:669px;left:716px;white-space:nowrap" class="ft72"><a href="#page7-div">9</a></p>
+<p style="position:absolute;top:669px;left:722px;white-space:nowrap" class="ft71"><a href="#page7-div">,&#160;</a>right).&#160;The</p>
+<p style="position:absolute;top:685px;left:467px;white-space:nowrap" class="ft75">idea&#160;is&#160;to&#160;only&#160;partially&#160;compute&#160;the&#160;filtered&#160;results&#160;and&#160;use<br/>the&#160;previously-presented&#160;transfer&#160;between&#160;bricks&#160;to&#160;complete<br/>the&#160;result.&#160;The&#160;first&#160;pass&#160;computes&#160;the&#160;center&#160;voxel&#160;using&#160;the<br/>involved&#160;27&#160;voxel&#160;values&#160;on&#160;the&#160;lower&#160;level&#160;(indicated&#160;by&#160;the<br/>yellow&#160;octants&#160;in&#160;Fig.</p>
+<p style="position:absolute;top:751px;left:587px;white-space:nowrap" class="ft72"><a href="#page7-div">9</a></p>
+<p style="position:absolute;top:751px;left:594px;white-space:nowrap" class="ft71"><a href="#page7-div">).&#160;</a>The&#160;second&#160;pass&#160;computes&#160;half&#160;of</p>
+<p style="position:absolute;top:768px;left:467px;white-space:nowrap" class="ft75">the&#160;filtered&#160;response&#160;for&#160;the&#160;voxels&#160;situated&#160;in&#160;the&#160;center&#160;of<br/>the&#160;node’s&#160;faces&#160;(blue).&#160;Because&#160;only&#160;half&#160;the&#160;value&#160;is&#160;com-<br/>puted,&#160;only&#160;18&#160;voxel&#160;values&#160;are&#160;involved.&#160;Finally,&#160;the&#160;third<br/>pass&#160;launches&#160;threads&#160;for&#160;the&#160;corner&#160;voxels&#160;(green)&#160;that&#160;com-<br/>pute&#160;a&#160;partial&#160;filtering&#160;of&#160;voxels&#160;from&#160;a&#160;single&#160;octant.&#160;After<br/>these&#160;passes,&#160;the&#160;higher-level&#160;voxels&#160;are&#160;in&#160;a&#160;similar&#160;situa-<br/>tion&#160;as&#160;were&#160;the&#160;leafs&#160;after&#160;the&#160;initial&#160;photon&#160;splatting:&#160;octree<br/>vertices&#160;might&#160;only&#160;contain&#160;a&#160;part&#160;of&#160;the&#160;result,&#160;but&#160;summing<br/>values&#160;across&#160;bricks,&#160;gives&#160;the&#160;desired&#160;result.&#160;Consequently,<br/>it&#160;is&#160;enough&#160;to&#160;apply&#160;the&#160;previously-presented&#160;transfer&#160;step<br/>to&#160;finalize&#160;the&#160;filtering.</p>
+<p style="position:absolute;top:965px;left:467px;white-space:nowrap" class="ft75">Sparse&#160;Octree&#160;So&#160;far&#160;we&#160;assumed&#160;that&#160;the&#160;octree&#160;is&#160;com-<br/>plete,&#160;but&#160;in&#160;reality,&#160;our&#160;structure&#160;is&#160;sparse.&#160;Furthermore,<br/>the&#160;previously-described&#160;solution&#160;consumes&#160;much&#160;resources:<br/>During&#160;the&#160;filtering,&#160;we&#160;launched&#160;threads&#160;for&#160;all&#160;nodes,&#160;even<br/>those&#160;that&#160;did&#160;not&#160;contain&#160;any&#160;photon,&#160;where&#160;filtering&#160;was</p>
+<p style="position:absolute;top:1067px;left:111px;white-space:nowrap" class="ft73">c</p>
+<p style="position:absolute;top:1067px;left:108px;white-space:nowrap" class="ft73">&#160;2011&#160;The&#160;Author(s)</p>
+<p style="position:absolute;top:1079px;left:111px;white-space:nowrap" class="ft73">c</p>
+<p style="position:absolute;top:1079px;left:108px;white-space:nowrap" class="ft73">&#160;2011&#160;The&#160;Eurographics&#160;Association&#160;and&#160;Blackwell&#160;Publishing&#160;Ltd.</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title></title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft80{font-size:9px;font-family:Times;color:#000000;}
+	.ft81{font-size:11px;font-family:Times;color:#000000;}
+	.ft82{font-size:11px;font-family:Times;color:#0000ff;}
+	.ft83{font-size:10px;font-family:Times;color:#000000;}
+	.ft84{font-size:7px;font-family:Times;color:#000000;}
+	.ft85{font-size:5px;font-family:Times;color:#000000;}
+	.ft86{font-size:8px;font-family:Times;color:#000000;}
+	.ft87{font-size:6px;font-family:Times;color:#000000;}
+	.ft88{font-size:11px;line-height:16px;font-family:Times;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page8-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="target008.png" alt="background image"/>
+<p style="position:absolute;top:99px;left:172px;white-space:nowrap" class="ft80">C.&#160;Crassin,&#160;F.&#160;Neyret,&#160;M.&#160;Sainz,&#160;S.&#160;Green,&#160;E.&#160;Eisemann&#160;/&#160;Interactive&#160;Indirect&#160;Illumination&#160;Using&#160;Voxel&#160;Cone&#160;Tracing</p>
+<p style="position:absolute;top:127px;left:108px;white-space:nowrap" class="ft88">applied&#160;to&#160;zero&#160;values.&#160;Direct&#160;light&#160;often&#160;only&#160;affects&#160;a&#160;small<br/>part&#160;of&#160;the&#160;scene,&#160;so&#160;avoiding&#160;filtering&#160;of&#160;zero&#160;values&#160;is&#160;cru-<br/>cial.&#160;One&#160;solution&#160;is&#160;to&#160;launch&#160;a&#160;thread&#160;per&#160;light-view-map<br/>pixel,&#160;find&#160;the&#160;node&#160;in&#160;the&#160;level&#160;on&#160;which&#160;the&#160;filtering&#160;should<br/>be&#160;applied&#160;and&#160;execute&#160;it.&#160;The&#160;result&#160;would&#160;be&#160;correct,&#160;but<br/>whenever&#160;threads&#160;end&#160;up&#160;in&#160;the&#160;same&#160;node&#160;(which&#160;would<br/>happen&#160;very&#160;often&#160;in&#160;high&#160;levels&#160;nodes),&#160;work&#160;would&#160;be&#160;per-<br/>formed&#160;multiple&#160;times.</p>
+<p style="position:absolute;top:268px;left:122px;white-space:nowrap" class="ft81">Our&#160;idea&#160;to&#160;reduce&#160;the&#160;number&#160;of&#160;threads,&#160;and&#160;get&#160;close</p>
+<p style="position:absolute;top:284px;left:108px;white-space:nowrap" class="ft88">to&#160;the&#160;optimal&#160;thread&#160;set&#160;for&#160;each&#160;filtering&#160;pass,&#160;is&#160;to&#160;rely<br/>on&#160;a&#160;2D&#160;node&#160;map,&#160;derived&#160;from&#160;the&#160;light-view&#160;map.&#160;This<br/>node-map&#160;is&#160;in-fact&#160;a&#160;MIP-map&#160;pyramid.&#160;The&#160;pixels&#160;of&#160;the<br/>lowest&#160;node-map&#160;level&#160;(highest&#160;resolution)&#160;store&#160;the&#160;indices<br/>of&#160;the&#160;3D&#160;leaf&#160;nodes&#160;containing&#160;the&#160;corresponding&#160;photon<br/>of&#160;the&#160;light-view&#160;map.&#160;Higher-level&#160;node-map&#160;pixels&#160;(lower<br/>resolution)&#160;store&#160;the&#160;index&#160;of&#160;the&#160;lowest&#160;common&#160;ancestor<br/>node&#160;for&#160;the&#160;preceding&#160;nodes&#160;of&#160;the&#160;previous&#160;level&#160;<a href="#page8-div">(Fig.</a></p>
+<p style="position:absolute;top:399px;left:406px;white-space:nowrap" class="ft82"><a href="#page8-div">10</a></p>
+<p style="position:absolute;top:399px;left:419px;white-space:nowrap" class="ft81"><a href="#page8-div">).</a></p>
+<p style="position:absolute;top:424px;left:122px;white-space:nowrap" class="ft81">We&#160;still&#160;launch&#160;one&#160;thread&#160;per&#160;pixel&#160;of&#160;the&#160;lowest&#160;node-</p>
+<p style="position:absolute;top:441px;left:108px;white-space:nowrap" class="ft88">map&#160;to&#160;compute&#160;each&#160;MIP-mapping&#160;pass&#160;in&#160;our&#160;octree&#160;struc-<br/>ture.&#160;But&#160;when&#160;a&#160;thread&#160;is&#160;going&#160;down&#160;in&#160;the&#160;tree,&#160;looking<br/>for&#160;the&#160;node&#160;that&#160;it&#160;must&#160;compute&#160;the&#160;MIP-mapped&#160;value&#160;for,<br/>it&#160;first&#160;looks&#160;in&#160;the&#160;current&#160;level&#160;of&#160;the&#160;node&#160;map&#160;to&#160;verify<br/>whether&#160;there&#160;is&#160;no&#160;common-ancestor&#160;with&#160;another&#160;thread.<br/>If&#160;there&#160;is,&#160;all&#160;threads&#160;detecting&#160;this&#160;common-ancestor&#160;are<br/>terminated&#160;except&#160;the&#160;upper&#160;left&#160;one,&#160;which&#160;is&#160;then&#160;in&#160;charge<br/>of&#160;computing&#160;the&#160;remaining&#160;filtered&#160;values.&#160;This&#160;strategy&#160;is<br/>quite&#160;successful&#160;and&#160;we&#160;obtain&#160;&gt;&#160;2&#160;speedup&#160;compared&#160;to&#160;not<br/>using&#160;our&#160;heuristic&#160;to&#160;terminate&#160;threads.</p>
+<p style="position:absolute;top:616px;left:335px;white-space:nowrap" class="ft83"><b>scene&#160;</b></p>
+<p style="position:absolute;top:631px;left:333px;white-space:nowrap" class="ft83"><b>octree</b></p>
+<p style="position:absolute;top:618px;left:112px;white-space:nowrap" class="ft83"><b>node map</b></p>
+<p style="position:absolute;top:633px;left:116px;white-space:nowrap" class="ft83"><b>(2 levels)</b></p>
+<p style="position:absolute;top:706px;left:120px;white-space:nowrap" class="ft84"><b>unncessary&#160;</b></p>
+<p style="position:absolute;top:718px;left:127px;white-space:nowrap" class="ft84"><b>threads</b></p>
+<p style="position:absolute;top:729px;left:123px;white-space:nowrap" class="ft85"><b>(detected &amp;&#160;</b></p>
+<p style="position:absolute;top:738px;left:123px;white-space:nowrap" class="ft85"><b>terminated)</b></p>
+<p style="position:absolute;top:666px;left:124px;white-space:nowrap" class="ft84"><b>executed</b></p>
+<p style="position:absolute;top:678px;left:127px;white-space:nowrap" class="ft84"><b>threads</b></p>
+<p style="position:absolute;top:671px;left:384px;white-space:nowrap" class="ft85"><b>no photon,&#160;</b></p>
+<p style="position:absolute;top:681px;left:384px;white-space:nowrap" class="ft85"><b>no filtering</b></p>
+<p style="position:absolute;top:770px;left:108px;white-space:nowrap" class="ft88">Figure&#160;10:&#160;The&#160;node&#160;map&#160;(left)&#160;is&#160;constructed&#160;from&#160;the&#160;light-<br/>view&#160;map.&#160;It&#160;is&#160;hierarchical&#160;(like&#160;a&#160;MIP-map)&#160;and&#160;has&#160;sev-<br/>eral&#160;levels&#160;(large&#160;circles&#160;represent&#160;the&#160;next&#160;level).&#160;On&#160;the<br/>lowest&#160;level,&#160;a&#160;pixel&#160;contains&#160;the&#160;index&#160;of&#160;the&#160;node&#160;in&#160;which<br/>the&#160;corresponding&#160;photon&#160;is&#160;located.&#160;Higher&#160;levels&#160;contain<br/>the&#160;common&#160;lowest&#160;ancestor&#160;of&#160;all&#160;underlying&#160;nodes.&#160;This<br/>structure&#160;allows&#160;to&#160;reduce&#160;the&#160;number&#160;of&#160;threads&#160;launched<br/>during&#160;the&#160;filtering&#160;of&#160;the&#160;photons&#160;(dashed&#160;are&#160;stopped).</p>
+<p style="position:absolute;top:940px;left:108px;white-space:nowrap" class="ft81">9.&#160;Anisotropic&#160;voxels&#160;for&#160;improved&#160;cone-tracing</p>
+<p style="position:absolute;top:966px;left:108px;white-space:nowrap" class="ft88">While&#160;the&#160;voxel&#160;representation&#160;as&#160;described&#160;up-to-now&#160;al-<br/>ready&#160;provides&#160;a&#160;very&#160;good&#160;approximation&#160;of&#160;the&#160;visibility<br/>when&#160;tracing&#160;cones,&#160;some&#160;quality&#160;problems&#160;remain.&#160;The&#160;first<br/>problem&#160;is&#160;known&#160;as&#160;the&#160;two&#160;red-green&#160;wall&#160;problem&#160;and<br/>is&#160;illustrated&#160;in&#160;Fig.</p>
+<p style="position:absolute;top:1031px;left:222px;white-space:nowrap" class="ft82"><a href="#page8-div">11</a></p>
+<p style="position:absolute;top:1031px;left:235px;white-space:nowrap" class="ft81"><a href="#page8-div">.&#160;</a>It&#160;is&#160;linked&#160;to&#160;averaging&#160;of&#160;values</p>
+<p style="position:absolute;top:127px;left:467px;white-space:nowrap" class="ft88">in&#160;the&#160;octree&#160;to&#160;a&#160;pre-integrated&#160;visibility&#160;value.&#160;Whenever<br/>two&#160;opaque&#160;voxels&#160;with&#160;different&#160;colors&#160;(or&#160;any&#160;other&#160;value)<br/>-coming&#160;from&#160;two&#160;plain&#160;walls&#160;for&#160;instance-&#160;are&#160;averaged&#160;in<br/>the&#160;upper&#160;level&#160;of&#160;the&#160;octree,&#160;their&#160;colors&#160;are&#160;mixed&#160;as&#160;if&#160;the<br/>two&#160;walls&#160;were&#160;semi-transparent.&#160;The&#160;same&#160;problem&#160;occurs<br/>for&#160;opacity,&#160;when&#160;a&#160;set&#160;of&#160;2x2x2&#160;voxels&#160;is&#160;half&#160;filled&#160;with<br/>opaque&#160;voxels&#160;and&#160;half&#160;filled&#160;with&#160;fully&#160;transparent&#160;ones,&#160;the<br/>resulting&#160;averaged&#160;voxel&#160;will&#160;be&#160;half-transparent.&#160;In&#160;our&#160;ap-<br/>plication,&#160;this&#160;under-estimation&#160;of&#160;the&#160;opacity&#160;and&#160;the&#160;wrong<br/>mix&#160;of&#160;materials&#160;can&#160;cause&#160;undesirable&#160;light&#160;leaking&#160;for&#160;large<br/>cones.</p>
+<p style="position:absolute;top:316px;left:480px;white-space:nowrap" class="ft81">For&#160;a&#160;better&#160;pre-integration&#160;of&#160;voxel&#160;values,&#160;we&#160;propose</p>
+<p style="position:absolute;top:332px;left:467px;white-space:nowrap" class="ft88">an&#160;anisotropic&#160;voxel&#160;representation&#160;that&#160;is&#160;constructed&#160;dur-<br/>ing&#160;the&#160;MIP-mapping&#160;process,&#160;when&#160;building&#160;or&#160;updating&#160;the<br/>octree&#160;with&#160;irradiance&#160;values.&#160;Instead&#160;of&#160;a&#160;single&#160;channel&#160;of<br/>non-directional&#160;values,&#160;voxels&#160;will&#160;store&#160;6&#160;channels&#160;of&#160;direc-<br/>tional&#160;values,&#160;one&#160;per&#160;major&#160;direction.&#160;A&#160;directional&#160;value&#160;is<br/>computed&#160;by&#160;doing&#160;a&#160;step&#160;of&#160;volumetric&#160;integration&#160;in&#160;depth,<br/>and&#160;then&#160;averaging&#160;the&#160;4&#160;directional&#160;values&#160;to&#160;get&#160;the&#160;result-<br/>ing&#160;value&#160;for&#160;one&#160;given&#160;direction&#160;(Fig.</p>
+<p style="position:absolute;top:447px;left:680px;white-space:nowrap" class="ft82"><a href="#page8-div">11</a></p>
+<p style="position:absolute;top:447px;left:694px;white-space:nowrap" class="ft81"><a href="#page8-div">).&#160;</a>At&#160;render&#160;time,</p>
+<p style="position:absolute;top:464px;left:467px;white-space:nowrap" class="ft88">the&#160;voxel&#160;value&#160;is&#160;retrieved&#160;by&#160;linearly&#160;interpolating&#160;the&#160;val-<br/>ues&#160;from&#160;the&#160;three&#160;closest&#160;directions&#160;with&#160;respect&#160;to&#160;the&#160;view<br/>direction.</p>
+<p style="position:absolute;top:665px;left:467px;white-space:nowrap" class="ft88">Figure&#160;11:&#160;The&#160;left&#160;blue&#160;box&#160;illustrates&#160;the&#160;voxel&#160;MIP-<br/>mapping&#160;process&#160;without&#160;(left)&#160;and&#160;with&#160;(right)&#160;anisotropic<br/>voxels&#160;and&#160;directional&#160;pre-integration.&#160;Directional&#160;integra-<br/>tion&#160;steps&#160;are&#160;illustrated&#160;in&#160;the&#160;middle&#160;blue&#160;box.&#160;The&#160;right<br/>box&#160;shows&#160;the&#160;result&#160;of&#160;directional&#160;sampling&#160;of&#160;a&#160;voxel.</p>
+<p style="position:absolute;top:770px;left:480px;white-space:nowrap" class="ft81">We&#160;chose&#160;this&#160;simple&#160;representation&#160;instead&#160;of&#160;a&#160;more</p>
+<p style="position:absolute;top:787px;left:467px;white-space:nowrap" class="ft88">complicated&#160;one&#160;because&#160;it&#160;can&#160;be&#160;fully&#160;interpolated&#160;and&#160;eas-<br/>ily&#160;stored&#160;in&#160;our&#160;bricks.&#160;In&#160;addition,&#160;this&#160;directional&#160;represen-<br/>tation&#160;only&#160;needs&#160;to&#160;be&#160;used&#160;for&#160;voxels&#160;that&#160;are&#160;not&#160;located&#160;in<br/>the&#160;last&#160;octree&#160;level&#160;(not&#160;at&#160;the&#160;full&#160;resolution).&#160;Hereby,&#160;stor-<br/>ing&#160;directional&#160;values&#160;for&#160;all&#160;the&#160;properties&#160;only&#160;increases&#160;the<br/>memory&#160;consumption&#160;by&#160;1.5x.</p>
+<p style="position:absolute;top:909px;left:467px;white-space:nowrap" class="ft81">10.&#160;Results&#160;and&#160;Discussion</p>
+<p style="position:absolute;top:933px;left:467px;white-space:nowrap" class="ft88">We&#160;implemented&#160;our&#160;approach&#160;on&#160;an&#160;NVIDIA&#160;GTX&#160;480&#160;sys-<br/>tem&#160;with&#160;an&#160;Intel&#160;Core&#160;2&#160;Duo&#160;E6850&#160;CPU.&#160;Our&#160;solution&#160;de-<br/>livers&#160;interactive&#160;to&#160;real-time&#160;framerates&#160;on&#160;various&#160;complex<br/>scenes&#160;as&#160;can&#160;be&#160;seen&#160;in&#160;the&#160;accompanying&#160;video.&#160;Table</p>
+<p style="position:absolute;top:982px;left:783px;white-space:nowrap" class="ft82"><a href="#page9-div">1</a></p>
+<p style="position:absolute;top:999px;left:467px;white-space:nowrap" class="ft88">shows&#160;the&#160;time&#160;per&#160;frame&#160;of&#160;each&#160;individual&#160;GI&#160;effects&#160;that<br/>our&#160;approach&#160;achieves&#160;for&#160;the&#160;Sponza&#160;scene&#160;(Fig.</p>
+<p style="position:absolute;top:1015px;left:745px;white-space:nowrap" class="ft82"><a href="#page1-div">1</a></p>
+<p style="position:absolute;top:1015px;left:751px;white-space:nowrap" class="ft81"><a href="#page1-div">,&#160;</a>280K</p>
+<p style="position:absolute;top:1031px;left:467px;white-space:nowrap" class="ft81">triangles)&#160;with&#160;a&#160;9&#160;levels&#160;octree&#160;(512</p>
+<p style="position:absolute;top:1028px;left:661px;white-space:nowrap" class="ft86">3</p>
+<p style="position:absolute;top:1031px;left:670px;white-space:nowrap" class="ft81">virtual&#160;resolution)&#160;and</p>
+<p style="position:absolute;top:1073px;left:709px;white-space:nowrap" class="ft87">c</p>
+<p style="position:absolute;top:1073px;left:705px;white-space:nowrap" class="ft87">&#160;2011&#160;The&#160;Author(s)</p>
+<p style="position:absolute;top:1085px;left:540px;white-space:nowrap" class="ft87">c</p>
+<p style="position:absolute;top:1085px;left:536px;white-space:nowrap" class="ft87">&#160;2011&#160;The&#160;Eurographics&#160;Association&#160;and&#160;Blackwell&#160;Publishing&#160;Ltd.</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title></title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft90{font-size:9px;font-family:Times;color:#000000;}
+	.ft91{font-size:11px;font-family:Times;color:#000000;}
+	.ft92{font-size:8px;font-family:Times;color:#000000;}
+	.ft93{font-size:11px;font-family:Times;color:#0000ff;}
+	.ft94{font-size:6px;font-family:Times;color:#000000;}
+	.ft95{font-size:11px;line-height:16px;font-family:Times;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page9-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="target009.png" alt="background image"/>
+<p style="position:absolute;top:99px;left:171px;white-space:nowrap" class="ft90">C.&#160;Crassin,&#160;F.&#160;Neyret,&#160;M.&#160;Sainz,&#160;S.&#160;Green,&#160;E.&#160;Eisemann&#160;/&#160;Interactive&#160;Indirect&#160;Illumination&#160;Using&#160;Voxel&#160;Cone&#160;Tracing</p>
+<p style="position:absolute;top:302px;left:214px;white-space:nowrap" class="ft90">(a)</p>
+<p style="position:absolute;top:302px;left:438px;white-space:nowrap" class="ft90">(b)</p>
+<p style="position:absolute;top:302px;left:663px;white-space:nowrap" class="ft90">(c)</p>
+<p style="position:absolute;top:314px;left:108px;white-space:nowrap" class="ft95">Figure&#160;12:&#160;Image&#160;quality&#160;and&#160;performance&#160;comparison&#160;between&#160;LPV&#160;(a,&#160;37ms),&#160;our&#160;approach&#160;(b,&#160;32ms)&#160;and&#160;ground&#160;truth&#160;(c,<br/>14&#34;12s)&#160;rendered&#160;with&#160;Mental&#160;Ray.</p>
+<p style="position:absolute;top:356px;left:108px;white-space:nowrap" class="ft91">a&#160;512</p>
+<p style="position:absolute;top:352px;left:139px;white-space:nowrap" class="ft92">2</p>
+<p style="position:absolute;top:356px;left:149px;white-space:nowrap" class="ft91">screen&#160;resolution.&#160;In&#160;addition&#160;to&#160;these&#160;costs,&#160;the&#160;in-</p>
+<p style="position:absolute;top:372px;left:108px;white-space:nowrap" class="ft95">teractive&#160;update&#160;of&#160;the&#160;sparse&#160;octree&#160;structure&#160;for&#160;dynamic<br/>objects&#160;(in&#160;our&#160;case&#160;the&#160;Wald’s&#160;hand&#160;16K&#160;triangles&#160;mesh)<br/>takes&#160;approximatively&#160;5.5ms&#160;per&#160;frame.&#160;This&#160;time&#160;depends<br/>on&#160;the&#160;size&#160;and&#160;number&#160;of&#160;dynamic&#160;parts.&#160;The&#160;initial&#160;cre-<br/>ation&#160;of&#160;the&#160;octree&#160;for&#160;the&#160;static&#160;environment&#160;takes&#160;approx-<br/>imatively&#160;280ms.&#160;The&#160;light&#160;injection&#160;and&#160;filtering&#160;pass&#160;is<br/>computed&#160;only&#160;when&#160;the&#160;light&#160;source&#160;is&#160;moved,&#160;and&#160;takes&#160;ap-<br/>proximately&#160;16ms.&#160;On&#160;the&#160;sponza&#160;scene,&#160;with&#160;one&#160;dynamic<br/>object&#160;and&#160;a&#160;moving&#160;light,&#160;the&#160;average&#160;framerate&#160;is&#160;30FPS<br/>with&#160;no&#160;specular&#160;cone&#160;traced,&#160;and&#160;20FPS&#160;with&#160;one&#160;specular<br/>cone,&#160;for&#160;a&#160;512</p>
+<p style="position:absolute;top:533px;left:192px;white-space:nowrap" class="ft92">2</p>
+<p style="position:absolute;top:537px;left:202px;white-space:nowrap" class="ft91">viewport.&#160;For&#160;a&#160;1024x768&#160;viewport&#160;(three</p>
+<p style="position:absolute;top:553px;left:108px;white-space:nowrap" class="ft95">diffuse&#160;and&#160;one&#160;specular&#160;cone),&#160;we&#160;get&#160;an&#160;average&#160;framerate<br/>of&#160;11.4FPS.</p>
+<p style="position:absolute;top:593px;left:122px;white-space:nowrap" class="ft91">Steps</p>
+<p style="position:absolute;top:593px;left:173px;white-space:nowrap" class="ft91">Ras</p>
+<p style="position:absolute;top:593px;left:211px;white-space:nowrap" class="ft91">Dir</p>
+<p style="position:absolute;top:593px;left:248px;white-space:nowrap" class="ft91">Dif</p>
+<p style="position:absolute;top:593px;left:288px;white-space:nowrap" class="ft91">Dir+dif</p>
+<p style="position:absolute;top:593px;left:350px;white-space:nowrap" class="ft91">Spec</p>
+<p style="position:absolute;top:593px;left:398px;white-space:nowrap" class="ft91">Total</p>
+<p style="position:absolute;top:610px;left:118px;white-space:nowrap" class="ft91">Times</p>
+<p style="position:absolute;top:610px;left:173px;white-space:nowrap" class="ft91">1.0</p>
+<p style="position:absolute;top:610px;left:211px;white-space:nowrap" class="ft91">2.0</p>
+<p style="position:absolute;top:610px;left:248px;white-space:nowrap" class="ft91">7.8</p>
+<p style="position:absolute;top:610px;left:288px;white-space:nowrap" class="ft91">14.2</p>
+<p style="position:absolute;top:610px;left:350px;white-space:nowrap" class="ft91">8.0</p>
+<p style="position:absolute;top:610px;left:398px;white-space:nowrap" class="ft91">22.0</p>
+<p style="position:absolute;top:635px;left:108px;white-space:nowrap" class="ft95">Table&#160;1:&#160;Timings&#160;(in&#160;ms)&#160;of&#160;individual&#160;effects&#160;:&#160;Mesh&#160;rasteri-<br/>sation,&#160;Direct&#160;lighting,&#160;Indirect&#160;diffuse,&#160;Total&#160;direct+indirect<br/>diffuse,&#160;indirect&#160;specular,&#160;direct+indirect&#160;diffuse&#160;and&#160;spec-<br/>ular.&#160;Sponza&#160;scene,&#160;using&#160;3&#160;diffuse&#160;cones&#160;and&#160;one&#160;specular<br/>cone&#160;(10&#160;deg.&#160;aperture)</p>
+<p style="position:absolute;top:735px;left:122px;white-space:nowrap" class="ft91">We&#160;compared&#160;the&#160;image&#160;quality&#160;of&#160;our&#160;approach</p>
+<p style="position:absolute;top:752px;left:108px;white-space:nowrap" class="ft91"><a href="#page9-div">(Fig.</a></p>
+<p style="position:absolute;top:752px;left:134px;white-space:nowrap" class="ft93"><a href="#page9-div">12(b)</a></p>
+<p style="position:absolute;top:752px;left:163px;white-space:nowrap" class="ft91"><a href="#page9-div">)&#160;</a>with&#160;light&#160;propagation&#160;volumes&#160;(LPV)&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:752px;left:390px;white-space:nowrap" class="ft93"><a href="#page10-div">KD10</a></p>
+<p style="position:absolute;top:752px;left:423px;white-space:nowrap" class="ft91"><a href="#page10-div">],</a></p>
+<p style="position:absolute;top:768px;left:108px;white-space:nowrap" class="ft91">the&#160;most&#160;closely-related&#160;real-time&#160;solution&#160;<a href="#page9-div">(Fig.</a></p>
+<p style="position:absolute;top:768px;left:363px;white-space:nowrap" class="ft93"><a href="#page9-div">12(a)</a></p>
+<p style="position:absolute;top:768px;left:391px;white-space:nowrap" class="ft91"><a href="#page9-div">),&#160;</a>and&#160;a</p>
+<p style="position:absolute;top:785px;left:108px;white-space:nowrap" class="ft91">reference&#160;<a href="#page9-div">(Fig.</a></p>
+<p style="position:absolute;top:785px;left:187px;white-space:nowrap" class="ft93"><a href="#page9-div">12(c)</a></p>
+<p style="position:absolute;top:785px;left:216px;white-space:nowrap" class="ft91"><a href="#page9-div">)&#160;</a>computed&#160;with&#160;Mental-Ray&#160;final&#160;gath-</p>
+<p style="position:absolute;top:801px;left:108px;white-space:nowrap" class="ft95">ering.&#160;We&#160;used&#160;NVIDIA’s&#160;implementation&#160;of&#160;LPV&#160;in&#160;the&#160;Di-<br/>rect3D&#160;SDK.&#160;In&#160;all&#160;situations,&#160;our&#160;solution&#160;achieves&#160;higher<br/>visual&#160;quality&#160;(closer&#160;to&#160;the&#160;reference)&#160;and&#160;maintains&#160;bet-<br/>ter&#160;performance&#160;than&#160;LPV.&#160;Our&#160;approach&#160;can&#160;capture&#160;much<br/>more&#160;precise&#160;indirect&#160;illumination&#160;even&#160;far&#160;from&#160;the&#160;ob-<br/>server,&#160;with&#160;results&#160;close&#160;to&#160;ground&#160;truth&#160;in&#160;this&#160;case&#160;(cf.<br/>Fig.</p>
+<p style="position:absolute;top:900px;left:133px;white-space:nowrap" class="ft93"><a href="#page9-div">12</a></p>
+<p style="position:absolute;top:900px;left:147px;white-space:nowrap" class="ft91"><a href="#page9-div">:&#160;</a>Right&#160;wall&#160;and&#160;ceiling&#160;of&#160;the&#160;corridor,&#160;opposite&#160;ex-</p>
+<p style="position:absolute;top:916px;left:108px;white-space:nowrap" class="ft95">terior&#160;wall&#160;seen&#160;from&#160;left&#160;windows),&#160;while&#160;the&#160;LPV&#160;nested-<br/>grids&#160;representation&#160;prevents&#160;a&#160;correct&#160;capture&#160;of&#160;far&#160;indirect<br/>lighting.&#160;Both&#160;our&#160;approach&#160;and&#160;LPV&#160;suffer&#160;from&#160;light&#160;leak-<br/>ing&#160;due&#160;to&#160;the&#160;discrete&#160;representation&#160;of&#160;the&#160;geometry&#160;and<br/>irradiance,&#160;which&#160;can&#160;be&#160;observed&#160;on&#160;the&#160;interior&#160;side&#160;of&#160;the<br/>arches&#160;or&#160;the&#160;low&#160;wall&#160;on&#160;the&#160;left.&#160;Leaking&#160;appears&#160;very&#160;high<br/>for&#160;LPV,&#160;while&#160;it&#160;is&#160;more&#160;contained&#160;in&#160;our&#160;approach&#160;due&#160;to<br/>our&#160;higher&#160;voxel&#160;resolution.</p>
+<p style="position:absolute;top:356px;left:480px;white-space:nowrap" class="ft91">One&#160;of&#160;our&#160;limitations&#160;is&#160;the&#160;relatively&#160;high&#160;memory&#160;con-</p>
+<p style="position:absolute;top:372px;left:467px;white-space:nowrap" class="ft95">sumption,&#160;even&#160;with&#160;our&#160;sparse&#160;structure,&#160;especially&#160;due&#160;to<br/>the&#160;support&#160;for&#160;indirect&#160;specularity.&#160;In&#160;practice,&#160;we&#160;allocate<br/>roughly&#160;1024MB&#160;in&#160;the&#160;video&#160;memory.&#160;However,&#160;this&#160;con-<br/>sumption&#160;is&#160;usually&#160;lower&#160;than&#160;in&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:422px;left:665px;white-space:nowrap" class="ft93"><a href="#page10-div">KD10</a></p>
+<p style="position:absolute;top:422px;left:697px;white-space:nowrap" class="ft91"><a href="#page10-div">]&#160;</a>when&#160;trying&#160;to</p>
+<p style="position:absolute;top:438px;left:467px;white-space:nowrap" class="ft91">achieve&#160;comparable&#160;visual&#160;quality.</p>
+<p style="position:absolute;top:471px;left:500px;white-space:nowrap" class="ft91">Cone&#160;aperture&#160;(deg)</p>
+<p style="position:absolute;top:471px;left:626px;white-space:nowrap" class="ft91">10</p>
+<p style="position:absolute;top:471px;left:668px;white-space:nowrap" class="ft91">20</p>
+<p style="position:absolute;top:471px;left:704px;white-space:nowrap" class="ft91">30</p>
+<p style="position:absolute;top:471px;left:739px;white-space:nowrap" class="ft91">60</p>
+<p style="position:absolute;top:487px;left:589px;white-space:nowrap" class="ft91">AO</p>
+<p style="position:absolute;top:487px;left:626px;white-space:nowrap" class="ft91">16.6</p>
+<p style="position:absolute;top:487px;left:668px;white-space:nowrap" class="ft91">9.0</p>
+<p style="position:absolute;top:487px;left:704px;white-space:nowrap" class="ft91">6.5</p>
+<p style="position:absolute;top:487px;left:739px;white-space:nowrap" class="ft91">3.9</p>
+<p style="position:absolute;top:512px;left:467px;white-space:nowrap" class="ft95">Table&#160;2:&#160;Timings&#160;in&#160;ms&#160;for&#160;the&#160;Sponza&#160;scene&#160;of&#160;the&#160;ambient<br/>occlusion&#160;computation&#160;for&#160;3&#160;cones&#160;and&#160;various&#160;cone&#160;aper-<br/>tures&#160;(</p>
+<p style="position:absolute;top:545px;left:501px;white-space:nowrap" class="ft91">512</p>
+<p style="position:absolute;top:542px;left:521px;white-space:nowrap" class="ft92">2</p>
+<p style="position:absolute;top:546px;left:530px;white-space:nowrap" class="ft91">resolution).</p>
+<p style="position:absolute;top:575px;left:480px;white-space:nowrap" class="ft91">Timings&#160;for&#160;ambient&#160;occlusion&#160;computations&#160;are&#160;shown</p>
+<p style="position:absolute;top:591px;left:467px;white-space:nowrap" class="ft91">in&#160;Table</p>
+<p style="position:absolute;top:591px;left:515px;white-space:nowrap" class="ft93"><a href="#page9-div">2</a></p>
+<p style="position:absolute;top:591px;left:526px;white-space:nowrap" class="ft91">and&#160;a&#160;comparison&#160;with&#160;a&#160;reference&#160;(path-tracing</p>
+<p style="position:absolute;top:608px;left:467px;white-space:nowrap" class="ft91">using&#160;NVIDIA&#160;OptiX)&#160;is&#160;shown&#160;Fig.</p>
+<p style="position:absolute;top:608px;left:666px;white-space:nowrap" class="ft93"><a href="#page9-div">13</a></p>
+<p style="position:absolute;top:608px;left:680px;white-space:nowrap" class="ft91"><a href="#page9-div">.&#160;</a>The&#160;differences&#160;are</p>
+<p style="position:absolute;top:624px;left:467px;white-space:nowrap" class="ft95">mainly&#160;due&#160;to&#160;the&#160;tested&#160;configuration&#160;using&#160;only&#160;3&#160;visibility<br/>cones.&#160;Wide&#160;cones&#160;suffer&#160;from&#160;a&#160;lack&#160;of&#160;precision&#160;for&#160;far<br/>visibility,&#160;that&#160;tends&#160;to&#160;overestimate&#160;occlusions.</p>
+<p style="position:absolute;top:844px;left:467px;white-space:nowrap" class="ft95">Figure&#160;13:&#160;Comparison&#160;with&#160;ground&#160;truth&#160;(OptiX)&#160;for&#160;ambi-<br/>ent&#160;occlusion&#160;computation.</p>
+<p style="position:absolute;top:908px;left:467px;white-space:nowrap" class="ft91">11.&#160;Conclusion</p>
+<p style="position:absolute;top:933px;left:467px;white-space:nowrap" class="ft95">We&#160;presented&#160;a&#160;novel&#160;real-time&#160;global-illumination&#160;algo-<br/>rithm&#160;using&#160;approximate&#160;voxel-based&#160;cone&#160;tracing&#160;to&#160;per-<br/>form&#160;final&#160;gathering&#160;very&#160;efficiently.&#160;It&#160;is&#160;based&#160;on&#160;a&#160;sparse<br/>voxel&#160;octree&#160;structure&#160;encoding&#160;a&#160;pre-filtered&#160;representation<br/>of&#160;the&#160;scene&#160;geometry&#160;and&#160;incoming&#160;radiance.&#160;Using&#160;this<br/>adaptive&#160;representation,&#160;we&#160;are&#160;able&#160;to&#160;compute&#160;approximate<br/>indirect&#160;lighting&#160;in&#160;complex&#160;dynamic&#160;scenes.&#160;Our&#160;solution</p>
+<p style="position:absolute;top:1067px;left:111px;white-space:nowrap" class="ft94">c</p>
+<p style="position:absolute;top:1067px;left:108px;white-space:nowrap" class="ft94">&#160;2011&#160;The&#160;Author(s)</p>
+<p style="position:absolute;top:1079px;left:111px;white-space:nowrap" class="ft94">c</p>
+<p style="position:absolute;top:1079px;left:108px;white-space:nowrap" class="ft94">&#160;2011&#160;The&#160;Eurographics&#160;Association&#160;and&#160;Blackwell&#160;Publishing&#160;Ltd.</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title></title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft100{font-size:9px;font-family:Times;color:#000000;}
+	.ft101{font-size:11px;font-family:Times;color:#000000;}
+	.ft102{font-size:11px;font-family:Times;color:#0000ff;}
+	.ft103{font-size:7px;font-family:Times;color:#000000;}
+	.ft104{font-size:6px;font-family:Times;color:#000000;}
+	.ft105{font-size:11px;line-height:16px;font-family:Times;color:#000000;}
+	.ft106{font-size:9px;line-height:13px;font-family:Times;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page10-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="target010.png" alt="background image"/>
+<p style="position:absolute;top:99px;left:172px;white-space:nowrap" class="ft100">C.&#160;Crassin,&#160;F.&#160;Neyret,&#160;M.&#160;Sainz,&#160;S.&#160;Green,&#160;E.&#160;Eisemann&#160;/&#160;Interactive&#160;Indirect&#160;Illumination&#160;Using&#160;Voxel&#160;Cone&#160;Tracing</p>
+<p style="position:absolute;top:127px;left:108px;white-space:nowrap" class="ft105">supports&#160;both&#160;diffuse&#160;and&#160;glossy&#160;effects&#160;with&#160;indirect&#160;high-<br/>lights,&#160;and&#160;scales&#160;well&#160;when&#160;trading&#160;off&#160;quality&#160;against&#160;per-<br/>formance.&#160;In&#160;the&#160;future,&#160;we&#160;want&#160;to&#160;investigate&#160;making&#160;dy-<br/>namic&#160;updates&#160;of&#160;the&#160;structure&#160;compatible&#160;with&#160;out-of-core<br/>caching&#160;schemes&#160;like&#160;<a href="#page10-div">[</a></p>
+<p style="position:absolute;top:193px;left:233px;white-space:nowrap" class="ft102"><a href="#page10-div">CNLE09</a></p>
+<p style="position:absolute;top:193px;left:281px;white-space:nowrap" class="ft101"><a href="#page10-div">],&#160;</a>to&#160;overcome&#160;the&#160;memory</p>
+<p style="position:absolute;top:209px;left:108px;white-space:nowrap" class="ft105">consumption&#160;problem&#160;and&#160;allow&#160;arbitrary&#160;large&#160;and&#160;detailed<br/>scenes.&#160;We&#160;are&#160;also&#160;interested&#160;in&#160;new&#160;basis&#160;functions&#160;that&#160;we<br/>could&#160;use&#160;to&#160;provide&#160;higher&#160;precision&#160;distribution&#160;functions<br/>for&#160;better&#160;filtering&#160;of&#160;incoming&#160;radiance.</p>
+<p style="position:absolute;top:304px;left:108px;white-space:nowrap" class="ft101">References</p>
+<p style="position:absolute;top:327px;left:108px;white-space:nowrap" class="ft100">[AFO05]</p>
+<p style="position:absolute;top:327px;left:165px;white-space:nowrap" class="ft100">A</p>
+<p style="position:absolute;top:329px;left:174px;white-space:nowrap" class="ft103">RIKAN</p>
+<p style="position:absolute;top:327px;left:212px;white-space:nowrap" class="ft100">O.,&#160;F</p>
+<p style="position:absolute;top:329px;left:240px;white-space:nowrap" class="ft103">ORSYTH</p>
+<p style="position:absolute;top:327px;left:286px;white-space:nowrap" class="ft100">D.&#160;A.,&#160;O’B</p>
+<p style="position:absolute;top:329px;left:347px;white-space:nowrap" class="ft103">RIEN</p>
+<p style="position:absolute;top:327px;left:376px;white-space:nowrap" class="ft100">J.&#160;F.:&#160;Fast</p>
+<p style="position:absolute;top:341px;left:122px;white-space:nowrap" class="ft106">and&#160;detailed&#160;approximate&#160;global&#160;illumination&#160;by&#160;irradiance&#160;de-<br/>composition.&#160;ACM&#160;Trans.&#160;Graph.&#160;(Proc.&#160;SIGGRAPH)&#160;24&#160;(2005),<br/>1108–1114.</p>
+<p style="position:absolute;top:388px;left:108px;white-space:nowrap" class="ft100">[CB04]</p>
+<p style="position:absolute;top:388px;left:157px;white-space:nowrap" class="ft100">C</p>
+<p style="position:absolute;top:389px;left:166px;white-space:nowrap" class="ft103">HRISTENSEN</p>
+<p style="position:absolute;top:388px;left:233px;white-space:nowrap" class="ft100">P.&#160;H.,&#160;B</p>
+<p style="position:absolute;top:389px;left:272px;white-space:nowrap" class="ft103">ATALI</p>
+<p style="position:absolute;top:388px;left:305px;white-space:nowrap" class="ft100">D.:&#160;An&#160;irradiance&#160;atlas&#160;for</p>
+<p style="position:absolute;top:401px;left:122px;white-space:nowrap" class="ft106">global&#160;illumination&#160;in&#160;complex&#160;production&#160;scenes.&#160;In&#160;Proc.&#160;of<br/>EGSR</p>
+<p style="position:absolute;top:415px;left:154px;white-space:nowrap" class="ft100">(June&#160;2004),&#160;pp.&#160;133–141.</p>
+<p style="position:absolute;top:435px;left:108px;white-space:nowrap" class="ft100">[CNLE09]</p>
+<p style="position:absolute;top:435px;left:172px;white-space:nowrap" class="ft100">C</p>
+<p style="position:absolute;top:436px;left:181px;white-space:nowrap" class="ft103">RASSIN</p>
+<p style="position:absolute;top:435px;left:221px;white-space:nowrap" class="ft100">C.,&#160;N</p>
+<p style="position:absolute;top:436px;left:249px;white-space:nowrap" class="ft103">EYRET</p>
+<p style="position:absolute;top:435px;left:285px;white-space:nowrap" class="ft100">F.,&#160;L</p>
+<p style="position:absolute;top:436px;left:309px;white-space:nowrap" class="ft103">EFEBVRE</p>
+<p style="position:absolute;top:435px;left:358px;white-space:nowrap" class="ft100">S.,&#160;E</p>
+<p style="position:absolute;top:436px;left:383px;white-space:nowrap" class="ft103">ISEMANN</p>
+<p style="position:absolute;top:448px;left:122px;white-space:nowrap" class="ft106">E.:&#160;Gigavoxels&#160;:&#160;Ray-guided&#160;streaming&#160;for&#160;efficient&#160;and&#160;detailed<br/>voxel&#160;rendering.&#160;In&#160;Proc.&#160;of&#160;I3D&#160;(feb&#160;2009),&#160;ACM,&#160;pp.&#160;15–22.</p>
+<p style="position:absolute;top:482px;left:108px;white-space:nowrap" class="ft100">[DK09]</p>
+<p style="position:absolute;top:482px;left:158px;white-space:nowrap" class="ft100">D</p>
+<p style="position:absolute;top:483px;left:167px;white-space:nowrap" class="ft103">ACHSBACHER</p>
+<p style="position:absolute;top:482px;left:239px;white-space:nowrap" class="ft100">C.,&#160;K</p>
+<p style="position:absolute;top:483px;left:268px;white-space:nowrap" class="ft103">AUTZ</p>
+<p style="position:absolute;top:482px;left:298px;white-space:nowrap" class="ft100">J.:&#160;Real-time&#160;global&#160;illumi-</p>
+<p style="position:absolute;top:495px;left:122px;white-space:nowrap" class="ft106">nation&#160;for&#160;dynamic&#160;scenes.&#160;In&#160;ACM&#160;SIGGRAPH&#160;2009&#160;Courses<br/>(2009),&#160;ACM,&#160;pp.&#160;19:1–19:217.</p>
+<p style="position:absolute;top:529px;left:108px;white-space:nowrap" class="ft100">[DKTS07]</p>
+<p style="position:absolute;top:529px;left:172px;white-space:nowrap" class="ft100">D</p>
+<p style="position:absolute;top:530px;left:182px;white-space:nowrap" class="ft103">ONG</p>
+<p style="position:absolute;top:529px;left:207px;white-space:nowrap" class="ft100">Z.,&#160;K</p>
+<p style="position:absolute;top:530px;left:235px;white-space:nowrap" class="ft103">AUTZ</p>
+<p style="position:absolute;top:529px;left:266px;white-space:nowrap" class="ft100">J.,&#160;T</p>
+<p style="position:absolute;top:530px;left:290px;white-space:nowrap" class="ft103">HEOBALT</p>
+<p style="position:absolute;top:529px;left:341px;white-space:nowrap" class="ft100">C.,&#160;S</p>
+<p style="position:absolute;top:530px;left:367px;white-space:nowrap" class="ft103">EIDEL</p>
+<p style="position:absolute;top:529px;left:401px;white-space:nowrap" class="ft100">H.-P.:</p>
+<p style="position:absolute;top:542px;left:122px;white-space:nowrap" class="ft106">Interactive&#160;global&#160;illumination&#160;using&#160;implicit&#160;visibility.&#160;In&#160;Proc.<br/>of&#160;Pacific&#160;Graphics</p>
+<p style="position:absolute;top:556px;left:217px;white-space:nowrap" class="ft100">(2007),&#160;pp.&#160;77–86.</p>
+<p style="position:absolute;top:576px;left:108px;white-space:nowrap" class="ft100">[DS05]</p>
+<p style="position:absolute;top:576px;left:156px;white-space:nowrap" class="ft100">D</p>
+<p style="position:absolute;top:577px;left:165px;white-space:nowrap" class="ft103">ACHSBACHER</p>
+<p style="position:absolute;top:576px;left:242px;white-space:nowrap" class="ft100">C.,&#160;S</p>
+<p style="position:absolute;top:577px;left:273px;white-space:nowrap" class="ft103">TAMMINGER</p>
+<p style="position:absolute;top:576px;left:345px;white-space:nowrap" class="ft100">M.:</p>
+<p style="position:absolute;top:576px;left:383px;white-space:nowrap" class="ft100">Reflective</p>
+<p style="position:absolute;top:589px;left:122px;white-space:nowrap" class="ft100">shadow&#160;maps.&#160;In&#160;Proc.&#160;of&#160;I3D&#160;(2005),&#160;pp.&#160;203–213.</p>
+<p style="position:absolute;top:609px;left:108px;white-space:nowrap" class="ft100">[DSDD07]</p>
+<p style="position:absolute;top:609px;left:174px;white-space:nowrap" class="ft100">D</p>
+<p style="position:absolute;top:611px;left:182px;white-space:nowrap" class="ft103">ACHSBACHER</p>
+<p style="position:absolute;top:609px;left:255px;white-space:nowrap" class="ft100">C.,&#160;S</p>
+<p style="position:absolute;top:611px;left:282px;white-space:nowrap" class="ft103">TAMMINGER</p>
+<p style="position:absolute;top:609px;left:350px;white-space:nowrap" class="ft100">M.,&#160;D</p>
+<p style="position:absolute;top:611px;left:381px;white-space:nowrap" class="ft103">RETTAKIS</p>
+<p style="position:absolute;top:623px;left:122px;white-space:nowrap" class="ft100">G.,&#160;D</p>
+<p style="position:absolute;top:624px;left:151px;white-space:nowrap" class="ft103">URAND</p>
+<p style="position:absolute;top:623px;left:191px;white-space:nowrap" class="ft100">F.:&#160;Implicit&#160;visibility&#160;and&#160;antiradiance&#160;for&#160;interac-</p>
+<p style="position:absolute;top:636px;left:122px;white-space:nowrap" class="ft106">tive&#160;global&#160;illumination.&#160;ACM&#160;Trans.&#160;Graph.&#160;(Proc.&#160;SIGGRAPH)<br/>26</p>
+<p style="position:absolute;top:650px;left:134px;white-space:nowrap" class="ft100">,&#160;3&#160;(2007).</p>
+<p style="position:absolute;top:670px;left:108px;white-space:nowrap" class="ft100">[EHK</p>
+<p style="position:absolute;top:667px;left:137px;white-space:nowrap" class="ft104">∗</p>
+<p style="position:absolute;top:670px;left:143px;white-space:nowrap" class="ft100">04]</p>
+<p style="position:absolute;top:670px;left:172px;white-space:nowrap" class="ft100">E</p>
+<p style="position:absolute;top:671px;left:180px;white-space:nowrap" class="ft103">NGEL</p>
+<p style="position:absolute;top:670px;left:212px;white-space:nowrap" class="ft100">K.,&#160;H</p>
+<p style="position:absolute;top:671px;left:242px;white-space:nowrap" class="ft103">ADWIGER</p>
+<p style="position:absolute;top:670px;left:294px;white-space:nowrap" class="ft100">M.,&#160;K</p>
+<p style="position:absolute;top:671px;left:326px;white-space:nowrap" class="ft103">NISS</p>
+<p style="position:absolute;top:670px;left:353px;white-space:nowrap" class="ft100">J.&#160;M.,&#160;L</p>
+<p style="position:absolute;top:671px;left:396px;white-space:nowrap" class="ft103">EFOHN</p>
+<p style="position:absolute;top:683px;left:122px;white-space:nowrap" class="ft100">A.&#160;E.,&#160;S</p>
+<p style="position:absolute;top:685px;left:162px;white-space:nowrap" class="ft103">ALAMA</p>
+<p style="position:absolute;top:683px;left:203px;white-space:nowrap" class="ft100">C.&#160;R.,&#160;W</p>
+<p style="position:absolute;top:685px;left:248px;white-space:nowrap" class="ft103">EISKOPF</p>
+<p style="position:absolute;top:683px;left:293px;white-space:nowrap" class="ft100">D.:&#160;Real-time&#160;volume&#160;graph-</p>
+<p style="position:absolute;top:697px;left:122px;white-space:nowrap" class="ft100">ics.&#160;In&#160;SIGGRAPH&#160;Course&#160;Notes&#160;(2004).</p>
+<p style="position:absolute;top:717px;left:108px;white-space:nowrap" class="ft100">[Fou92]</p>
+<p style="position:absolute;top:717px;left:160px;white-space:nowrap" class="ft100">F</p>
+<p style="position:absolute;top:718px;left:167px;white-space:nowrap" class="ft103">OURNIER</p>
+<p style="position:absolute;top:717px;left:216px;white-space:nowrap" class="ft100">A.:&#160;Normal&#160;distribution&#160;functions&#160;and&#160;multi-</p>
+<p style="position:absolute;top:730px;left:122px;white-space:nowrap" class="ft106">ple&#160;surfaces.&#160;In&#160;Graphics&#160;Interface’92&#160;Workshop&#160;on&#160;Local&#160;Illu-<br/>mination</p>
+<p style="position:absolute;top:744px;left:167px;white-space:nowrap" class="ft100">(May&#160;1992),&#160;pp.&#160;45–52.</p>
+<p style="position:absolute;top:764px;left:108px;white-space:nowrap" class="ft100">[FP02]</p>
+<p style="position:absolute;top:764px;left:154px;white-space:nowrap" class="ft100">F</p>
+<p style="position:absolute;top:765px;left:162px;white-space:nowrap" class="ft103">ORSYTH</p>
+<p style="position:absolute;top:764px;left:206px;white-space:nowrap" class="ft100">D.&#160;A.,&#160;P</p>
+<p style="position:absolute;top:765px;left:248px;white-space:nowrap" class="ft103">ONCE</p>
+<p style="position:absolute;top:764px;left:280px;white-space:nowrap" class="ft100">J.:&#160;Computer&#160;Vision:&#160;A&#160;Modern</p>
+<p style="position:absolute;top:777px;left:122px;white-space:nowrap" class="ft100">Approach</p>
+<p style="position:absolute;top:777px;left:168px;white-space:nowrap" class="ft100">,&#160;us&#160;edition&#160;ed.&#160;Prentice&#160;Hall,&#160;August&#160;2002.</p>
+<p style="position:absolute;top:797px;left:108px;white-space:nowrap" class="ft100">[Hac05]</p>
+<p style="position:absolute;top:797px;left:160px;white-space:nowrap" class="ft100">H</p>
+<p style="position:absolute;top:799px;left:170px;white-space:nowrap" class="ft103">ACHISUKA</p>
+<p style="position:absolute;top:797px;left:227px;white-space:nowrap" class="ft100">T.:&#160;GPU&#160;Gems&#160;2.&#160;2005,&#160;ch.&#160;High-Quality</p>
+<p style="position:absolute;top:811px;left:122px;white-space:nowrap" class="ft100">Global&#160;Illumination&#160;Rendering&#160;Using&#160;Rasterization.</p>
+<p style="position:absolute;top:831px;left:108px;white-space:nowrap" class="ft100">[HPB07]</p>
+<p style="position:absolute;top:831px;left:164px;white-space:nowrap" class="ft100">H</p>
+<p style="position:absolute;top:833px;left:174px;white-space:nowrap" class="ft103">AŠAN</p>
+<p style="position:absolute;top:831px;left:207px;white-space:nowrap" class="ft100">M.,&#160;P</p>
+<p style="position:absolute;top:833px;left:238px;white-space:nowrap" class="ft103">ELLACINI</p>
+<p style="position:absolute;top:831px;left:291px;white-space:nowrap" class="ft100">F.,&#160;B</p>
+<p style="position:absolute;top:833px;left:318px;white-space:nowrap" class="ft103">ALA</p>
+<p style="position:absolute;top:831px;left:344px;white-space:nowrap" class="ft100">K.:</p>
+<p style="position:absolute;top:831px;left:371px;white-space:nowrap" class="ft100">Matrix&#160;row-</p>
+<p style="position:absolute;top:844px;left:122px;white-space:nowrap" class="ft100">column&#160;sampling&#160;for&#160;the&#160;many-light&#160;problem.</p>
+<p style="position:absolute;top:844px;left:370px;white-space:nowrap" class="ft100">ACM&#160;Trans.</p>
+<p style="position:absolute;top:858px;left:122px;white-space:nowrap" class="ft100">Graph.&#160;(Proc.&#160;SIGGRAPH)&#160;26</p>
+<p style="position:absolute;top:858px;left:268px;white-space:nowrap" class="ft100">,&#160;3&#160;(2007).</p>
+<p style="position:absolute;top:878px;left:108px;white-space:nowrap" class="ft100">[HREB11]</p>
+<p style="position:absolute;top:878px;left:173px;white-space:nowrap" class="ft100">H</p>
+<p style="position:absolute;top:880px;left:182px;white-space:nowrap" class="ft103">OLLÄNDER</p>
+<p style="position:absolute;top:878px;left:246px;white-space:nowrap" class="ft100">M.,&#160;R</p>
+<p style="position:absolute;top:880px;left:280px;white-space:nowrap" class="ft103">ITSCHEL</p>
+<p style="position:absolute;top:878px;left:331px;white-space:nowrap" class="ft100">T.,&#160;E</p>
+<p style="position:absolute;top:880px;left:361px;white-space:nowrap" class="ft103">ISEMANN</p>
+<p style="position:absolute;top:878px;left:416px;white-space:nowrap" class="ft100">E.,</p>
+<p style="position:absolute;top:891px;left:122px;white-space:nowrap" class="ft100">B</p>
+<p style="position:absolute;top:893px;left:131px;white-space:nowrap" class="ft103">OUBEKEUR</p>
+<p style="position:absolute;top:891px;left:191px;white-space:nowrap" class="ft100">T.:&#160;Manylods:&#160;Parallel&#160;many-view&#160;level-of-detail</p>
+<p style="position:absolute;top:905px;left:122px;white-space:nowrap" class="ft106">selection&#160;for&#160;real-time&#160;global&#160;illumination.&#160;Computer&#160;Graphics<br/>Forum&#160;(Proc.&#160;EGSR)</p>
+<p style="position:absolute;top:918px;left:225px;white-space:nowrap" class="ft100">(2011),&#160;1233–1240.</p>
+<p style="position:absolute;top:938px;left:108px;white-space:nowrap" class="ft100">[HSRG07]</p>
+<p style="position:absolute;top:938px;left:173px;white-space:nowrap" class="ft100">H</p>
+<p style="position:absolute;top:940px;left:182px;white-space:nowrap" class="ft103">AN</p>
+<p style="position:absolute;top:938px;left:202px;white-space:nowrap" class="ft100">C.,&#160;S</p>
+<p style="position:absolute;top:940px;left:230px;white-space:nowrap" class="ft103">UN</p>
+<p style="position:absolute;top:938px;left:250px;white-space:nowrap" class="ft100">B.,&#160;R</p>
+<p style="position:absolute;top:940px;left:279px;white-space:nowrap" class="ft103">AMAMOORTHI</p>
+<p style="position:absolute;top:938px;left:356px;white-space:nowrap" class="ft100">R.,&#160;G</p>
+<p style="position:absolute;top:940px;left:386px;white-space:nowrap" class="ft103">RINSPUN</p>
+<p style="position:absolute;top:952px;left:122px;white-space:nowrap" class="ft106">E.:&#160;Frequency&#160;domain&#160;normal&#160;map&#160;filtering.&#160;Proc.&#160;of&#160;SIGGRAPH<br/>26</p>
+<p style="position:absolute;top:965px;left:134px;white-space:nowrap" class="ft100">,&#160;3&#160;(2007),&#160;28:1–28:12.</p>
+<p style="position:absolute;top:985px;left:108px;white-space:nowrap" class="ft100">[Jen96]</p>
+<p style="position:absolute;top:985px;left:157px;white-space:nowrap" class="ft100">J</p>
+<p style="position:absolute;top:987px;left:162px;white-space:nowrap" class="ft103">ENSEN</p>
+<p style="position:absolute;top:985px;left:199px;white-space:nowrap" class="ft100">H.&#160;W.:&#160;Global&#160;illumination&#160;using&#160;photon&#160;maps.</p>
+<p style="position:absolute;top:999px;left:122px;white-space:nowrap" class="ft100">In&#160;Proc.&#160;of&#160;EGSR&#160;(1996),&#160;Springer-Verlag,&#160;pp.&#160;21–30.</p>
+<p style="position:absolute;top:1019px;left:108px;white-space:nowrap" class="ft100">[Jen01]</p>
+<p style="position:absolute;top:1019px;left:157px;white-space:nowrap" class="ft100">J</p>
+<p style="position:absolute;top:1021px;left:162px;white-space:nowrap" class="ft103">ENSEN</p>
+<p style="position:absolute;top:1019px;left:199px;white-space:nowrap" class="ft100">H.&#160;W.:&#160;Realistic&#160;Image&#160;Synthesis&#160;Using&#160;Photon</p>
+<p style="position:absolute;top:1033px;left:122px;white-space:nowrap" class="ft100">Mapping</p>
+<p style="position:absolute;top:1032px;left:165px;white-space:nowrap" class="ft100">.&#160;A.&#160;K.&#160;Peters,&#160;2001.</p>
+<p style="position:absolute;top:128px;left:467px;white-space:nowrap" class="ft100">[Kaj86]</p>
+<p style="position:absolute;top:128px;left:517px;white-space:nowrap" class="ft100">K</p>
+<p style="position:absolute;top:130px;left:526px;white-space:nowrap" class="ft103">AJIYA</p>
+<p style="position:absolute;top:128px;left:560px;white-space:nowrap" class="ft100">J.&#160;T.:&#160;The&#160;rendering&#160;equation.&#160;Proc.&#160;of&#160;SIG-</p>
+<p style="position:absolute;top:142px;left:480px;white-space:nowrap" class="ft100">GRAPH&#160;20</p>
+<p style="position:absolute;top:142px;left:535px;white-space:nowrap" class="ft100">,&#160;4&#160;(1986),&#160;143–150.</p>
+<p style="position:absolute;top:161px;left:467px;white-space:nowrap" class="ft100">[KD10]</p>
+<p style="position:absolute;top:161px;left:517px;white-space:nowrap" class="ft100">K</p>
+<p style="position:absolute;top:163px;left:526px;white-space:nowrap" class="ft103">APLANYAN</p>
+<p style="position:absolute;top:161px;left:587px;white-space:nowrap" class="ft100">A.,&#160;D</p>
+<p style="position:absolute;top:163px;left:617px;white-space:nowrap" class="ft103">ACHSBACHER</p>
+<p style="position:absolute;top:161px;left:691px;white-space:nowrap" class="ft100">C.:&#160;Cascaded&#160;light</p>
+<p style="position:absolute;top:175px;left:480px;white-space:nowrap" class="ft106">propagation&#160;volumes&#160;for&#160;real-time&#160;indirect&#160;illumination.&#160;In&#160;Proc.<br/>of&#160;I3D</p>
+<p style="position:absolute;top:188px;left:514px;white-space:nowrap" class="ft100">(2010).</p>
+<p style="position:absolute;top:207px;left:467px;white-space:nowrap" class="ft100">[Kel97]</p>
+<p style="position:absolute;top:207px;left:517px;white-space:nowrap" class="ft100">K</p>
+<p style="position:absolute;top:209px;left:526px;white-space:nowrap" class="ft103">ELLER</p>
+<p style="position:absolute;top:207px;left:563px;white-space:nowrap" class="ft100">A.:&#160;Instant&#160;radiosity.&#160;In&#160;Proc.&#160;of&#160;SIGGRAPH</p>
+<p style="position:absolute;top:221px;left:480px;white-space:nowrap" class="ft100">(1997),&#160;pp.&#160;49–56.</p>
+<p style="position:absolute;top:240px;left:467px;white-space:nowrap" class="ft100">[LK10]</p>
+<p style="position:absolute;top:240px;left:516px;white-space:nowrap" class="ft100">L</p>
+<p style="position:absolute;top:242px;left:524px;white-space:nowrap" class="ft103">AINE</p>
+<p style="position:absolute;top:240px;left:552px;white-space:nowrap" class="ft100">S.,&#160;K</p>
+<p style="position:absolute;top:242px;left:578px;white-space:nowrap" class="ft103">ARRAS</p>
+<p style="position:absolute;top:240px;left:616px;white-space:nowrap" class="ft100">T.:&#160;Efficient&#160;sparse&#160;voxel&#160;octrees.&#160;In</p>
+<p style="position:absolute;top:254px;left:480px;white-space:nowrap" class="ft100">Proc.&#160;of&#160;I3D</p>
+<p style="position:absolute;top:254px;left:543px;white-space:nowrap" class="ft100">(2010),&#160;ACM&#160;Press,&#160;pp.&#160;55–63.</p>
+<p style="position:absolute;top:273px;left:467px;white-space:nowrap" class="ft100">[LSK</p>
+<p style="position:absolute;top:270px;left:493px;white-space:nowrap" class="ft104">∗</p>
+<p style="position:absolute;top:273px;left:500px;white-space:nowrap" class="ft100">07]</p>
+<p style="position:absolute;top:273px;left:529px;white-space:nowrap" class="ft100">L</p>
+<p style="position:absolute;top:275px;left:537px;white-space:nowrap" class="ft103">AINE</p>
+<p style="position:absolute;top:273px;left:572px;white-space:nowrap" class="ft100">S.,&#160;S</p>
+<p style="position:absolute;top:275px;left:603px;white-space:nowrap" class="ft103">ARANSAARI</p>
+<p style="position:absolute;top:273px;left:674px;white-space:nowrap" class="ft100">H.,&#160;K</p>
+<p style="position:absolute;top:275px;left:710px;white-space:nowrap" class="ft103">ONTKANEN</p>
+<p style="position:absolute;top:273px;left:777px;white-space:nowrap" class="ft100">J.,</p>
+<p style="position:absolute;top:287px;left:481px;white-space:nowrap" class="ft100">L</p>
+<p style="position:absolute;top:288px;left:489px;white-space:nowrap" class="ft103">EHTINEN</p>
+<p style="position:absolute;top:287px;left:538px;white-space:nowrap" class="ft100">J.,&#160;A</p>
+<p style="position:absolute;top:288px;left:564px;white-space:nowrap" class="ft103">ILA</p>
+<p style="position:absolute;top:287px;left:586px;white-space:nowrap" class="ft100">T.:&#160;Incremental&#160;instant&#160;radiosity&#160;for&#160;real-</p>
+<p style="position:absolute;top:300px;left:480px;white-space:nowrap" class="ft106">time&#160;indirect&#160;illumination.&#160;In&#160;Proc.&#160;of&#160;EGSR&#160;(2007),&#160;pp.&#160;277–<br/>286.</p>
+<p style="position:absolute;top:333px;left:467px;white-space:nowrap" class="ft100">[LWDB10]</p>
+<p style="position:absolute;top:333px;left:534px;white-space:nowrap" class="ft100">L</p>
+<p style="position:absolute;top:335px;left:542px;white-space:nowrap" class="ft103">AURIJSSEN</p>
+<p style="position:absolute;top:333px;left:601px;white-space:nowrap" class="ft100">J.,&#160;W</p>
+<p style="position:absolute;top:335px;left:628px;white-space:nowrap" class="ft103">ANG</p>
+<p style="position:absolute;top:333px;left:654px;white-space:nowrap" class="ft100">R.,&#160;D</p>
+<p style="position:absolute;top:335px;left:683px;white-space:nowrap" class="ft103">UTRE</p>
+<p style="position:absolute;top:333px;left:714px;white-space:nowrap" class="ft100">P.,&#160;B</p>
+<p style="position:absolute;top:335px;left:740px;white-space:nowrap" class="ft103">ROWN</p>
+<p style="position:absolute;top:333px;left:774px;white-space:nowrap" class="ft100">B.:</p>
+<p style="position:absolute;top:346px;left:480px;white-space:nowrap" class="ft106">Fast&#160;estimation&#160;and&#160;rendering&#160;of&#160;indirect&#160;highlights.&#160;Computer<br/>Graphics&#160;Forum&#160;29</p>
+<p style="position:absolute;top:360px;left:574px;white-space:nowrap" class="ft100">,&#160;4&#160;(2010),&#160;1305–1313.</p>
+<p style="position:absolute;top:379px;left:467px;white-space:nowrap" class="ft100">[LZT</p>
+<p style="position:absolute;top:377px;left:493px;white-space:nowrap" class="ft104">∗</p>
+<p style="position:absolute;top:379px;left:499px;white-space:nowrap" class="ft100">08]</p>
+<p style="position:absolute;top:379px;left:528px;white-space:nowrap" class="ft100">L</p>
+<p style="position:absolute;top:381px;left:536px;white-space:nowrap" class="ft103">EHTINEN</p>
+<p style="position:absolute;top:379px;left:584px;white-space:nowrap" class="ft100">J.,&#160;Z</p>
+<p style="position:absolute;top:381px;left:607px;white-space:nowrap" class="ft103">WICKER</p>
+<p style="position:absolute;top:379px;left:651px;white-space:nowrap" class="ft100">M.,&#160;T</p>
+<p style="position:absolute;top:381px;left:679px;white-space:nowrap" class="ft103">URQUIN</p>
+<p style="position:absolute;top:379px;left:722px;white-space:nowrap" class="ft100">E.,&#160;K</p>
+<p style="position:absolute;top:381px;left:749px;white-space:nowrap" class="ft103">ONTKA</p>
+<p style="position:absolute;top:379px;left:785px;white-space:nowrap" class="ft100">-</p>
+<p style="position:absolute;top:394px;left:481px;white-space:nowrap" class="ft103">NEN</p>
+<p style="position:absolute;top:393px;left:506px;white-space:nowrap" class="ft100">J.,&#160;D</p>
+<p style="position:absolute;top:394px;left:532px;white-space:nowrap" class="ft103">URAND</p>
+<p style="position:absolute;top:393px;left:573px;white-space:nowrap" class="ft100">F.,&#160;S</p>
+<p style="position:absolute;top:394px;left:598px;white-space:nowrap" class="ft103">ILLION</p>
+<p style="position:absolute;top:393px;left:637px;white-space:nowrap" class="ft100">F.,&#160;A</p>
+<p style="position:absolute;top:394px;left:664px;white-space:nowrap" class="ft103">ILA</p>
+<p style="position:absolute;top:393px;left:686px;white-space:nowrap" class="ft100">T.:&#160;A&#160;meshless&#160;hier-</p>
+<p style="position:absolute;top:406px;left:480px;white-space:nowrap" class="ft106">archical&#160;representation&#160;for&#160;light&#160;transport.&#160;ACM&#160;Trans.&#160;Graph.<br/>(Proc.&#160;SIGGRAPH)&#160;27</p>
+<p style="position:absolute;top:420px;left:593px;white-space:nowrap" class="ft100">(2008),&#160;37:1–37:9.</p>
+<p style="position:absolute;top:439px;left:467px;white-space:nowrap" class="ft100">[Max95]</p>
+<p style="position:absolute;top:439px;left:522px;white-space:nowrap" class="ft100">M</p>
+<p style="position:absolute;top:441px;left:533px;white-space:nowrap" class="ft103">AX</p>
+<p style="position:absolute;top:439px;left:552px;white-space:nowrap" class="ft100">N.:&#160;Optical&#160;models&#160;for&#160;direct&#160;volume&#160;rendering.</p>
+<p style="position:absolute;top:453px;left:480px;white-space:nowrap" class="ft100">IEEE&#160;Trans.&#160;on&#160;Vis.&#160;and&#160;Computer&#160;Graphics&#160;1</p>
+<p style="position:absolute;top:453px;left:699px;white-space:nowrap" class="ft100">,&#160;2&#160;(1995),&#160;99–108.</p>
+<p style="position:absolute;top:472px;left:467px;white-space:nowrap" class="ft100">[Mil94]</p>
+<p style="position:absolute;top:472px;left:517px;white-space:nowrap" class="ft100">M</p>
+<p style="position:absolute;top:474px;left:528px;white-space:nowrap" class="ft103">ILLER</p>
+<p style="position:absolute;top:472px;left:561px;white-space:nowrap" class="ft100">G.:&#160;Efficient&#160;algorithms&#160;for&#160;local&#160;and&#160;global&#160;ac-</p>
+<p style="position:absolute;top:485px;left:480px;white-space:nowrap" class="ft100">cessibility&#160;shading.&#160;In&#160;Proc.&#160;of&#160;SIGGRAPH&#160;(1994),&#160;pp.&#160;319–326.</p>
+<p style="position:absolute;top:505px;left:467px;white-space:nowrap" class="ft100">[NSW09]</p>
+<p style="position:absolute;top:505px;left:526px;white-space:nowrap" class="ft100">N</p>
+<p style="position:absolute;top:506px;left:536px;white-space:nowrap" class="ft103">ICHOLS</p>
+<p style="position:absolute;top:505px;left:579px;white-space:nowrap" class="ft100">G.,&#160;S</p>
+<p style="position:absolute;top:506px;left:607px;white-space:nowrap" class="ft103">HOPF</p>
+<p style="position:absolute;top:505px;left:639px;white-space:nowrap" class="ft100">J.,&#160;W</p>
+<p style="position:absolute;top:506px;left:668px;white-space:nowrap" class="ft103">YMAN</p>
+<p style="position:absolute;top:505px;left:705px;white-space:nowrap" class="ft100">C.:&#160;Hierarchical</p>
+<p style="position:absolute;top:518px;left:480px;white-space:nowrap" class="ft106">image-space&#160;radiosity&#160;for&#160;interactive&#160;global&#160;illumination.&#160;Com-<br/>puter&#160;Graphics&#160;Forum&#160;(Proc.&#160;EGSR)&#160;28</p>
+<p style="position:absolute;top:532px;left:671px;white-space:nowrap" class="ft100">,&#160;4&#160;(2009),&#160;1141–1149.</p>
+<p style="position:absolute;top:551px;left:467px;white-space:nowrap" class="ft100">[REG</p>
+<p style="position:absolute;top:548px;left:495px;white-space:nowrap" class="ft104">∗</p>
+<p style="position:absolute;top:551px;left:501px;white-space:nowrap" class="ft100">09]</p>
+<p style="position:absolute;top:551px;left:530px;white-space:nowrap" class="ft100">R</p>
+<p style="position:absolute;top:553px;left:539px;white-space:nowrap" class="ft103">ITSCHEL</p>
+<p style="position:absolute;top:551px;left:587px;white-space:nowrap" class="ft100">T.,&#160;E</p>
+<p style="position:absolute;top:553px;left:613px;white-space:nowrap" class="ft103">NGELHARDT</p>
+<p style="position:absolute;top:551px;left:682px;white-space:nowrap" class="ft100">T.,&#160;G</p>
+<p style="position:absolute;top:553px;left:710px;white-space:nowrap" class="ft103">ROSCH</p>
+<p style="position:absolute;top:551px;left:749px;white-space:nowrap" class="ft100">T.,&#160;S</p>
+<p style="position:absolute;top:553px;left:775px;white-space:nowrap" class="ft103">EI</p>
+<p style="position:absolute;top:551px;left:785px;white-space:nowrap" class="ft100">-</p>
+<p style="position:absolute;top:566px;left:481px;white-space:nowrap" class="ft103">DEL</p>
+<p style="position:absolute;top:565px;left:504px;white-space:nowrap" class="ft100">H.-P.,&#160;K</p>
+<p style="position:absolute;top:566px;left:547px;white-space:nowrap" class="ft103">AUTZ</p>
+<p style="position:absolute;top:565px;left:577px;white-space:nowrap" class="ft100">J.,&#160;D</p>
+<p style="position:absolute;top:566px;left:602px;white-space:nowrap" class="ft103">ACHSBACHER</p>
+<p style="position:absolute;top:565px;left:674px;white-space:nowrap" class="ft100">C.:&#160;Micro-rendering&#160;for</p>
+<p style="position:absolute;top:578px;left:480px;white-space:nowrap" class="ft106">scalable,&#160;parallel&#160;final&#160;gathering.&#160;ACM&#160;Trans.&#160;Graph.&#160;(Proc.&#160;SIG-<br/>GRAPH&#160;Asia)&#160;28</p>
+<p style="position:absolute;top:592px;left:563px;white-space:nowrap" class="ft100">,&#160;5&#160;(2009),&#160;132:1–132:8.</p>
+<p style="position:absolute;top:611px;left:467px;white-space:nowrap" class="ft100">[RGK</p>
+<p style="position:absolute;top:608px;left:496px;white-space:nowrap" class="ft104">∗</p>
+<p style="position:absolute;top:611px;left:502px;white-space:nowrap" class="ft100">08]</p>
+<p style="position:absolute;top:611px;left:531px;white-space:nowrap" class="ft100">R</p>
+<p style="position:absolute;top:613px;left:540px;white-space:nowrap" class="ft103">ITSCHEL</p>
+<p style="position:absolute;top:611px;left:587px;white-space:nowrap" class="ft100">T.,&#160;G</p>
+<p style="position:absolute;top:613px;left:613px;white-space:nowrap" class="ft103">ROSCH</p>
+<p style="position:absolute;top:611px;left:651px;white-space:nowrap" class="ft100">T.,&#160;K</p>
+<p style="position:absolute;top:613px;left:678px;white-space:nowrap" class="ft103">IM</p>
+<p style="position:absolute;top:611px;left:694px;white-space:nowrap" class="ft100">M.&#160;H.,&#160;S</p>
+<p style="position:absolute;top:613px;left:739px;white-space:nowrap" class="ft103">EIDEL</p>
+<p style="position:absolute;top:611px;left:772px;white-space:nowrap" class="ft100">H.-</p>
+<p style="position:absolute;top:624px;left:481px;white-space:nowrap" class="ft100">P.,&#160;D</p>
+<p style="position:absolute;top:626px;left:508px;white-space:nowrap" class="ft103">ACHSBACHER</p>
+<p style="position:absolute;top:624px;left:583px;white-space:nowrap" class="ft100">C.,&#160;K</p>
+<p style="position:absolute;top:626px;left:613px;white-space:nowrap" class="ft103">AUTZ</p>
+<p style="position:absolute;top:624px;left:646px;white-space:nowrap" class="ft100">J.:</p>
+<p style="position:absolute;top:624px;left:670px;white-space:nowrap" class="ft100">Imperfect&#160;shadow&#160;maps</p>
+<p style="position:absolute;top:638px;left:480px;white-space:nowrap" class="ft106">for&#160;efficient&#160;computation&#160;of&#160;indirect&#160;illumination.&#160;ACM&#160;Trans.<br/>Graph.&#160;(Proc.&#160;SIGGRAPH&#160;Asia)&#160;27</p>
+<p style="position:absolute;top:651px;left:651px;white-space:nowrap" class="ft100">,&#160;5&#160;(2008),&#160;129:1–129:8.</p>
+<p style="position:absolute;top:671px;left:467px;white-space:nowrap" class="ft100">[RHK</p>
+<p style="position:absolute;top:668px;left:496px;white-space:nowrap" class="ft104">∗</p>
+<p style="position:absolute;top:671px;left:502px;white-space:nowrap" class="ft100">11]</p>
+<p style="position:absolute;top:671px;left:531px;white-space:nowrap" class="ft100">R</p>
+<p style="position:absolute;top:672px;left:540px;white-space:nowrap" class="ft103">ITSCHEL</p>
+<p style="position:absolute;top:671px;left:586px;white-space:nowrap" class="ft100">T.,&#160;H</p>
+<p style="position:absolute;top:672px;left:613px;white-space:nowrap" class="ft103">AN</p>
+<p style="position:absolute;top:671px;left:630px;white-space:nowrap" class="ft100">I.,&#160;K</p>
+<p style="position:absolute;top:672px;left:654px;white-space:nowrap" class="ft103">IM</p>
+<p style="position:absolute;top:671px;left:670px;white-space:nowrap" class="ft100">J.&#160;D.&#160;K.,&#160;E</p>
+<p style="position:absolute;top:672px;left:724px;white-space:nowrap" class="ft103">ISEMANN</p>
+<p style="position:absolute;top:671px;left:775px;white-space:nowrap" class="ft100">E.,</p>
+<p style="position:absolute;top:684px;left:481px;white-space:nowrap" class="ft100">S</p>
+<p style="position:absolute;top:686px;left:488px;white-space:nowrap" class="ft103">EIDEL</p>
+<p style="position:absolute;top:684px;left:522px;white-space:nowrap" class="ft100">H.-P.:&#160;Making&#160;imperfect&#160;shadow&#160;maps&#160;view-adaptive:</p>
+<p style="position:absolute;top:698px;left:480px;white-space:nowrap" class="ft106">High-quality&#160;global&#160;illumination&#160;in&#160;large&#160;dynamic&#160;scenes.&#160;Com-<br/>puter&#160;Graphics&#160;Forum&#160;(Proc.&#160;EGSR)</p>
+<p style="position:absolute;top:711px;left:659px;white-space:nowrap" class="ft100">(2011).</p>
+<p style="position:absolute;top:731px;left:467px;white-space:nowrap" class="ft100">[ST90]</p>
+<p style="position:absolute;top:731px;left:514px;white-space:nowrap" class="ft100">S</p>
+<p style="position:absolute;top:732px;left:521px;white-space:nowrap" class="ft103">AITO</p>
+<p style="position:absolute;top:731px;left:549px;white-space:nowrap" class="ft100">T.,&#160;T</p>
+<p style="position:absolute;top:732px;left:573px;white-space:nowrap" class="ft103">AKAHASHI</p>
+<p style="position:absolute;top:731px;left:631px;white-space:nowrap" class="ft100">T.:&#160;Comprehensible&#160;rendering&#160;of</p>
+<p style="position:absolute;top:744px;left:480px;white-space:nowrap" class="ft100">3-D&#160;shapes.&#160;Proc.&#160;of&#160;SIGGRAPH&#160;24,&#160;4&#160;(1990),&#160;197–206.</p>
+<p style="position:absolute;top:763px;left:467px;white-space:nowrap" class="ft100">[THGM11]</p>
+<p style="position:absolute;top:763px;left:535px;white-space:nowrap" class="ft100">T</p>
+<p style="position:absolute;top:765px;left:543px;white-space:nowrap" class="ft103">HIEDEMANN</p>
+<p style="position:absolute;top:763px;left:615px;white-space:nowrap" class="ft100">S.,&#160;H</p>
+<p style="position:absolute;top:765px;left:648px;white-space:nowrap" class="ft103">ENRICH</p>
+<p style="position:absolute;top:763px;left:697px;white-space:nowrap" class="ft100">N.,&#160;G</p>
+<p style="position:absolute;top:765px;left:732px;white-space:nowrap" class="ft103">ROSCH</p>
+<p style="position:absolute;top:763px;left:776px;white-space:nowrap" class="ft100">T.,</p>
+<p style="position:absolute;top:777px;left:481px;white-space:nowrap" class="ft100">M</p>
+<p style="position:absolute;top:778px;left:492px;white-space:nowrap" class="ft103">ÜLLER</p>
+<p style="position:absolute;top:777px;left:530px;white-space:nowrap" class="ft100">S.:&#160;Voxel-based&#160;global&#160;illumination.&#160;Proc.&#160;of&#160;I3D,</p>
+<p style="position:absolute;top:790px;left:480px;white-space:nowrap" class="ft100">ACM,&#160;pp.&#160;103–110.</p>
+<p style="position:absolute;top:810px;left:467px;white-space:nowrap" class="ft100">[TL04]</p>
+<p style="position:absolute;top:810px;left:514px;white-space:nowrap" class="ft100">T</p>
+<p style="position:absolute;top:811px;left:521px;white-space:nowrap" class="ft103">ABELLION</p>
+<p style="position:absolute;top:810px;left:580px;white-space:nowrap" class="ft100">E.,&#160;L</p>
+<p style="position:absolute;top:811px;left:609px;white-space:nowrap" class="ft103">AMORLETTE</p>
+<p style="position:absolute;top:810px;left:679px;white-space:nowrap" class="ft100">A.:</p>
+<p style="position:absolute;top:810px;left:709px;white-space:nowrap" class="ft100">An&#160;approximate</p>
+<p style="position:absolute;top:823px;left:480px;white-space:nowrap" class="ft106">global&#160;illumination&#160;system&#160;for&#160;computer&#160;generated&#160;films.&#160;ACM<br/>Trans.&#160;Graph.&#160;(Proc.&#160;SIGGRAPH)&#160;23</p>
+<p style="position:absolute;top:837px;left:663px;white-space:nowrap" class="ft100">(2004),&#160;469–476.</p>
+<p style="position:absolute;top:856px;left:467px;white-space:nowrap" class="ft100">[Tok05]</p>
+<p style="position:absolute;top:856px;left:518px;white-space:nowrap" class="ft100">T</p>
+<p style="position:absolute;top:858px;left:526px;white-space:nowrap" class="ft103">OKSVIG</p>
+<p style="position:absolute;top:856px;left:570px;white-space:nowrap" class="ft100">M.:&#160;Mipmapping&#160;normal&#160;maps.&#160;Journal&#160;of</p>
+<p style="position:absolute;top:870px;left:480px;white-space:nowrap" class="ft100">Graphics,&#160;GPU,&#160;and&#160;Game&#160;Tools&#160;10</p>
+<p style="position:absolute;top:870px;left:654px;white-space:nowrap" class="ft100">,&#160;3&#160;(2005),&#160;65–71.</p>
+<p style="position:absolute;top:889px;left:467px;white-space:nowrap" class="ft100">[WFA</p>
+<p style="position:absolute;top:886px;left:496px;white-space:nowrap" class="ft104">∗</p>
+<p style="position:absolute;top:889px;left:503px;white-space:nowrap" class="ft100">05]</p>
+<p style="position:absolute;top:889px;left:532px;white-space:nowrap" class="ft100">W</p>
+<p style="position:absolute;top:891px;left:543px;white-space:nowrap" class="ft103">ALTER</p>
+<p style="position:absolute;top:889px;left:581px;white-space:nowrap" class="ft100">B.,&#160;F</p>
+<p style="position:absolute;top:891px;left:609px;white-space:nowrap" class="ft103">ERNANDEZ</p>
+<p style="position:absolute;top:889px;left:670px;white-space:nowrap" class="ft100">S.,&#160;A</p>
+<p style="position:absolute;top:891px;left:699px;white-space:nowrap" class="ft103">RBREE</p>
+<p style="position:absolute;top:889px;left:738px;white-space:nowrap" class="ft100">A.,&#160;B</p>
+<p style="position:absolute;top:891px;left:768px;white-space:nowrap" class="ft103">ALA</p>
+<p style="position:absolute;top:902px;left:481px;white-space:nowrap" class="ft100">K.,&#160;D</p>
+<p style="position:absolute;top:904px;left:512px;white-space:nowrap" class="ft103">ONIKIAN</p>
+<p style="position:absolute;top:902px;left:562px;white-space:nowrap" class="ft100">M.,&#160;G</p>
+<p style="position:absolute;top:904px;left:595px;white-space:nowrap" class="ft103">REENBERG</p>
+<p style="position:absolute;top:902px;left:656px;white-space:nowrap" class="ft100">D.&#160;P.:</p>
+<p style="position:absolute;top:902px;left:699px;white-space:nowrap" class="ft100">Lightcuts:&#160;A&#160;scal-</p>
+<p style="position:absolute;top:916px;left:480px;white-space:nowrap" class="ft106">able&#160;approach&#160;to&#160;illumination.&#160;ACM&#160;Trans.&#160;Graph.&#160;(Proc.&#160;SIG-<br/>GRAPH)&#160;24</p>
+<p style="position:absolute;top:929px;left:539px;white-space:nowrap" class="ft100">,&#160;3&#160;(2005),&#160;1098–1107.</p>
+<p style="position:absolute;top:949px;left:467px;white-space:nowrap" class="ft100">[WMG</p>
+<p style="position:absolute;top:946px;left:501px;white-space:nowrap" class="ft104">∗</p>
+<p style="position:absolute;top:949px;left:508px;white-space:nowrap" class="ft100">]</p>
+<p style="position:absolute;top:949px;left:525px;white-space:nowrap" class="ft100">W</p>
+<p style="position:absolute;top:950px;left:535px;white-space:nowrap" class="ft103">ALD</p>
+<p style="position:absolute;top:949px;left:561px;white-space:nowrap" class="ft100">I.,&#160;M</p>
+<p style="position:absolute;top:950px;left:589px;white-space:nowrap" class="ft103">ARK</p>
+<p style="position:absolute;top:949px;left:615px;white-space:nowrap" class="ft100">W.&#160;R.,&#160;G</p>
+<p style="position:absolute;top:950px;left:664px;white-space:nowrap" class="ft103">ÜNTHER</p>
+<p style="position:absolute;top:949px;left:710px;white-space:nowrap" class="ft100">J.,&#160;B</p>
+<p style="position:absolute;top:950px;left:736px;white-space:nowrap" class="ft103">OULOS</p>
+<p style="position:absolute;top:949px;left:775px;white-space:nowrap" class="ft100">S.,</p>
+<p style="position:absolute;top:962px;left:481px;white-space:nowrap" class="ft100">I</p>
+<p style="position:absolute;top:964px;left:485px;white-space:nowrap" class="ft103">ZE</p>
+<p style="position:absolute;top:962px;left:501px;white-space:nowrap" class="ft100">T.,&#160;H</p>
+<p style="position:absolute;top:964px;left:528px;white-space:nowrap" class="ft103">UNT</p>
+<p style="position:absolute;top:962px;left:552px;white-space:nowrap" class="ft100">W.,&#160;P</p>
+<p style="position:absolute;top:964px;left:579px;white-space:nowrap" class="ft103">ARKER</p>
+<p style="position:absolute;top:962px;left:617px;white-space:nowrap" class="ft100">S.&#160;G.,&#160;S</p>
+<p style="position:absolute;top:964px;left:658px;white-space:nowrap" class="ft103">HIRLEY</p>
+<p style="position:absolute;top:962px;left:699px;white-space:nowrap" class="ft100">P.:&#160;State&#160;of&#160;the&#160;Art</p>
+<p style="position:absolute;top:976px;left:480px;white-space:nowrap" class="ft100">in&#160;Ray&#160;Tracing&#160;Animated&#160;Scenes.&#160;In&#160;Eurographics.</p>
+<p style="position:absolute;top:995px;left:467px;white-space:nowrap" class="ft100">[WZPB09]</p>
+<p style="position:absolute;top:995px;left:533px;white-space:nowrap" class="ft100">W</p>
+<p style="position:absolute;top:997px;left:544px;white-space:nowrap" class="ft103">ANG</p>
+<p style="position:absolute;top:995px;left:569px;white-space:nowrap" class="ft100">R.,&#160;Z</p>
+<p style="position:absolute;top:997px;left:596px;white-space:nowrap" class="ft103">HOU</p>
+<p style="position:absolute;top:995px;left:621px;white-space:nowrap" class="ft100">K.,&#160;P</p>
+<p style="position:absolute;top:997px;left:647px;white-space:nowrap" class="ft103">AN</p>
+<p style="position:absolute;top:995px;left:665px;white-space:nowrap" class="ft100">M.,&#160;B</p>
+<p style="position:absolute;top:997px;left:695px;white-space:nowrap" class="ft103">AO</p>
+<p style="position:absolute;top:995px;left:712px;white-space:nowrap" class="ft100">H.:&#160;An&#160;efficient</p>
+<p style="position:absolute;top:1008px;left:480px;white-space:nowrap" class="ft100">gpu-based&#160;approach&#160;for&#160;interactive&#160;global&#160;illumination.</p>
+<p style="position:absolute;top:1009px;left:765px;white-space:nowrap" class="ft100">ACM</p>
+<p style="position:absolute;top:1022px;left:480px;white-space:nowrap" class="ft100">Trans.&#160;Graph.&#160;(Proc.&#160;SIGGRAPH)&#160;28</p>
+<p style="position:absolute;top:1022px;left:663px;white-space:nowrap" class="ft100">(2009),&#160;91:1–91:8.</p>
+<p style="position:absolute;top:1073px;left:709px;white-space:nowrap" class="ft104">c</p>
+<p style="position:absolute;top:1073px;left:705px;white-space:nowrap" class="ft104">&#160;2011&#160;The&#160;Author(s)</p>
+<p style="position:absolute;top:1085px;left:540px;white-space:nowrap" class="ft104">c</p>
+<p style="position:absolute;top:1085px;left:536px;white-space:nowrap" class="ft104">&#160;2011&#160;The&#160;Eurographics&#160;Association&#160;and&#160;Blackwell&#160;Publishing&#160;Ltd.</p>
+</div>
+</body>
+</html>
